@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Zugangsbeschränkter Bereich"
+AuthUserFile "beliebigerpfad"/.htusers
+Require valid-user
