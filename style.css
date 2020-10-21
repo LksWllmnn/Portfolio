@@ -4,6 +4,7 @@
 
 body{
     margin: 0px;
+    overflow-x: hidden;
     /*overflow: hidden;*/
     
 }
@@ -14,6 +15,18 @@ a{
 
 h1{
     font-size: 500%;
+}
+
+h2{
+    margin: 0px;
+}
+
+.sectionWeiß{
+    color: rgb(51, 0, 51);
+}
+
+.sectionLila{
+    color: white;
 }
 
 h1,h2,h3{
@@ -31,6 +44,7 @@ h1,h2,h3{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    
 }
 
 .header h1{
@@ -57,24 +71,26 @@ h1,h2,h3{
     background-color: rgba(51, 51, 51, 0);
     box-shadow: 5px 5px 10px 2px;
     justify-content: center;
+    background-color: rgba(15, 15, 15, 0.651);
 }
 
 .navElement{
-    background-color: rgba(15, 15, 15, 0.651);
-    margin:30px;
-    width: 150px;
+    width: 12%;
     height: 50px;
     text-align: center;
-    padding-bottom: auto;
     display: flex;
-    color: white;
     align-items: center;
-    border-radius: 15px;
+}
+
+.navElement a{
+    color: white;
+    text-decoration: none;
 }
 
 .navContainer{
     display: block;
     width: 1200px;
+    background-color: rgba(0,0,0,0);
 }
 
 .navElement>div{
@@ -86,8 +102,7 @@ h1,h2,h3{
     background-color: #222;
     box-shadow: none;
     color: rgb(255, 255, 255);
-    width: 180px;
-    margin: 30px 15px 30px 15px
+    width: 12%;
 }
 
 .sprungmarke{
@@ -102,27 +117,40 @@ h1,h2,h3{
 /*/////////////////*/
 /*Begrüßungstext*/
 /*/////////////////*/
-#begrüßungstext{
-    display: flex;
+
+
+/*Grid-Versuch*/
+.grid-container {
+    display: grid;
+    grid-template-columns: calc(100%/3) calc(100%/3) calc(100%/3);
+    grid-template-rows: calc(100vh/3) calc(100vh/3) calc(100vh/3);
     height: 100vh;
-    justify-content: center;
+    
+  }
+.grid-container:nth-child(odd){
+    background-color: rgb(51, 0, 51);
+}
+  .grid-item {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    text-align: center;
+    
+  }
+
+  .grid-item.oben{
+    padding-top: 20%;
 }
 
-#Startseite2{
-    position: absolute;
-    top: 125vh;
+.grid-item.unten{
+    padding-bottom: 20%;
 }
 
-.sectionTitle1{
-    position: absolute;
-    top: 135vh;
+.grid-item.unten.sprungmarkenachunten{
+    padding-top: 30%;
 }
 
-/*/////////////////*/
-/*Main*/
-/*/////////////////*/
-main{
-    width: 100%;
-    margin-left:5%;
-    margin-right: 5%;
+.grid-item.mitte{
+    text-align: center;
+    display: flex;
+    align-items: center;
 }
