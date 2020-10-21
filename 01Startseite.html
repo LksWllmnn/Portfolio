@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lukas Willmann</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="scrip.js" defer></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        
+        <!--Header--> <!--Navigation-->
+        <div id="Start" class="header">
+            <div class="nav">
+                <div class="navElement"><div><a>Startseite</a></div></div>
+                <div class="navElement"><div><a>Über Mich</a></div></div>
+                <div class="navElement"><div><a>Lebenslauf</a></div></div>
+                <div class="navElement"><div><a>Arbeitsbesipiele</a></div></div>
+                <div class="navElement"><div><a>Zeugnisse und Zertifikate</a></div></div>
+            </div>
+            <div class="title">
+                <h1>Mein Portfolio</h1>
+            </div>
+
+            <div id="Startseite1"><a href="#begrüßungstext"><img  class="sprungmarke" src="/00Design/Logos/pfeilnachunten_weiß.png"></a></div>
+
+        </div>
+        
+        
+
+        <!--begrüßungstext-->
+        <div id="begrüßungstext">
+            <div id="Startseite2"><a href="#Start"><img  class="sprungmarke" src="/00Design/Logos/pfeilnachoben_schwarz.png"></a></div>
+            <div class="sectionTitle1">
+                <h2>Herzlich Willkommen</h2>
+            </div>
+
+        </div>
+        
+        <main>
+            <h2 id="sectionWebentwicklung"> Webentwicklung Projekte</h2>
+
+
+            <h3>Wärend des Moduls "Grundlagen interaktiver Systeme"</h3>
+            <h3>Wärend meines Praktikums</h3>
+            <h3>Privat</h3>
+
+
+            <h2 id="sectionMedia"> Media-Projekte</h2>
+            <h3>Bildbearbeitung</h3>
+            <h3>CGI-Projekte</h3>
+            <h3>Musik-Projekte</h3>
+
+            <h2 id="sectionZeugnisse"> Zeugnisse</h2>
+            <h3>Schulzeugnisse</h3>
+            <h3>Ausbildungszeugnisse und Auszeichnungen</h3>
+            <h3>Studienzeugnisse</h3>
+
+
+            <h2 id="sectionZertifikate"> Zertifikate</h2>
+            <h3>Linkedin Learning Zertifikate</h3>
+            <h3>Google Analytics und Google Zukunftswerkstatt Zertifikate</h3>
+            <h3>FSJ-Bescheinigungen</h3>
+            <h3>KMK-Zertifikat</h3>
+            
+
+        </main>
+        <footer>
+            <div class="footer-links">
+                <a href="#">Impressum</a>
+                <a href="#">Datenschutz</a>
+            </div>
+        </footer>  
+        
+        <script>
+            $('a[href^="#"]').on('click',function(e) {
+            e.preventDefault();
+            var target = this.hash;
+            var $target = $(target);
+            $('html, body').stop().animate({
+            'scrollTop': $target.offset().top
+            }, 900, 'swing', function () {
+            window.location.hash = target;
+            });
+            });
+        </script>
+    </body>
+</html>
