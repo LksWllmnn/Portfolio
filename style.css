@@ -123,6 +123,10 @@ h1,h2,h3{
     top: 80vh;
 }
 
+.navElement>div>.active{
+    color: red;
+}
+
 /*/////////////////*/
 /*Begrüßungstext*/
 /*/////////////////*/
