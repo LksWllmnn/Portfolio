@@ -21,7 +21,7 @@ var Portfolio;
         let schließendiv = document.createElement("div");
         schließendiv.setAttribute("class", "schließenDiv");
         kreuz.setAttribute("class", "plus");
-        kreuz.setAttribute("src", "00Design/Logos/Plus.png");
+        kreuz.setAttribute("src", "00Design/Logos/plus.png");
         kreuz.addEventListener("click", hndl_Click);
         let unternavliste = document.createElement("ul");
         let listenelement1 = document.createElement("li");

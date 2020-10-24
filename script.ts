@@ -28,7 +28,7 @@ namespace Portfolio {
     
         
         kreuz.setAttribute("class", "plus");
-        kreuz.setAttribute("src", "00Design/Logos/Plus.png");
+        kreuz.setAttribute("src", "00Design/Logos/plus.png");
         kreuz.addEventListener("click", hndl_Click);
     
         let unternavliste: HTMLUListElement = <HTMLUListElement>document.createElement("ul");
