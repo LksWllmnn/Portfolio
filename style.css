@@ -6,7 +6,6 @@ body{
     margin: 0px;
     overflow-x: hidden;
     overflow: hidden;
-    
 }
 
 a{
@@ -188,6 +187,12 @@ h1,h2,h3{
     justify-content: center;
 }
 
+.grid-item.impkondatw{
+    grid-row: 2;
+    grid-column: 1 / 4;
+    justify-content: center;
+}
+
 .grid-item.impkondat a{
     text-decoration: none;
     font-size: 250%;
@@ -196,8 +201,20 @@ h1,h2,h3{
     color: rgb(51, 0, 51);
 }
 
+.grid-item.impkondatw a{
+    text-decoration: none;
+    font-size: 250%;
+    margin-left: 2%;
+    margin-right: 2%;
+    color: white;
+}
+
 .grid-item.impkondat a:hover{
     color:rgba(51, 0, 51, 0.4);
+}
+
+.grid-item.impkondatw a:hover{
+    color:rgba(51, 51, 51, 0.4);
 }
 
 /*//////////////////////////////////////////*/
@@ -250,4 +267,19 @@ h1,h2,h3{
 
 .sehbar{
     display: block;
+}
+
+@media (max-width:1000px) {
+    body{
+        overflow: scroll; 
+    }
+    
+}
+
+@media (max-width:768px){
+
+}
+
+@media (max-width:768px){
+    
 }
