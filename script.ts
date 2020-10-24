@@ -283,7 +283,7 @@ namespace Portfolio {
             ],
                           {duration: 1000}
             );
-            kreuz.setAttribute("src", "00Design/Logos/Plus.png");
+            kreuz.setAttribute("src", "00Design/Logos/plus.png");
         }
     }
 

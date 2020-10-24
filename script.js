@@ -235,7 +235,7 @@ var Portfolio;
             kreuz.animate([
                 { transform: "rotate(-180deg)" }
             ], { duration: 1000 });
-            kreuz.setAttribute("src", "00Design/Logos/Plus.png");
+            kreuz.setAttribute("src", "00Design/Logos/plus.png");
         }
     }
     function hndl_erscheinen1() {
