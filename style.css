@@ -204,8 +204,7 @@ h1,h2,h3{
 /*kleine nav*/
 /*//////////////////////////////////////////*/
 
-#seitenNav1{
-
+#seitenNav1, #seitenNav2, #seitenNav3, #seitenNav4, #seitenNav5{
     display: flex;
     position: fixed;
     background-color: rgba(255, 255, 255, 0.705);

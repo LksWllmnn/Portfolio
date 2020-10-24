@@ -1,7 +1,28 @@
 "use strict";
 var Portfolio;
 (function (Portfolio) {
-    let unternav = document.getElementById("seitenNav1");
+    let versuch = document.getElementById("seitenNav1");
+    let versuch2 = document.getElementById("seitenNav2");
+    let versuch3 = document.getElementById("seitenNav3");
+    let versuch4 = document.getElementById("seitenNav4");
+    let versuch5 = document.getElementById("seitenNav5");
+    let unternav;
+    if (versuch) {
+        unternav = versuch;
+    }
+    else if (versuch2) {
+        unternav = versuch2;
+    }
+    else if (versuch3) {
+        unternav = versuch3;
+    }
+    else if (versuch4) {
+        unternav = versuch4;
+    }
+    else if (versuch5) {
+        unternav = versuch5;
+    }
+    //let unternav: HTMLDivElement = <HTMLDivElement> document.getElementById("seitenNav1");
     let kreuz = document.createElement("img");
     let anchor1 = document.createElement("a");
     let unterunternav1 = document.createElement("ul");
@@ -49,106 +70,111 @@ var Portfolio;
         let anchor11 = document.createElement("a");
         anchor11.innerHTML = "Start";
         anchor11.setAttribute("class", "navAnchor");
-        anchor11.setAttribute("href", "#Start");
+        anchor11.setAttribute("href", "01Startseite.html#Start");
         let listenelement12 = document.createElement("li");
         let anchor12 = document.createElement("a");
         anchor12.innerHTML = "Begrüßungstext";
         anchor12.setAttribute("class", "navAnchor");
-        anchor12.setAttribute("href", "#begruessungstext");
+        anchor12.setAttribute("href", "01Startseite.html#begruessungstext");
         let listenelement13 = document.createElement("li");
         let anchor13 = document.createElement("a");
         anchor13.innerHTML = "Anmerkung";
         anchor13.setAttribute("class", "navAnchor");
-        anchor13.setAttribute("href", "#anmerkung");
-        let listenelement14 = document.createElement("li");
-        let anchor14 = document.createElement("a");
+        anchor13.setAttribute("href", "01Startseite.html#anmerkung");
+        /*let listenelement14: HTMLLIElement = <HTMLLIElement>document.createElement("li");
+        let anchor14: HTMLAnchorElement = <HTMLAnchorElement>document.createElement("a");
         anchor14.innerHTML = "Impressum, Datenschutz, Kontakt";
         anchor14.setAttribute("class", "navAnchor");
-        anchor14.setAttribute("href", "#ImpressumKontakt");
+        anchor14.setAttribute("href", "01Startseite.html#ImpressumKontakt");*/
         unterunternav2.setAttribute("class", "versteckt");
         let listenelement21 = document.createElement("li");
         let anchor21 = document.createElement("a");
         anchor21.innerHTML = "Start";
         anchor21.setAttribute("class", "navAnchor");
-        anchor21.setAttribute("href", "#Start");
+        anchor21.setAttribute("href", "02ueberMich.html#Start2");
         let listenelement22 = document.createElement("li");
         let anchor22 = document.createElement("a");
-        anchor22.innerHTML = "Begrüßungstext";
+        anchor22.innerHTML = "Allgemeines";
         anchor22.setAttribute("class", "navAnchor");
-        anchor22.setAttribute("href", "#begruessungstext");
+        anchor22.setAttribute("href", "02ueberMich.html#allgemeines");
         let listenelement23 = document.createElement("li");
         let anchor23 = document.createElement("a");
-        anchor23.innerHTML = "Anmerkung";
+        anchor23.innerHTML = "Hobbys";
         anchor23.setAttribute("class", "navAnchor");
-        anchor23.setAttribute("href", "#anmerkung");
+        anchor23.setAttribute("href", "02ueberMich.html#Hobbys");
         let listenelement24 = document.createElement("li");
         let anchor24 = document.createElement("a");
-        anchor24.innerHTML = "Impressum, Datenschutz, Kontakt";
+        anchor24.innerHTML = "Preferierte Medien";
         anchor24.setAttribute("class", "navAnchor");
-        anchor24.setAttribute("href", "#ImpressumKontakt");
+        anchor24.setAttribute("href", "02ueberMich.html#MedienBeispiele");
+        let listenelement25 = document.createElement("li");
+        let anchor25 = document.createElement("a");
+        anchor25.innerHTML = "Ziele";
+        anchor25.setAttribute("class", "navAnchor");
+        anchor25.setAttribute("href", "02ueberMich.html#Ziele");
         unterunternav3.setAttribute("class", "versteckt");
         let listenelement31 = document.createElement("li");
         let anchor31 = document.createElement("a");
         anchor31.innerHTML = "Start";
         anchor31.setAttribute("class", "navAnchor");
-        anchor31.setAttribute("href", "#Start");
+        anchor31.setAttribute("href", "03Lebenslauf.html#Start");
         let listenelement32 = document.createElement("li");
         let anchor32 = document.createElement("a");
         anchor32.innerHTML = "Begrüßungstext";
         anchor32.setAttribute("class", "navAnchor");
-        anchor32.setAttribute("href", "#begruessungstext");
+        anchor32.setAttribute("href", "03Lebenslauf.html#begruessungstext");
         let listenelement33 = document.createElement("li");
         let anchor33 = document.createElement("a");
         anchor33.innerHTML = "Anmerkung";
         anchor33.setAttribute("class", "navAnchor");
-        anchor33.setAttribute("href", "#anmerkung");
+        anchor33.setAttribute("href", "03Lebenslauf.html#anmerkung");
         let listenelement34 = document.createElement("li");
         let anchor34 = document.createElement("a");
         anchor34.innerHTML = "Impressum, Datenschutz, Kontakt";
         anchor34.setAttribute("class", "navAnchor");
-        anchor34.setAttribute("href", "#ImpressumKontakt");
+        anchor34.setAttribute("href", "03Lebenslauf.html#ImpressumKontakt");
         unterunternav4.setAttribute("class", "versteckt");
         let listenelement41 = document.createElement("li");
         let anchor41 = document.createElement("a");
         anchor41.innerHTML = "Start";
         anchor41.setAttribute("class", "navAnchor");
-        anchor41.setAttribute("href", "#Start");
+        anchor41.setAttribute("href", "04Arbeitsbeispiele.html#Start");
         let listenelement42 = document.createElement("li");
         let anchor42 = document.createElement("a");
         anchor42.innerHTML = "Begrüßungstext";
         anchor42.setAttribute("class", "navAnchor");
-        anchor42.setAttribute("href", "#begruessungstext");
+        anchor42.setAttribute("href", "04Arbeitsbeispiele.html#begruessungstext");
         let listenelement43 = document.createElement("li");
         let anchor43 = document.createElement("a");
         anchor43.innerHTML = "Anmerkung";
         anchor43.setAttribute("class", "navAnchor");
-        anchor43.setAttribute("href", "#anmerkung");
+        anchor43.setAttribute("href", "04Arbeitsbeispiele.html#anmerkung");
         let listenelement44 = document.createElement("li");
         let anchor44 = document.createElement("a");
         anchor44.innerHTML = "Impressum, Datenschutz, Kontakt";
         anchor44.setAttribute("class", "navAnchor");
-        anchor44.setAttribute("href", "#ImpressumKontakt");
+        anchor44.setAttribute("href", "04Arbeitsbeispiele.html#ImpressumKontakt");
         unterunternav5.setAttribute("class", "versteckt");
         let listenelement51 = document.createElement("li");
         let anchor51 = document.createElement("a");
         anchor51.innerHTML = "Start";
         anchor51.setAttribute("class", "navAnchor");
-        anchor51.setAttribute("href", "#Start");
+        anchor51.setAttribute("href", "05ZeugnisseundZertifikate.html#Start");
         let listenelement52 = document.createElement("li");
         let anchor52 = document.createElement("a");
         anchor52.innerHTML = "Begrüßungstext";
         anchor52.setAttribute("class", "navAnchor");
-        anchor52.setAttribute("href", "#begruessungstext");
+        anchor52.setAttribute("href", "05ZeugnisseundZertifikate.html#begruessungstext");
         let listenelement53 = document.createElement("li");
         let anchor53 = document.createElement("a");
         anchor53.innerHTML = "Anmerkung";
         anchor53.setAttribute("class", "navAnchor");
-        anchor53.setAttribute("href", "#anmerkung");
+        anchor53.setAttribute("href", "05ZeugnisseundZertifikate.html#anmerkung");
         let listenelement54 = document.createElement("li");
         let anchor54 = document.createElement("a");
         anchor54.innerHTML = "Impressum, Datenschutz, Kontakt";
         anchor54.setAttribute("class", "navAnchor");
-        anchor54.setAttribute("href", "#ImpressumKontakt");
+        anchor54.setAttribute("href", "05ZeugnisseundZertifikate.html#ImpressumKontakt");
         if (unternav) {
             unternav.appendChild(schließendiv);
             unternav.appendChild(unternavliste);
@@ -172,11 +198,12 @@ var Portfolio;
         unterunternav1.appendChild(listenelement11);
         unterunternav1.appendChild(listenelement12);
         unterunternav1.appendChild(listenelement13);
-        unterunternav1.appendChild(listenelement14);
+        //unterunternav1.appendChild(listenelement14);
         unterunternav2.appendChild(listenelement21);
         unterunternav2.appendChild(listenelement22);
         unterunternav2.appendChild(listenelement23);
         unterunternav2.appendChild(listenelement24);
+        unterunternav2.appendChild(listenelement25);
         unterunternav3.appendChild(listenelement31);
         unterunternav3.appendChild(listenelement32);
         unterunternav3.appendChild(listenelement33);
@@ -192,11 +219,12 @@ var Portfolio;
         listenelement11.appendChild(anchor11);
         listenelement12.appendChild(anchor12);
         listenelement13.appendChild(anchor13);
-        listenelement14.appendChild(anchor14);
+        //listenelement14.appendChild(anchor14);
         listenelement21.appendChild(anchor21);
         listenelement22.appendChild(anchor22);
         listenelement23.appendChild(anchor23);
         listenelement24.appendChild(anchor24);
+        listenelement25.appendChild(anchor25);
         listenelement31.appendChild(anchor31);
         listenelement32.appendChild(anchor32);
         listenelement33.appendChild(anchor33);
@@ -222,7 +250,7 @@ var Portfolio;
             kreuz.animate([
                 { transform: "rotate(180deg)" }
             ], { duration: 1000 });
-            kreuz.setAttribute("src", "00Design/Logos/X.png");
+            kreuz.setAttribute("src", "00Design/Logos/plus.png");
         }
         else {
             kreuz.className = "kreuz";
@@ -235,7 +263,7 @@ var Portfolio;
             kreuz.animate([
                 { transform: "rotate(-180deg)" }
             ], { duration: 1000 });
-            kreuz.setAttribute("src", "00Design/Logos/plus.png");
+            kreuz.setAttribute("src", "00Design/Logos/X.png");
         }
     }
     function hndl_erscheinen1() {
@@ -243,12 +271,16 @@ var Portfolio;
             anchor1.setAttribute("class", "active");
             unterunternav1.className = "sehbar";
             anchor2.className = "";
+            unterunternav2.className = "versteckt";
             anchor3.className = "";
+            unterunternav3.className = "versteckt";
             anchor4.className = "";
+            unterunternav4.className = "versteckt";
             anchor5.className = "";
+            unterunternav5.className = "versteckt";
         }
         else {
-            anchor1.setAttribute("class", "");
+            anchor1.className = "";
             unterunternav1.className = "versteckt";
         }
     }
@@ -257,9 +289,13 @@ var Portfolio;
             anchor2.setAttribute("class", "active");
             unterunternav2.className = "sehbar";
             anchor1.className = "";
+            unterunternav1.className = "versteckt";
             anchor3.className = "";
+            unterunternav3.className = "versteckt";
             anchor4.className = "";
+            unterunternav4.className = "versteckt";
             anchor5.className = "";
+            unterunternav5.className = "versteckt";
         }
         else {
             anchor2.setAttribute("class", "");
@@ -271,9 +307,13 @@ var Portfolio;
             anchor3.setAttribute("class", "active");
             unterunternav3.className = "sehbar";
             anchor2.className = "";
+            unterunternav2.className = "versteckt";
             anchor1.className = "";
+            unterunternav1.className = "versteckt";
             anchor4.className = "";
+            unterunternav4.className = "versteckt";
             anchor5.className = "";
+            unterunternav5.className = "versteckt";
         }
         else {
             anchor3.setAttribute("class", "");
@@ -285,9 +325,13 @@ var Portfolio;
             anchor4.setAttribute("class", "active");
             unterunternav4.className = "sehbar";
             anchor2.className = "";
+            unterunternav2.className = "versteckt";
             anchor3.className = "";
+            unterunternav3.className = "versteckt";
             anchor1.className = "";
+            unterunternav1.className = "versteckt";
             anchor5.className = "";
+            unterunternav5.className = "versteckt";
         }
         else {
             anchor4.setAttribute("class", "");
@@ -298,10 +342,14 @@ var Portfolio;
         if (anchor5.className != "active") {
             anchor5.setAttribute("class", "active");
             unterunternav5.className = "sehbar";
-            anchor2.className = "";
+            anchor5.className = "";
+            unterunternav1.className = "versteckt";
             anchor3.className = "";
+            unterunternav3.className = "versteckt";
             anchor4.className = "";
+            unterunternav4.className = "versteckt";
             anchor1.className = "";
+            unterunternav1.className = "versteckt";
         }
         else {
             anchor5.setAttribute("class", "");

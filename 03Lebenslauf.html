@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="jquery.js" defer></script>
+    <script src="script.js" defer></script>
     <title>LW | Lebenslauf</title>
 </head>
 <body>
@@ -14,31 +17,162 @@
 
         <div id="Startseite1"><a href="#begruessungstext"><img  class="sprungmarke" src="/00Design/Logos/pfeilnachunten_weiß.png"></a></div>
 
+        <div class="nav">
+            <div class="navElement"><div><a href="01Startseite.html">Startseite</a></div></div>
+            <div class="navElement"><div><a href="02ueberMich.html">Über Mich</a></div></div>
+            <div class="navElement"><div><a class="active" href="#">Lebenslauf</a></div></div>
+            <div class="navElement"><div><a href="04Arbeitsbeispiele.html">Arbeitsbesipiele</a></div></div>
+            <div class="navElement"><div><a href="05ZeugnisseundZertifikate.html">Zeugnisse und Zertifikate</a></div></div>
+        </div>
+
+        <div id="seitenNav3" class="geschlossen"></div>
+
     </div>
 
-    <div class="nav">
-        <div class="navElement"><div><a>Startseite</a></div></div>
-        <div class="navElement"><div><a>Über Mich</a></div></div>
-        <div class="navElement"><div><a class="active">Lebenslauf</a></div></div>
-        <div class="navElement"><div><a>Arbeitsbesipiele</a></div></div>
-        <div class="navElement"><div><a>Zeugnisse und Zertifikate</a></div></div>
-    </div>
+    
 
     <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         Studium
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5%%-->
-
+    <div class="grid-container" id="allgemeines">
+        <div class="grid-item oben">
+            <div class="sectionTitle1 ">
+                <h2 class="sectionWeiß">Allgemeines</h2>
+            </div>
+        </div>
+        <div class="grid-item oben">
+            <div id="Startseite2">
+                <a href="#ueberMich">
+                    <img  class="sprungmarke" src="00Design/Logos/pfeilnachoben_schwarz.png">
+                </a>
+            </div>
+        </div>
+        <div class="grid-item oben"></div>
+        <div class="grid-item text">
+            <p class="textLila">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="grid-item"></div>
+        <div class="grid-item unten"></div>
+        <div class="grid-item unten sprungmarkenachunten">
+            <a href="#Hobbys">
+                <img  class="sprungmarke" src="00Design/Logos/pfeilnachunten_schwarz.png">
+            </a>
+        </div>
+        <div class="grid-item unten"></div>
+      </div>
     <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         Ausbildung
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5%%-->
-
+    <div class="grid-container" id="Hobbys">
+        <div class="grid-item oben">
+            <div class="sectionTitle1 ">
+                <h2 class="sectionLila">Hobbys</h2>
+            </div>
+        </div>
+        <div class="grid-item oben">
+            <div id="Startseite2">
+                <a href="#allgemeines">
+                    <img  class="sprungmarke" src="00Design/Logos/pfeilnachoben_weiß.png">
+                </a>
+            </div>
+        </div>
+        <div class="grid-item oben"></div>
+        <div class="grid-item text">
+            <p class="textWeiß">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="grid-item"></div>
+        <div class="grid-item unten"></div>
+        <div class="grid-item unten sprungmarkenachunten">
+            <a href="#MedienBeispiele">
+                <img  class="sprungmarke" src="00Design/Logos/pfeilnachunten_weiß.png">
+            </a>
+        </div>
+        <div class="grid-item unten"></div>
+      </div>
     <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         FSJ
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5%%-->
-
+    <div class="grid-container" id="MedienBeispiele">
+        <div class="grid-item oben">
+            <div class="sectionTitle1 ">
+                <h2 class="sectionWeiß">Preferierte Medien</h2>
+            </div>
+        </div>
+        <div class="grid-item oben">
+            <a href="#Hobbys">
+                <img  class="sprungmarke" src="00Design/Logos/pfeilnachoben_schwarz.png">
+            </a>
+        </div>
+        <div class="grid-item oben"></div>
+        <div class="grid-item text">
+            <p class="textLila">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="grid-item"></div>
+        <div class="grid-item unten"></div>
+        <div class="grid-item unten sprungmarkenachunten">
+            <a href="#Ziele">
+                <img  class="sprungmarke" src="00Design/Logos/pfeilnachunten_schwarz.png">
+            </a>
+        </div>
+        <div class="grid-item unten"></div>
+    </div>
     <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         Schulzeit
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5%%-->
-    
+    <div class="grid-container" id="Ziele">
+        <div class="grid-item oben">
+            <div class="sectionTitle1 ">
+                <h2 class="sectionLila">Meine Ziele</h2>
+            </div>
+        </div>
+        <div class="grid-item oben">
+            <div id="Startseite2">
+                <a href="#MedienBeispiele">
+                    <img  class="sprungmarke" src="00Design/Logos/pfeilnachoben_weiß.png">
+                </a>
+            </div>
+        </div>
+        <div class="grid-item oben"></div>
+        <div class="grid-item text">
+            <p class="textWeiß">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="grid-item"></div>
+        <div class="grid-item unten"></div>
+        <div class="grid-item unten sprungmarkenachunten">
+            <a href="#ImpressumKontakt2">
+                <img  class="sprungmarke" src="00Design/Logos/pfeilnachunten_weiß.png">
+            </a>
+        </div>
+        <div class="grid-item unten"></div>
+      </div>
+
+<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Impressum/Kontakt/Datenschutz
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->  
+        <div class="grid-container" id="ImpressumKontakt2">
+            <div class="grid-item oben">
+                <div class="sectionTitle1 ">
+                    <h2 class="sectionWeiß"></h2>
+                </div>
+            </div>
+            <div class="grid-item oben">
+                <a href="#Ziele">
+                    <img  class="sprungmarke" src="00Design/Logos/pfeilnachoben_schwarz.png">
+                </a>
+            </div>
+            <div class="grid-item oben"></div>
+            <div class="grid-item mitte impkondat">
+                
+                    <a href="#">Impressum</a>
+                    <a href="#">Datenschutz</a>
+                    <a href="#">Kontakt</a>
+                
+            </div>
+            <div class="grid-item unten"></div>
+            <div class="grid-item unten ">
+                
+            </div>
+            <div class="grid-item unten"></div>
+        </div>
 </body>
 </html>
