@@ -300,9 +300,31 @@ h1,h2,h3{
 }
 
 @media (max-width:768px){
+    h1{
+        font-size: 350%;
+    }
 
+    h2{
+        font-size: 300%;
+    }
+    
+    .header{
+        width: 100%;
+        height: 500px;
+    }
 }
 
-@media (max-width:768px){
+@media (max-width:400px){
+    h1{
+        font-size: 300%;
+    }
+
+    h2{
+        font-size: 250%;
+    }
     
+    .header{
+        width: 100%;
+        height: 300px;
+    }
 }
