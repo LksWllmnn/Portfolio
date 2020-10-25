@@ -156,7 +156,7 @@ h1,h2,h3{
     background-color: rgb(51, 0, 51);
 }
   .grid-item {
-    border: 1px solid rgba(0, 0, 0, 0.8);
+    /*border: 1px solid rgba(0, 0, 0, 0.8);*/
     padding: 20px;
     text-align: center;
     
@@ -257,6 +257,10 @@ h1,h2,h3{
     cursor: pointer;
     border-style: groove;
     border-width: 1px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-top: 1px;
+    margin-bottom: 1px;
 }
 
 #seitenNav1 ul, #seitenNav2 ul, #seitenNav3 ul, #seitenNav4 ul, #seitenNav5 ul{

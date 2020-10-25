@@ -132,22 +132,27 @@ namespace Portfolio {
         let anchor31: HTMLAnchorElement = <HTMLAnchorElement>document.createElement("a");
         anchor31.innerHTML = "Start";
         anchor31.setAttribute("class", "navAnchor");
-        anchor31.setAttribute("href", "03Lebenslauf.html#Start");
+        anchor31.setAttribute("href", "03Lebenslauf.html#lebenslauf");
         let listenelement32: HTMLLIElement = <HTMLLIElement>document.createElement("li");
         let anchor32: HTMLAnchorElement = <HTMLAnchorElement>document.createElement("a");
-        anchor32.innerHTML = "Begrüßungstext";
+        anchor32.innerHTML = "Studium Medieninformatik";
         anchor32.setAttribute("class", "navAnchor");
-        anchor32.setAttribute("href", "03Lebenslauf.html#begruessungstext");
+        anchor32.setAttribute("href", "03Lebenslauf.html#Studium");
         let listenelement33: HTMLLIElement = <HTMLLIElement>document.createElement("li");
         let anchor33: HTMLAnchorElement = <HTMLAnchorElement>document.createElement("a");
-        anchor33.innerHTML = "Anmerkung";
+        anchor33.innerHTML = "Ausbildung";
         anchor33.setAttribute("class", "navAnchor");
-        anchor33.setAttribute("href", "03Lebenslauf.html#anmerkung");
+        anchor33.setAttribute("href", "03Lebenslauf.html#Ausbildung");
         let listenelement34: HTMLLIElement = <HTMLLIElement>document.createElement("li");
         let anchor34: HTMLAnchorElement = <HTMLAnchorElement>document.createElement("a");
-        anchor34.innerHTML = "Impressum, Datenschutz, Kontakt";
+        anchor34.innerHTML = "Freiwilliges soziales Jahr";
         anchor34.setAttribute("class", "navAnchor");
-        anchor34.setAttribute("href", "03Lebenslauf.html#ImpressumKontakt");
+        anchor34.setAttribute("href", "03Lebenslauf.html#FSJ");
+        let listenelement35: HTMLLIElement = <HTMLLIElement>document.createElement("li");
+        let anchor35: HTMLAnchorElement = <HTMLAnchorElement>document.createElement("a");
+        anchor35.innerHTML = "Schulzeit";
+        anchor35.setAttribute("class", "navAnchor");
+        anchor35.setAttribute("href", "03Lebenslauf.html#Schulzeit");
 
         
         unterunternav4.setAttribute("class", "versteckt");
@@ -155,22 +160,32 @@ namespace Portfolio {
         let anchor41: HTMLAnchorElement = <HTMLAnchorElement>document.createElement("a");
         anchor41.innerHTML = "Start";
         anchor41.setAttribute("class", "navAnchor");
-        anchor41.setAttribute("href", "04Arbeitsbeispiele.html#Start");
+        anchor41.setAttribute("href", "04Arbeitsbeispiele.html#projekte");
         let listenelement42: HTMLLIElement = <HTMLLIElement>document.createElement("li");
         let anchor42: HTMLAnchorElement = <HTMLAnchorElement>document.createElement("a");
-        anchor42.innerHTML = "Begrüßungstext";
+        anchor42.innerHTML = "Webprojekte - Gis";
         anchor42.setAttribute("class", "navAnchor");
-        anchor42.setAttribute("href", "04Arbeitsbeispiele.html#begruessungstext");
+        anchor42.setAttribute("href", "04Arbeitsbeispiele.html#WebGis");
         let listenelement43: HTMLLIElement = <HTMLLIElement>document.createElement("li");
         let anchor43: HTMLAnchorElement = <HTMLAnchorElement>document.createElement("a");
-        anchor43.innerHTML = "Anmerkung";
+        anchor43.innerHTML = "CGI Projekte";
         anchor43.setAttribute("class", "navAnchor");
-        anchor43.setAttribute("href", "04Arbeitsbeispiele.html#anmerkung");
+        anchor43.setAttribute("href", "04Arbeitsbeispiele.html#CGI");
         let listenelement44: HTMLLIElement = <HTMLLIElement>document.createElement("li");
         let anchor44: HTMLAnchorElement = <HTMLAnchorElement>document.createElement("a");
-        anchor44.innerHTML = "Impressum, Datenschutz, Kontakt";
+        anchor44.innerHTML = "Bildbearbeitungen und Logos";
         anchor44.setAttribute("class", "navAnchor");
-        anchor44.setAttribute("href", "04Arbeitsbeispiele.html#ImpressumKontakt");
+        anchor44.setAttribute("href", "04Arbeitsbeispiele.html#Bildbearbeitungen");
+        let listenelement45: HTMLLIElement = <HTMLLIElement>document.createElement("li");
+        let anchor45: HTMLAnchorElement = <HTMLAnchorElement>document.createElement("a");
+        anchor45.innerHTML = "Sonstige Webprojekte";
+        anchor45.setAttribute("class", "navAnchor");
+        anchor45.setAttribute("href", "04Arbeitsbeispiele.html#WebPrakt");
+        let listenelement46: HTMLLIElement = <HTMLLIElement>document.createElement("li");
+        let anchor46: HTMLAnchorElement = <HTMLAnchorElement>document.createElement("a");
+        anchor46.innerHTML = "Audioprojekte";
+        anchor46.setAttribute("class", "navAnchor");
+        anchor46.setAttribute("href", "04Arbeitsbeispiele.html#Audioprojekte");
 
         
         unterunternav5.setAttribute("class", "versteckt");
@@ -178,22 +193,32 @@ namespace Portfolio {
         let anchor51: HTMLAnchorElement = <HTMLAnchorElement>document.createElement("a");
         anchor51.innerHTML = "Start";
         anchor51.setAttribute("class", "navAnchor");
-        anchor51.setAttribute("href", "05ZeugnisseundZertifikate.html#Start");
+        anchor51.setAttribute("href", "05ZeugnisseundZertifikate.html#Zeugnisse");
         let listenelement52: HTMLLIElement = <HTMLLIElement>document.createElement("li");
         let anchor52: HTMLAnchorElement = <HTMLAnchorElement>document.createElement("a");
-        anchor52.innerHTML = "Begrüßungstext";
+        anchor52.innerHTML = "Studium Zeugnis";
         anchor52.setAttribute("class", "navAnchor");
-        anchor52.setAttribute("href", "05ZeugnisseundZertifikate.html#begruessungstext");
+        anchor52.setAttribute("href", "05ZeugnisseundZertifikate.html#StudiumZeug");
         let listenelement53: HTMLLIElement = <HTMLLIElement>document.createElement("li");
         let anchor53: HTMLAnchorElement = <HTMLAnchorElement>document.createElement("a");
-        anchor53.innerHTML = "Anmerkung";
+        anchor53.innerHTML = "Ausbildungs Zeugnis";
         anchor53.setAttribute("class", "navAnchor");
-        anchor53.setAttribute("href", "05ZeugnisseundZertifikate.html#anmerkung");
+        anchor53.setAttribute("href", "05ZeugnisseundZertifikate.html#AusbildungZeug");
         let listenelement54: HTMLLIElement = <HTMLLIElement>document.createElement("li");
         let anchor54: HTMLAnchorElement = <HTMLAnchorElement>document.createElement("a");
-        anchor54.innerHTML = "Impressum, Datenschutz, Kontakt";
+        anchor54.innerHTML = "FSJ Bescheinigung";
         anchor54.setAttribute("class", "navAnchor");
-        anchor54.setAttribute("href", "05ZeugnisseundZertifikate.html#ImpressumKontakt");
+        anchor54.setAttribute("href", "05ZeugnisseundZertifikate.html#FSJZeug");
+        let listenelement55: HTMLLIElement = <HTMLLIElement>document.createElement("li");
+        let anchor55: HTMLAnchorElement = <HTMLAnchorElement>document.createElement("a");
+        anchor55.innerHTML = "Schul-Zeugnis";
+        anchor55.setAttribute("class", "navAnchor");
+        anchor55.setAttribute("href", "05ZeugnisseundZertifikate.html#SchuleZeug");
+        let listenelement56: HTMLLIElement = <HTMLLIElement>document.createElement("li");
+        let anchor56: HTMLAnchorElement = <HTMLAnchorElement>document.createElement("a");
+        anchor56.innerHTML = "Sonstige Zertifikate";
+        anchor56.setAttribute("class", "navAnchor");
+        anchor56.setAttribute("href", "05ZeugnisseundZertifikate.html#sonstZert");
         
         if (unternav) {
             unternav.appendChild(schließendiv);
@@ -238,21 +263,25 @@ namespace Portfolio {
         unterunternav3.appendChild(listenelement32);
         unterunternav3.appendChild(listenelement33);
         unterunternav3.appendChild(listenelement34);
+        unterunternav3.appendChild(listenelement35);
 
         unterunternav4.appendChild(listenelement41);
         unterunternav4.appendChild(listenelement42);
         unterunternav4.appendChild(listenelement43);
         unterunternav4.appendChild(listenelement44);
+        unterunternav4.appendChild(listenelement45);
+        unterunternav4.appendChild(listenelement46);
 
         unterunternav5.appendChild(listenelement51);
         unterunternav5.appendChild(listenelement52);
         unterunternav5.appendChild(listenelement53);
         unterunternav5.appendChild(listenelement54);
+        unterunternav5.appendChild(listenelement55);
+        unterunternav5.appendChild(listenelement56);
     
         listenelement11.appendChild(anchor11);
         listenelement12.appendChild(anchor12);
         listenelement13.appendChild(anchor13);
-        //listenelement14.appendChild(anchor14);
 
         listenelement21.appendChild(anchor21);
         listenelement22.appendChild(anchor22);
@@ -264,16 +293,21 @@ namespace Portfolio {
         listenelement32.appendChild(anchor32);
         listenelement33.appendChild(anchor33);
         listenelement34.appendChild(anchor34);
+        listenelement35.appendChild(anchor35);
 
         listenelement41.appendChild(anchor41);
         listenelement42.appendChild(anchor42);
         listenelement43.appendChild(anchor43);
         listenelement44.appendChild(anchor44);
+        listenelement45.appendChild(anchor45);
+        listenelement46.appendChild(anchor46);
 
         listenelement51.appendChild(anchor51);
         listenelement52.appendChild(anchor52);
         listenelement53.appendChild(anchor53);
         listenelement54.appendChild(anchor54);
+        listenelement55.appendChild(anchor55);
+        listenelement56.appendChild(anchor56);
     }
 
     function hndl_Click(): void {
@@ -406,5 +440,36 @@ namespace Portfolio {
         }
     }
 
+    /*//////////////////////////////////////////////////////////////////////////////*/
+    /*Bildrondel*/
+    /*//////////////////////////////////////////////////////////////////////////////*/
+/*
+    let bildrondel: HTMLDivElement = <HTMLDivElement>document.getElementById("bildrondel1");
+    let buttonlinks: HTMLButtonElement = <HTMLButtonElement>document.createElement("button");
+    buttonlinks.addEventListener("click", hndl_links);
+    let buttonrechts: HTMLButtonElement = <HTMLButtonElement>document.createElement("button");
+    buttonrechts.addEventListener("click", hndl_rechts);
+
+    let bild1: HTMLImageElement = <HTMLImageElement>document.createElement("img");
+    bild1.setAttribute("src", "00Design/Logos/burger.png");
+    bild1.setAttribute("class", "bildactive");
+
+    let bild2: HTMLImageElement = <HTMLImageElement>document.createElement("img");
+    bild1.setAttribute("src", "00Design/Logos/plus.png");
+
+    let bild3: HTMLImageElement = <HTMLImageElement>document.createElement("img");
+    bild1.setAttribute("src", "00Design/Logos/X.png");
+
+    let bildmagazin: HTMLImageElement[] = [bild1, bild2, bild3];
+
+    function hndl_links(): void {
+
+    }
     
+    function hndl_rechts(): void {
+
+    }*/
+
+
+    /*if (bildrondel)*/
 }
