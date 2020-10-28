@@ -5,7 +5,7 @@
 body{
     margin: 0px;
     overflow-x: hidden;
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 
 a{
@@ -156,7 +156,7 @@ h1,h2,h3{
     background-color: rgb(51, 0, 51);
 }
   .grid-item {
-    /*border: 1px solid rgba(0, 0, 0, 0.8);*/
+    border: 1px solid rgba(0, 0, 0, 0.8);
     padding: 20px;
     text-align: center;
     
@@ -194,6 +194,28 @@ h1,h2,h3{
     padding-left: 10%;
     /*justify-self: center;*/
     align-self: center;
+}
+
+.grid-item.rondel{
+    grid-row: 2;
+    grid-column: 1 / 4;
+    padding: 0px;
+}
+
+.rondel-grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.rondel-grid-item{
+    border: 1px solid red;
+    vertical-align: baseline;
+    height: calc(99vh*0.5);
+}
+
+.rondel-grid-item>button>img{
+    width: 50px;
+    transform: rotate(-90deg);
 }
 
 .grid-item.bild{
