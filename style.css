@@ -218,6 +218,19 @@ h1,h2,h3{
     transform: rotate(-90deg);
 }
 
+.rondel-flex{
+    display: flex;
+    overflow-x: hidden;
+}
+
+.rondelProgNichtAngezeigt{
+    display:none;
+}
+
+.rondelProgAngezeigt{
+    display:block;
+}
+
 .grid-item.bild{
     padding: 0px;
 }

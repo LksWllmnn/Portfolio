@@ -56,6 +56,13 @@ namespace mediaObjektePortfolio {
     let divConZertText: HTMLDivElement[];
     let divConZertMed: HTMLDivElement[];
 
+    let rondelProgAktiv: number = 0;
+    let rondelCGIAktiv: number = 0;
+    let rondelPicAktiv: number = 0;
+    let rondelUXAktiv: number = 0;
+    let rondelAudAktiv: number = 0;
+    let rondelZertAktiv: number = 0;
+
     /*function selectSection(): void {
         
             switch (listMedia[i].seite) {
@@ -98,12 +105,14 @@ namespace mediaObjektePortfolio {
             let text: HTMLParagraphElement = <HTMLParagraphElement> document.createElement("p");
             text.innerHTML = listMedia[i].text;
             text.className = "rondelElementText";
+            divText.appendChild(text);
             switch (listMedia[i].typ) {
                 case "bild":
                     let mediaBild: HTMLImageElement = <HTMLImageElement> document.createElement("img");
                     mediaBild.src = listMedia[i].mediapfad;
                     mediaBild.className = "rondelElementBild";
                     mediaBild.alt = listMedia[i].typ;
+                    divMedia.appendChild(mediaBild);
                     break;
                 case "video":
                     let mediaVideo: HTMLVideoElement = <HTMLVideoElement> document.createElement("video");
@@ -114,6 +123,7 @@ namespace mediaObjektePortfolio {
                     mediaVideo.className = "rondelElementVideo";
                     mediaVideo.innerHTML = "Your Browser does not support this tag";
                     mediaVideo.appendChild(mediaVideoSource);
+                    divMedia.appendChild(mediaVideo);
                     break;
                 case "audio":
                     let mediaAudio: HTMLAudioElement = <HTMLAudioElement> document.createElement("audio");
@@ -123,6 +133,7 @@ namespace mediaObjektePortfolio {
                     mediaAudioSource.src = listMedia[i].mediapfad;
                     mediaAudioSource.type = "audio/mpeg";
                     mediaAudio.appendChild(mediaAudioSource);
+                    divMedia.appendChild(mediaAudio);
                     break;
                 default:
                     console.log("Es gibt ein Problem bei den Mediaarten.");
@@ -208,6 +219,8 @@ namespace mediaObjektePortfolio {
 
     function show (_section: string, _order: string): void {
         let rondelDivProgtext: HTMLDivElement = <HTMLDivElement>document.getElementById("rondelProgtext");
+        if (rondelDivProgtext)
+            rondelDivProgtext.className = "rondel-flex";
         let rondelDivProgmed: HTMLDivElement = <HTMLDivElement>document.getElementById("rondelProgmed");
         let rondelDivCGItext: HTMLDivElement = <HTMLDivElement>document.getElementById("rondelCGItext");
         let rondelDivCGImed: HTMLDivElement = <HTMLDivElement>document.getElementById("rondelCGImed");
@@ -219,6 +232,9 @@ namespace mediaObjektePortfolio {
         let rondelDivAudmed: HTMLDivElement = <HTMLDivElement>document.getElementById("rondelAudmed");
         let rondelDivZerttext: HTMLDivElement = <HTMLDivElement>document.getElementById("rondelZerttext");
         let rondelDivZertmed: HTMLDivElement = <HTMLDivElement>document.getElementById("rondelZertmed");
+        for (let i: number = 0; i < divConProgText.length; i++) {
+
+        }
         switch (_section) {
             case "all": 
                 if (rondelDivProgtext)
@@ -247,16 +263,48 @@ namespace mediaObjektePortfolio {
                     rondelDivZertmed.appendChild(divConZertMed[0]);
                 break;
             case "Prog":
+                if (_order == "+1") {
+                    rondelProgAktiv++;
+                    divConProgText[rondelProgAktiv - 1].className = "rondelProgNichtAngezeigt";
+                    divConProgText[rondelProgAktiv].className = "rondelProgAngezeigt";
+                } else {
+
+                }
                 break;
             case "CGI":
+                if (_order == "+1") {
+
+                } else {
+
+                }
                 break;
             case "Pic":
+                if (_order == "+1") {
+
+                } else {
+
+                }
                 break;
             case "UX":
+                if (_order == "+1") {
+
+                } else {
+
+                }
                 break;
             case "Aud":
+                if (_order == "+1") {
+
+                } else {
+
+                }
                 break;
             case "Zert":
+                if (_order == "+1") {
+
+                } else {
+
+                }
                 break;
             default:
                 console.log("Etwas stimmt mit den anzeigenbefehlen nicht");
