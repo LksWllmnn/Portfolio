@@ -1,92 +1,80 @@
 "use strict";
 var mediaObjektePortfolio;
 (function (mediaObjektePortfolio) {
-    main();
-    function main() {
-        fillrondel();
-        show("all", "start");
-    }
+    //Media und Text Divs in welche die Inhalte ringeladen werden
+    let windowProgText = document.getElementById("textWindowProg");
+    let windowProgMedia = document.getElementById("mediaWindowProg");
+    let windowCGIText = document.getElementById("textWindowCGI");
+    let windowCGIMedia = document.getElementById("mediaWindowCGI");
+    let windowAudText = document.getElementById("textWindowAud");
+    let windowAudMedia = document.getElementById("mediaWindowAud");
+    let windowPicText = document.getElementById("textWindowPic");
+    let windowPicMedia = document.getElementById("mediaWindowPic");
+    let windowUXText = document.getElementById("textWindowUX");
+    let windowUXMedia = document.getElementById("mediaWindowUX");
+    let windowZeugText = document.getElementById("textWindowZert");
+    let windowZeugMedia = document.getElementById("mediatWindowZert");
+    //Knöpfe zur Bedienung des Rondels
     let butLinksProg = document.getElementById("butLinksProg");
-    butLinksProg.addEventListener("click", hndl_links_Prog);
-    let butRechtsProg = document.getElementById("butLinksProg");
-    butRechtsProg.addEventListener("click", hndl_rechts_Prog);
+    if (butLinksProg)
+        butLinksProg.addEventListener("click", hndl_links_Prog);
+    let butRechtsProg = document.getElementById("butRechtsProg");
+    if (butRechtsProg)
+        butRechtsProg.addEventListener("click", hndl_rechts_Prog);
     let butLinksCGI = document.getElementById("butLinksCGI");
-    butLinksCGI.addEventListener("click", hndl_links_CGI);
+    if (butLinksCGI)
+        butLinksCGI.addEventListener("click", hndl_links_CGI);
     let butRechtsCGI = document.getElementById("butRechtsCGI");
-    butRechtsCGI.addEventListener("click", hndl_rechts_CGI);
+    if (butRechtsCGI)
+        butRechtsCGI.addEventListener("click", hndl_rechts_CGI);
     let butLinksPic = document.getElementById("butLinksPic");
-    butLinksPic.addEventListener("click", hndl_links_Pic);
+    if (butLinksPic)
+        butLinksPic.addEventListener("click", hndl_links_Pic);
     let butRechtsPic = document.getElementById("butRechtsPic");
-    butRechtsPic.addEventListener("click", hndl_rechts_Pic);
+    if (butRechtsPic)
+        butRechtsPic.addEventListener("click", hndl_rechts_Pic);
     let butLinksUX = document.getElementById("butLinksUX");
-    butLinksUX.addEventListener("click", hndl_links_UX);
+    if (butLinksUX)
+        butLinksUX.addEventListener("click", hndl_links_UX);
     let butRechtsUX = document.getElementById("butRechtsUX");
-    butRechtsUX.addEventListener("click", hndl_rechts_UX);
+    if (butRechtsUX)
+        butRechtsUX.addEventListener("click", hndl_rechts_UX);
     let butLinksAud = document.getElementById("butLinksAud");
-    butLinksAud.addEventListener("click", hndl_links_Aud);
+    if (butLinksAud)
+        butLinksAud.addEventListener("click", hndl_links_Aud);
     let butRechtsAud = document.getElementById("butRechtsAud");
-    butRechtsAud.addEventListener("click", hndl_rechts_Aud);
+    if (butRechtsAud)
+        butRechtsAud.addEventListener("click", hndl_rechts_Aud);
     let butLinksZert = document.getElementById("butLinksZert");
-    butLinksZert.addEventListener("click", hndl_links_Zert);
+    if (butLinksZert)
+        butLinksZert.addEventListener("click", hndl_links_Zert);
     let butRechtsZert = document.getElementById("butRechtsZert");
-    butRechtsZert.addEventListener("click", hndl_rechts_Zert);
-    /*let angezeigtProg: mediaObjekt[];
-    let angezeigtCGI: mediaObjekt[];
-    let angezeigtPic: mediaObjekt[];
-    let angezeigtUX: mediaObjekt[];
-    let angezeigtAud: mediaObjekt[];
-    let angezeigtZert: mediaObjekt[];*/
-    let divConProgText;
-    let divConProgMed;
-    let divConCGIText;
-    let divConCGIMed;
-    let divConPicText;
-    let divConPicMed;
-    let divConUXText;
-    let divConUXMed;
-    let divConAudText;
-    let divConAudMed;
-    let divConZertText;
-    let divConZertMed;
+    if (butRechtsZert)
+        butRechtsZert.addEventListener("click", hndl_rechts_Zert);
     let rondelProgAktiv = 0;
     let rondelCGIAktiv = 0;
     let rondelPicAktiv = 0;
     let rondelUXAktiv = 0;
     let rondelAudAktiv = 0;
     let rondelZertAktiv = 0;
-    /*function selectSection(): void {
-        
-            switch (listMedia[i].seite) {
-                case "rondelProg":
-                    //angezeigtProg.push(listMedia[i]);
-                    fillrondel(i);
-                    break;
-                case "rondelCGI":
-                    //angezeigtCGI.push(listMedia[i]);
-                    fillrondel(i);
-                    break;
-                case "rondelPic":
-                    //angezeigtPic.push(listMedia[i]);
-                    fillrondel(i);
-                    break;
-                case "rondelUX":
-                    //angezeigtUX.push(listMedia[i]);
-                    fillrondel(i);
-                    break;
-                case "rondelAud":
-                    //angezeigtAud.push(listMedia[i]);
-                    fillrondel(i);
-                    break;
-                case "rondelZert":
-                    //angezeigtZert.push(listMedia[i]);
-                    fillrondel( i);
-                    break;
-                default:
-                    console.log("Es ist ein Objekt erfasst worden welches keine richtige Kategorie besitzt.");
-                    break;
-            }
-        }
-    }*/
+    let platzhalter = document.createElement("div");
+    let divConProgText = [platzhalter];
+    let divConProgMed = [platzhalter];
+    let divConCGIText = [platzhalter];
+    let divConCGIMed = [platzhalter];
+    let divConPicText = [platzhalter];
+    let divConPicMed = [platzhalter];
+    let divConUXText = [platzhalter];
+    let divConUXMed = [platzhalter];
+    let divConAudText = [platzhalter];
+    let divConAudMed = [platzhalter];
+    let divConZertText = [platzhalter];
+    let divConZertMed = [platzhalter];
+    main();
+    function main() {
+        fillrondel();
+        show("all", "start");
+    }
     function fillrondel() {
         for (let i = 0; i < mediaObjektePortfolio.listMedia.length; i++) {
             let divText = document.createElement("div");
@@ -157,122 +145,260 @@ var mediaObjektePortfolio;
         }
     }
     function hndl_links_Prog() {
-        show("Prog", "+1");
+        wechsel("Prog", "+1");
     }
     function hndl_rechts_Prog() {
-        show("Prog", "-1");
+        wechsel("Prog", "-1");
     }
     function hndl_links_CGI() {
-        show("CGI", "+1");
+        wechsel("CGI", "+1");
     }
     function hndl_rechts_CGI() {
-        show("CGI", "-1");
+        wechsel("CGI", "-1");
     }
     function hndl_links_Pic() {
-        show("Pic", "+1");
+        wechsel("Pic", "+1");
     }
     function hndl_rechts_Pic() {
-        show("Pic", "-1");
+        wechsel("Pic", "-1");
     }
     function hndl_links_UX() {
-        show("UX", "+1");
+        wechsel("UX", "+1");
     }
     function hndl_rechts_UX() {
-        show("UX", "-1");
+        wechsel("UX", "-1");
     }
     function hndl_links_Aud() {
-        show("Aud", "+1");
+        wechsel("Aud", "+1");
     }
     function hndl_rechts_Aud() {
-        show("Aud", "-1");
+        wechsel("Aud", "-1");
     }
     function hndl_links_Zert() {
-        show("Zert", "+1");
+        wechsel("Zert", "+1");
     }
     function hndl_rechts_Zert() {
-        show("Zert", "-1");
+        wechsel("Zert", "-1");
     }
     function show(_section, _order) {
-        let rondelDivProgtext = document.getElementById("rondelProgtext");
-        if (rondelDivProgtext)
-            rondelDivProgtext.className = "rondel-flex";
-        let rondelDivProgmed = document.getElementById("rondelProgmed");
-        let rondelDivCGItext = document.getElementById("rondelCGItext");
-        let rondelDivCGImed = document.getElementById("rondelCGImed");
-        let rondelDivPictext = document.getElementById("rondelPictext");
-        let rondelDivPicmed = document.getElementById("rondelPicmed");
-        let rondelDivUXtext = document.getElementById("rondelUXtext");
-        let rondelDivUXmed = document.getElementById("rondelUXmed");
-        let rondelDivAudtext = document.getElementById("rondelAudtext");
-        let rondelDivAudmed = document.getElementById("rondelAudmed");
-        let rondelDivZerttext = document.getElementById("rondelZerttext");
-        let rondelDivZertmed = document.getElementById("rondelZertmed");
+        //alle bilder und Texte werden als childelemente dem Fenster Prog zugeordnet aber später werden nicht alle angezeigt
         for (let i = 0; i < divConProgText.length; i++) {
+            if (windowProgText && windowProgMedia) {
+                divConProgText[i].className = "rondelNichtAngezeigt";
+                windowProgText.appendChild(divConProgText[i]);
+                divConProgMed[i].className = "rondelNichtAngezeigt";
+                windowProgMedia.appendChild(divConProgMed[i]);
+            }
         }
+        for (let i = 0; i < divConCGIText.length; i++) {
+            if (windowCGIText && windowCGIMedia) {
+                divConCGIText[i].className = "rondelNichtAngezeigt";
+                windowCGIText.appendChild(divConCGIText[i]);
+                divConCGIMed[i].className = "rondelNichtAngezeigt";
+                windowCGIMedia.appendChild(divConCGIMed[i]);
+            }
+        }
+        for (let i = 0; i < divConAudText.length; i++) {
+            if (windowAudText && windowAudMedia) {
+                divConAudText[i].className = "rondelNichtAngezeigt";
+                windowAudText.appendChild(divConAudText[i]);
+                divConAudMed[i].className = "rondelNichtAngezeigt";
+                windowAudMedia.appendChild(divConAudMed[i]);
+            }
+        }
+        for (let i = 0; i < divConPicText.length; i++) {
+            if (windowPicText && windowPicMedia) {
+                divConPicText[i].className = "rondelNichtAngezeigt";
+                windowPicText.appendChild(divConPicText[i]);
+                divConPicMed[i].className = "rondelNichtAngezeigt";
+                windowPicMedia.appendChild(divConPicMed[i]);
+            }
+        }
+        for (let i = 0; i < divConUXText.length; i++) {
+            if (windowUXText && windowUXMedia) {
+                divConUXText[i].className = "rondelNichtAngezeigt";
+                windowUXText.appendChild(divConUXText[i]);
+                divConUXMed[i].className = "rondelNichtAngezeigt";
+                windowUXMedia.appendChild(divConUXMed[i]);
+            }
+        }
+        for (let i = 0; i < divConZertText.length; i++) {
+            if (windowZeugText && windowZeugMedia) {
+                divConZertText[i].className = "rondelNichtAngezeigt";
+                windowZeugText.appendChild(divConZertText[i]);
+                divConZertMed[i].className = "rondelNichtAngezeigt";
+                windowZeugMedia.appendChild(divConZertMed[i]);
+            }
+        }
+        if (windowProgText)
+            divConProgText[1].className = "rondelAngezeigt";
+        if (windowProgMedia)
+            divConProgMed[1].className = "rondelAngezeigt";
+        if (windowCGIText)
+            divConCGIText[1].className = "rondelAngezeigt";
+        if (windowCGIMedia)
+            divConCGIMed[1].className = "rondelAngezeigt";
+        if (windowPicText)
+            divConPicText[1].className = "rondelAngezeigt";
+        if (windowPicMedia)
+            divConPicMed[1].className = "rondelAngezeigt";
+        if (windowUXText)
+            divConUXText[1].className = "rondelAngezeigt";
+        if (windowUXMedia)
+            divConUXMed[1].className = "rondelAngezeigt";
+        if (windowAudText)
+            divConAudText[1].className = "rondelAngezeigt";
+        if (windowAudMedia)
+            divConAudMed[1].className = "rondelAngezeigt";
+        if (windowZeugText)
+            divConZertText[1].className = "rondelAngezeigt";
+        if (windowZeugMedia)
+            divConZertMed[1].className = "rondelAngezeigt";
+    }
+    function wechsel(_section, _order) {
         switch (_section) {
-            case "all":
-                if (rondelDivProgtext)
-                    rondelDivProgmed.appendChild(divConProgText[0]);
-                if (rondelDivProgmed)
-                    rondelDivProgmed.appendChild(divConProgMed[0]);
-                if (rondelDivCGItext)
-                    rondelDivCGItext.appendChild(divConCGIText[0]);
-                if (rondelDivCGImed)
-                    rondelDivCGImed.appendChild(divConCGIMed[0]);
-                if (rondelDivPictext)
-                    rondelDivPictext.appendChild(divConPicText[0]);
-                if (rondelDivPicmed)
-                    rondelDivPicmed.appendChild(divConPicMed[0]);
-                if (rondelDivUXtext)
-                    rondelDivUXtext.appendChild(divConUXText[0]);
-                if (rondelDivUXmed)
-                    rondelDivUXmed.appendChild(divConUXMed[0]);
-                if (rondelDivAudtext)
-                    rondelDivAudtext.appendChild(divConAudText[0]);
-                if (rondelDivAudmed)
-                    rondelDivAudmed.appendChild(divConAudMed[0]);
-                if (rondelDivZerttext)
-                    rondelDivZerttext.appendChild(divConZertText[0]);
-                if (rondelDivZertmed)
-                    rondelDivZertmed.appendChild(divConZertMed[0]);
-                break;
             case "Prog":
                 if (_order == "+1") {
-                    rondelProgAktiv++;
-                    divConProgText[rondelProgAktiv - 1].className = "rondelProgNichtAngezeigt";
-                    divConProgText[rondelProgAktiv].className = "rondelProgAngezeigt";
+                    if (rondelProgAktiv < divConProgText.length - 1) {
+                        rondelProgAktiv++;
+                        divConProgText[rondelProgAktiv - 1].className = "rondelNichtAngezeigt";
+                        divConProgText[rondelProgAktiv].className = "rondelAngezeigt";
+                        divConProgMed[rondelProgAktiv - 1].className = "rondelNichtAngezeigt";
+                        divConProgMed[rondelProgAktiv].className = "rondelAngezeigt";
+                    }
                 }
                 else {
+                    if (rondelProgAktiv > 1) {
+                        rondelProgAktiv--;
+                        divConProgText[rondelProgAktiv + 1].className = "rondelNichtAngezeigt";
+                        divConProgText[rondelProgAktiv].className = "rondelAngezeigt";
+                        divConProgMed[rondelProgAktiv + 1].className = "rondelNichtAngezeigt";
+                        divConProgMed[rondelProgAktiv].className = "rondelAngezeigt";
+                    }
+                    else if (rondelProgAktiv == 1) {
+                        divConProgText[rondelProgAktiv].className = "rondelAngezeigt";
+                        divConProgMed[rondelProgAktiv].className = "rondelAngezeigt";
+                    }
                 }
                 break;
             case "CGI":
                 if (_order == "+1") {
+                    if (rondelCGIAktiv < divConCGIText.length - 1) {
+                        rondelCGIAktiv++;
+                        divConCGIText[rondelCGIAktiv - 1].className = "rondelNichtAngezeigt";
+                        divConCGIText[rondelCGIAktiv].className = "rondelAngezeigt";
+                        divConCGIMed[rondelCGIAktiv - 1].className = "rondelNichtAngezeigt";
+                        divConCGIMed[rondelCGIAktiv].className = "rondelAngezeigt";
+                    }
                 }
                 else {
+                    if (rondelCGIAktiv > 1) {
+                        rondelCGIAktiv--;
+                        divConCGIText[rondelCGIAktiv + 1].className = "rondelNichtAngezeigt";
+                        divConCGIText[rondelCGIAktiv].className = "rondelAngezeigt";
+                        divConCGIMed[rondelCGIAktiv + 1].className = "rondelNichtAngezeigt";
+                        divConCGIMed[rondelCGIAktiv].className = "rondelAngezeigt";
+                    }
+                    else if (rondelCGIAktiv == 1) {
+                        divConCGIText[rondelCGIAktiv].className = "rondelAngezeigt";
+                        divConCGIMed[rondelCGIAktiv].className = "rondelAngezeigt";
+                    }
                 }
                 break;
             case "Pic":
                 if (_order == "+1") {
+                    if (rondelPicAktiv < divConPicText.length - 1) {
+                        rondelPicAktiv++;
+                        divConPicText[rondelPicAktiv - 1].className = "rondelNichtAngezeigt";
+                        divConPicText[rondelPicAktiv].className = "rondelAngezeigt";
+                        divConPicMed[rondelPicAktiv - 1].className = "rondelNichtAngezeigt";
+                        divConPicMed[rondelPicAktiv].className = "rondelAngezeigt";
+                    }
                 }
                 else {
+                    if (rondelPicAktiv > 1) {
+                        rondelPicAktiv--;
+                        divConPicText[rondelPicAktiv + 1].className = "rondelNichtAngezeigt";
+                        divConPicText[rondelPicAktiv].className = "rondelAngezeigt";
+                        divConPicMed[rondelPicAktiv + 1].className = "rondelNichtAngezeigt";
+                        divConPicMed[rondelPicAktiv].className = "rondelAngezeigt";
+                    }
+                    else if (rondelPicAktiv == 1) {
+                        divConPicText[rondelPicAktiv].className = "rondelAngezeigt";
+                        divConPicMed[rondelPicAktiv].className = "rondelAngezeigt";
+                    }
                 }
                 break;
             case "UX":
                 if (_order == "+1") {
+                    if (rondelUXAktiv < divConUXText.length - 1) {
+                        rondelUXAktiv++;
+                        divConUXText[rondelUXAktiv - 1].className = "rondelNichtAngezeigt";
+                        divConUXText[rondelUXAktiv].className = "rondelAngezeigt";
+                        divConUXMed[rondelUXAktiv - 1].className = "rondelNichtAngezeigt";
+                        divConUXMed[rondelUXAktiv].className = "rondelAngezeigt";
+                    }
                 }
                 else {
+                    if (rondelUXAktiv > 1) {
+                        rondelUXAktiv--;
+                        divConUXText[rondelUXAktiv + 1].className = "rondelNichtAngezeigt";
+                        divConUXText[rondelUXAktiv].className = "rondelAngezeigt";
+                        divConUXMed[rondelUXAktiv + 1].className = "rondelNichtAngezeigt";
+                        divConUXMed[rondelUXAktiv].className = "rondelAngezeigt";
+                    }
+                    else if (rondelUXAktiv == 1) {
+                        divConUXText[rondelUXAktiv].className = "rondelAngezeigt";
+                        divConUXMed[rondelUXAktiv].className = "rondelAngezeigt";
+                    }
                 }
                 break;
             case "Aud":
                 if (_order == "+1") {
+                    if (rondelAudAktiv < divConAudText.length - 1) {
+                        rondelAudAktiv++;
+                        divConAudText[rondelAudAktiv - 1].className = "rondelNichtAngezeigt";
+                        divConAudText[rondelAudAktiv].className = "rondelAngezeigt";
+                        divConAudMed[rondelAudAktiv - 1].className = "rondelNichtAngezeigt";
+                        divConAudMed[rondelAudAktiv].className = "rondelAngezeigt";
+                    }
                 }
                 else {
+                    if (rondelAudAktiv > 1) {
+                        rondelAudAktiv--;
+                        divConAudText[rondelAudAktiv + 1].className = "rondelNichtAngezeigt";
+                        divConAudText[rondelAudAktiv].className = "rondelAngezeigt";
+                        divConAudMed[rondelAudAktiv + 1].className = "rondelNichtAngezeigt";
+                        divConAudMed[rondelAudAktiv].className = "rondelAngezeigt";
+                    }
+                    else if (rondelAudAktiv == 1) {
+                        divConAudText[rondelAudAktiv].className = "rondelAngezeigt";
+                        divConAudMed[rondelAudAktiv].className = "rondelAngezeigt";
+                    }
                 }
                 break;
             case "Zert":
                 if (_order == "+1") {
+                    if (rondelZertAktiv < divConZertText.length - 1) {
+                        rondelZertAktiv++;
+                        divConZertText[rondelZertAktiv - 1].className = "rondelNichtAngezeigt";
+                        divConZertText[rondelZertAktiv].className = "rondelAngezeigt";
+                        divConZertMed[rondelZertAktiv - 1].className = "rondelNichtAngezeigt";
+                        divConZertMed[rondelZertAktiv].className = "rondelAngezeigt";
+                    }
                 }
                 else {
+                    if (rondelZertAktiv > 1) {
+                        rondelZertAktiv--;
+                        divConZertText[rondelZertAktiv + 1].className = "rondelNichtAngezeigt";
+                        divConZertText[rondelZertAktiv].className = "rondelAngezeigt";
+                        divConZertMed[rondelZertAktiv + 1].className = "rondelNichtAngezeigt";
+                        divConZertMed[rondelZertAktiv].className = "rondelAngezeigt";
+                    }
+                    else if (rondelZertAktiv == 1) {
+                        divConZertText[rondelZertAktiv].className = "rondelAngezeigt";
+                        divConZertMed[rondelZertAktiv].className = "rondelAngezeigt";
+                    }
                 }
                 break;
             default:

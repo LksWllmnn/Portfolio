@@ -156,7 +156,7 @@ h1,h2,h3{
     background-color: rgb(51, 0, 51);
 }
   .grid-item {
-    border: 1px solid rgba(0, 0, 0, 0.8);
+    /*border: 1px solid rgba(0, 0, 0, 0.8);*/
     padding: 20px;
     text-align: center;
     
@@ -204,13 +204,18 @@ h1,h2,h3{
 
 .rondel-grid-container{
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: 10% 40% 40% 10%;
+    vertical-align: ;
 }
 
 .rondel-grid-item{
-    border: 1px solid red;
-    vertical-align: baseline;
+    /*border: 1px solid red;*/
+    justify-content: center;
+    align-items: center;
     height: calc(99vh*0.5);
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
 }
 
 .rondel-grid-item>button>img{
@@ -223,11 +228,11 @@ h1,h2,h3{
     overflow-x: hidden;
 }
 
-.rondelProgNichtAngezeigt{
+.rondelNichtAngezeigt{
     display:none;
 }
 
-.rondelProgAngezeigt{
+.rondelAngezeigt{
     display:block;
 }
 
