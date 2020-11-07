@@ -299,19 +299,80 @@ namespace mediaObjektePortfolio {
                 if (_order == "+1") {
                     if (rondelProgAktiv < divConProgText.length - 1) {
                         rondelProgAktiv++;
+                        divConProgText[rondelProgAktiv - 1].className = "rondelAngezeigt";
+                        /*divConProgText[rondelProgAktiv - 1].animate([
+                            { transform: "scale(1)" }, 
+                            { transform: "scale(10)" }
+                        ], 
+                                                                    {duration: 1000}
+                        );*/
+                        
                         divConProgText[rondelProgAktiv - 1].className = "rondelNichtAngezeigt";
+                        
                         divConProgText[rondelProgAktiv].className = "rondelAngezeigt";
+                        /*divConProgText[rondelProgAktiv].animate([
+                            { transform: "scale(10)" }, 
+                            { transform: "scale(1)" }
+                        ], 
+                                                                {duration: 1000}
+                        );*/
+                        
 
-                        divConProgMed[rondelProgAktiv - 1].className = "rondelNichtAngezeigt";
+                        divConProgMed[rondelProgAktiv - 1].animate([
+                            { transform: "translate3D(0, 0, 0)" }, 
+                            { transform: "translate3D(-400px, 0, 0)" }
+                        ], 
+                                                                   {duration: 1000}
+                        );
+                        setTimeout(function (): void {
+                            divConProgMed[rondelProgAktiv - 1].className = "rondelNichtAngezeigt";
+                        },         1000);
                         divConProgMed[rondelProgAktiv].className = "rondelAngezeigt";
+                        divConProgMed[rondelProgAktiv].animate([
+                            { transform: "translate3D(400px, 0, 0)" }, 
+                            { transform: "translate3D(0px, 0, 0)" }
+                        ], 
+                                                               {duration: 1000}
+                        );
+                        
                     }
                 } else {
                     if (rondelProgAktiv > 1) {
                         rondelProgAktiv--;
+                        /*divConProgText[rondelProgAktiv + 1].animate([
+                            { transform: "scale(1)" }, 
+                            { transform: "scale(10)" }
+                        ], 
+                                                                    {duration: 1000}
+                        );*/
+                        
                         divConProgText[rondelProgAktiv + 1].className = "rondelNichtAngezeigt";
+                        
+                        
+                        /*divConProgText[rondelProgAktiv].animate([
+                            { transform: "scale(10)" }, 
+                            { transform: "scale(1)" }
+                        ], 
+                                                                {duration: 1000}
+                        );*/
                         divConProgText[rondelProgAktiv].className = "rondelAngezeigt";
 
-                        divConProgMed[rondelProgAktiv + 1].className = "rondelNichtAngezeigt";
+                        divConProgMed[rondelProgAktiv + 1].animate([
+                            { transform: "translate3D(0, 0, 0)" }, 
+                            { transform: "translate3D(400px, 0, 0)" }
+                        ], 
+                                                                   {duration: 1000}
+                        );
+                        setTimeout(function (): void {
+                            divConProgMed[rondelProgAktiv + 1].className = "rondelNichtAngezeigt";
+                        },         1000);
+                        
+                        divConProgMed[rondelProgAktiv].animate([
+                            { transform: "translate3D(-400px, 0, 0)" }, 
+                            { transform: "translate3D(0px, 0, 0)" }
+                        ], 
+                                                               {duration: 1000}
+                        );
                         divConProgMed[rondelProgAktiv].className = "rondelAngezeigt";
                     } else if (rondelProgAktiv == 1) {
                         divConProgText[rondelProgAktiv].className = "rondelAngezeigt";
@@ -326,8 +387,22 @@ namespace mediaObjektePortfolio {
                         divConCGIText[rondelCGIAktiv - 1].className = "rondelNichtAngezeigt";
                         divConCGIText[rondelCGIAktiv].className = "rondelAngezeigt";
 
-                        divConCGIMed[rondelCGIAktiv - 1].className = "rondelNichtAngezeigt";
+                        divConCGIMed[rondelCGIAktiv - 1].animate([
+                            { transform: "translate3D(0, 0, 0)" }, 
+                            { transform: "translate3D(-400px, 0, 0)" }
+                        ], 
+                                                                 {duration: 1000}
+                        );
+                        setTimeout(function (): void {
+                            divConCGIMed[rondelCGIAktiv - 1].className = "rondelNichtAngezeigt";
+                        },         1000);
                         divConCGIMed[rondelCGIAktiv].className = "rondelAngezeigt";
+                        divConCGIMed[rondelCGIAktiv].animate([
+                            { transform: "translate3D(400px, 0, 0)" }, 
+                            { transform: "translate3D(0px, 0, 0)" }
+                        ], 
+                                                             {duration: 1000}
+                        );
                     }
                 } else {
                     if (rondelCGIAktiv > 1) {
@@ -335,7 +410,21 @@ namespace mediaObjektePortfolio {
                     divConCGIText[rondelCGIAktiv + 1].className = "rondelNichtAngezeigt";
                     divConCGIText[rondelCGIAktiv].className = "rondelAngezeigt";
 
-                    divConCGIMed[rondelCGIAktiv + 1].className = "rondelNichtAngezeigt";
+                    divConCGIMed[rondelCGIAktiv + 1].animate([
+                        { transform: "translate3D(0, 0, 0)" }, 
+                        { transform: "translate3D(400px, 0, 0)" }
+                    ], 
+                                                             {duration: 1000}
+                    );
+                    setTimeout(function (): void {
+                        divConCGIMed[rondelCGIAktiv + 1].className = "rondelNichtAngezeigt";
+                    },         1000);
+                    divConCGIMed[rondelCGIAktiv].animate([
+                        { transform: "translate3D(-400px, 0, 0)" }, 
+                        { transform: "translate3D(0px, 0, 0)" }
+                    ], 
+                                                         {duration: 1000}
+                    );
                     divConCGIMed[rondelCGIAktiv].className = "rondelAngezeigt";
                     } else if (rondelCGIAktiv == 1) {
                         divConCGIText[rondelCGIAktiv].className = "rondelAngezeigt";
@@ -350,7 +439,21 @@ namespace mediaObjektePortfolio {
                         divConPicText[rondelPicAktiv - 1].className = "rondelNichtAngezeigt";
                         divConPicText[rondelPicAktiv].className = "rondelAngezeigt";
 
-                        divConPicMed[rondelPicAktiv - 1].className = "rondelNichtAngezeigt";
+                        divConCGIMed[rondelCGIAktiv - 1].animate([
+                            { transform: "translate3D(0, 0, 0)" }, 
+                            { transform: "translate3D(-400px, 0, 0)" }
+                        ], 
+                                                                 {duration: 1000}
+                        );
+                        setTimeout(function (): void {
+                            divConPicMed[rondelPicAktiv - 1].className = "rondelNichtAngezeigt";
+                        },         1000);
+                        divConPicMed[rondelPicAktiv].animate([
+                            { transform: "translate3D(400px, 0, 0)" }, 
+                            { transform: "translate3D(0px, 0, 0)" }
+                        ], 
+                                                             {duration: 1000}
+                        );
                         divConPicMed[rondelPicAktiv].className = "rondelAngezeigt";
                     }
                 } else {
@@ -359,7 +462,21 @@ namespace mediaObjektePortfolio {
                     divConPicText[rondelPicAktiv + 1].className = "rondelNichtAngezeigt";
                     divConPicText[rondelPicAktiv].className = "rondelAngezeigt";
 
-                    divConPicMed[rondelPicAktiv + 1].className = "rondelNichtAngezeigt";
+                    divConPicMed[rondelPicAktiv + 1].animate([
+                        { transform: "translate3D(0, 0, 0)" }, 
+                        { transform: "translate3D(400px, 0, 0)" }
+                    ], 
+                                                             {duration: 1000}
+                    );
+                    setTimeout(function (): void {
+                        divConPicMed[rondelPicAktiv + 1].className = "rondelNichtAngezeigt";
+                    },         1000);
+                    divConPicMed[rondelPicAktiv].animate([
+                        { transform: "translate3D(-400px, 0, 0)" }, 
+                        { transform: "translate3D(0px, 0, 0)" }
+                    ], 
+                                                         {duration: 1000}
+                    );
                     divConPicMed[rondelPicAktiv].className = "rondelAngezeigt";
                     } else if (rondelPicAktiv == 1) {
                         divConPicText[rondelPicAktiv].className = "rondelAngezeigt";
@@ -374,7 +491,21 @@ namespace mediaObjektePortfolio {
                         divConUXText[rondelUXAktiv - 1].className = "rondelNichtAngezeigt";
                         divConUXText[rondelUXAktiv].className = "rondelAngezeigt";
 
-                        divConUXMed[rondelUXAktiv - 1].className = "rondelNichtAngezeigt";
+                        divConUXMed[rondelUXAktiv - 1].animate([
+                            { transform: "translate3D(0, 0, 0)" }, 
+                            { transform: "translate3D(-400px, 0, 0)" }
+                        ], 
+                                                               {duration: 1000}
+                        );
+                        setTimeout(function (): void {
+                            divConUXMed[rondelUXAktiv - 1].className = "rondelNichtAngezeigt";
+                        },         1000);
+                        divConUXMed[rondelUXAktiv].animate([
+                            { transform: "translate3D(400px, 0, 0)" }, 
+                            { transform: "translate3D(0px, 0, 0)" }
+                        ], 
+                                                           {duration: 1000}
+                        );
                         divConUXMed[rondelUXAktiv].className = "rondelAngezeigt";
                     }
                 } else {
@@ -383,7 +514,21 @@ namespace mediaObjektePortfolio {
                     divConUXText[rondelUXAktiv + 1].className = "rondelNichtAngezeigt";
                     divConUXText[rondelUXAktiv].className = "rondelAngezeigt";
 
-                    divConUXMed[rondelUXAktiv + 1].className = "rondelNichtAngezeigt";
+                    divConUXMed[rondelUXAktiv + 1].animate([
+                        { transform: "translate3D(0, 0, 0)" }, 
+                        { transform: "translate3D(400px, 0, 0)" }
+                    ], 
+                                                           {duration: 1000}
+                    );
+                    setTimeout(function (): void {
+                        divConUXMed[rondelUXAktiv + 1].className = "rondelNichtAngezeigt";
+                    },         1000);
+                    divConUXMed[rondelUXAktiv].animate([
+                        { transform: "translate3D(-400px, 0, 0)" }, 
+                        { transform: "translate3D(0px, 0, 0)" }
+                    ], 
+                                                       {duration: 1000}
+                    );
                     divConUXMed[rondelUXAktiv].className = "rondelAngezeigt";
                     } else if (rondelUXAktiv == 1) {
                         divConUXText[rondelUXAktiv].className = "rondelAngezeigt";
@@ -398,7 +543,21 @@ namespace mediaObjektePortfolio {
                         divConAudText[rondelAudAktiv - 1].className = "rondelNichtAngezeigt";
                         divConAudText[rondelAudAktiv].className = "rondelAngezeigt";
 
-                        divConAudMed[rondelAudAktiv - 1].className = "rondelNichtAngezeigt";
+                        divConAudMed[rondelAudAktiv - 1].animate([
+                            { transform: "translate3D(0, 0, 0)" }, 
+                            { transform: "translate3D(-400px, 0, 0)" }
+                        ], 
+                                                                 {duration: 1000}
+                        );
+                        setTimeout(function (): void {
+                            divConAudMed[rondelAudAktiv - 1].className = "rondelNichtAngezeigt";
+                        },         1000);
+                        divConAudMed[rondelAudAktiv].animate([
+                            { transform: "translate3D(400px, 0, 0)" }, 
+                            { transform: "translate3D(0px, 0, 0)" }
+                        ], 
+                                                             {duration: 1000}
+                        );
                         divConAudMed[rondelAudAktiv].className = "rondelAngezeigt";
                     }
                 } else {
@@ -407,7 +566,21 @@ namespace mediaObjektePortfolio {
                     divConAudText[rondelAudAktiv + 1].className = "rondelNichtAngezeigt";
                     divConAudText[rondelAudAktiv].className = "rondelAngezeigt";
 
-                    divConAudMed[rondelAudAktiv + 1].className = "rondelNichtAngezeigt";
+                    divConAudMed[rondelAudAktiv + 1].animate([
+                        { transform: "translate3D(0, 0, 0)" }, 
+                        { transform: "translate3D(400px, 0, 0)" }
+                    ], 
+                                                             {duration: 1000}
+                    );
+                    setTimeout(function (): void {
+                        divConAudMed[rondelAudAktiv + 1].className = "rondelNichtAngezeigt";
+                    },         1000);
+                    divConAudMed[rondelAudAktiv].animate([
+                        { transform: "translate3D(-400px, 0, 0)" }, 
+                        { transform: "translate3D(0px, 0, 0)" }
+                    ], 
+                                                         {duration: 1000}
+                    );
                     divConAudMed[rondelAudAktiv].className = "rondelAngezeigt";
                     } else if (rondelAudAktiv == 1) {
                         divConAudText[rondelAudAktiv].className = "rondelAngezeigt";
@@ -422,7 +595,21 @@ namespace mediaObjektePortfolio {
                         divConZertText[rondelZertAktiv - 1].className = "rondelNichtAngezeigt";
                         divConZertText[rondelZertAktiv].className = "rondelAngezeigt";
 
-                        divConZertMed[rondelZertAktiv - 1].className = "rondelNichtAngezeigt";
+                        divConZertMed[rondelZertAktiv - 1].animate([
+                            { transform: "translate3D(0, 0, 0)" }, 
+                            { transform: "translate3D(-400px, 0, 0)" }
+                        ], 
+                                                                   {duration: 1000}
+                        );
+                        setTimeout(function (): void {
+                            divConZertMed[rondelZertAktiv - 1].className = "rondelNichtAngezeigt";
+                        },         1000);
+                        divConZertMed[rondelZertAktiv].animate([
+                            { transform: "translate3D(400px, 0, 0)" }, 
+                            { transform: "translate3D(0px, 0, 0)" }
+                        ], 
+                                                               {duration: 1000}
+                        );
                         divConZertMed[rondelZertAktiv].className = "rondelAngezeigt";
                     }
                 } else {
@@ -431,7 +618,21 @@ namespace mediaObjektePortfolio {
                     divConZertText[rondelZertAktiv + 1].className = "rondelNichtAngezeigt";
                     divConZertText[rondelZertAktiv].className = "rondelAngezeigt";
 
-                    divConZertMed[rondelZertAktiv + 1].className = "rondelNichtAngezeigt";
+                    divConZertMed[rondelZertAktiv + 1].animate([
+                        { transform: "translate3D(0, 0, 0)" }, 
+                        { transform: "translate3D(400px, 0, 0)" }
+                    ], 
+                                                               {duration: 1000}
+                    );
+                    setTimeout(function (): void {
+                        divConZertMed[rondelZertAktiv + 1].className = "rondelNichtAngezeigt";
+                    },         1000);
+                    divConAudMed[rondelAudAktiv].animate([
+                        { transform: "translate3D(-400px, 0, 0)" }, 
+                        { transform: "translate3D(0px, 0, 0)" }
+                    ], 
+                                                         {duration: 1000}
+                    );
                     divConZertMed[rondelZertAktiv].className = "rondelAngezeigt";
                     } else if (rondelZertAktiv == 1) {
                         divConZertText[rondelZertAktiv].className = "rondelAngezeigt";

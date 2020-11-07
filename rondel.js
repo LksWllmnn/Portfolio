@@ -261,18 +261,63 @@ var mediaObjektePortfolio;
                 if (_order == "+1") {
                     if (rondelProgAktiv < divConProgText.length - 1) {
                         rondelProgAktiv++;
+                        divConProgText[rondelProgAktiv - 1].className = "rondelAngezeigt";
+                        /*divConProgText[rondelProgAktiv - 1].animate([
+                            { transform: "scale(1)" },
+                            { transform: "scale(10)" }
+                        ],
+                                                                    {duration: 1000}
+                        );*/
                         divConProgText[rondelProgAktiv - 1].className = "rondelNichtAngezeigt";
                         divConProgText[rondelProgAktiv].className = "rondelAngezeigt";
-                        divConProgMed[rondelProgAktiv - 1].className = "rondelNichtAngezeigt";
+                        /*divConProgText[rondelProgAktiv].animate([
+                            { transform: "scale(10)" },
+                            { transform: "scale(1)" }
+                        ],
+                                                                {duration: 1000}
+                        );*/
+                        divConProgMed[rondelProgAktiv - 1].animate([
+                            { transform: "translate3D(0, 0, 0)" },
+                            { transform: "translate3D(-400px, 0, 0)" }
+                        ], { duration: 1000 });
+                        setTimeout(function () {
+                            divConProgMed[rondelProgAktiv - 1].className = "rondelNichtAngezeigt";
+                        }, 1000);
                         divConProgMed[rondelProgAktiv].className = "rondelAngezeigt";
+                        divConProgMed[rondelProgAktiv].animate([
+                            { transform: "translate3D(400px, 0, 0)" },
+                            { transform: "translate3D(0px, 0, 0)" }
+                        ], { duration: 1000 });
                     }
                 }
                 else {
                     if (rondelProgAktiv > 1) {
                         rondelProgAktiv--;
+                        /*divConProgText[rondelProgAktiv + 1].animate([
+                            { transform: "scale(1)" },
+                            { transform: "scale(10)" }
+                        ],
+                                                                    {duration: 1000}
+                        );*/
                         divConProgText[rondelProgAktiv + 1].className = "rondelNichtAngezeigt";
+                        /*divConProgText[rondelProgAktiv].animate([
+                            { transform: "scale(10)" },
+                            { transform: "scale(1)" }
+                        ],
+                                                                {duration: 1000}
+                        );*/
                         divConProgText[rondelProgAktiv].className = "rondelAngezeigt";
-                        divConProgMed[rondelProgAktiv + 1].className = "rondelNichtAngezeigt";
+                        divConProgMed[rondelProgAktiv + 1].animate([
+                            { transform: "translate3D(0, 0, 0)" },
+                            { transform: "translate3D(400px, 0, 0)" }
+                        ], { duration: 1000 });
+                        setTimeout(function () {
+                            divConProgMed[rondelProgAktiv + 1].className = "rondelNichtAngezeigt";
+                        }, 1000);
+                        divConProgMed[rondelProgAktiv].animate([
+                            { transform: "translate3D(-400px, 0, 0)" },
+                            { transform: "translate3D(0px, 0, 0)" }
+                        ], { duration: 1000 });
                         divConProgMed[rondelProgAktiv].className = "rondelAngezeigt";
                     }
                     else if (rondelProgAktiv == 1) {
@@ -287,8 +332,18 @@ var mediaObjektePortfolio;
                         rondelCGIAktiv++;
                         divConCGIText[rondelCGIAktiv - 1].className = "rondelNichtAngezeigt";
                         divConCGIText[rondelCGIAktiv].className = "rondelAngezeigt";
-                        divConCGIMed[rondelCGIAktiv - 1].className = "rondelNichtAngezeigt";
+                        divConCGIMed[rondelCGIAktiv - 1].animate([
+                            { transform: "translate3D(0, 0, 0)" },
+                            { transform: "translate3D(-400px, 0, 0)" }
+                        ], { duration: 1000 });
+                        setTimeout(function () {
+                            divConCGIMed[rondelCGIAktiv - 1].className = "rondelNichtAngezeigt";
+                        }, 1000);
                         divConCGIMed[rondelCGIAktiv].className = "rondelAngezeigt";
+                        divConCGIMed[rondelCGIAktiv].animate([
+                            { transform: "translate3D(400px, 0, 0)" },
+                            { transform: "translate3D(0px, 0, 0)" }
+                        ], { duration: 1000 });
                     }
                 }
                 else {
@@ -296,7 +351,17 @@ var mediaObjektePortfolio;
                         rondelCGIAktiv--;
                         divConCGIText[rondelCGIAktiv + 1].className = "rondelNichtAngezeigt";
                         divConCGIText[rondelCGIAktiv].className = "rondelAngezeigt";
-                        divConCGIMed[rondelCGIAktiv + 1].className = "rondelNichtAngezeigt";
+                        divConCGIMed[rondelCGIAktiv + 1].animate([
+                            { transform: "translate3D(0, 0, 0)" },
+                            { transform: "translate3D(400px, 0, 0)" }
+                        ], { duration: 1000 });
+                        setTimeout(function () {
+                            divConCGIMed[rondelCGIAktiv + 1].className = "rondelNichtAngezeigt";
+                        }, 1000);
+                        divConCGIMed[rondelCGIAktiv].animate([
+                            { transform: "translate3D(-400px, 0, 0)" },
+                            { transform: "translate3D(0px, 0, 0)" }
+                        ], { duration: 1000 });
                         divConCGIMed[rondelCGIAktiv].className = "rondelAngezeigt";
                     }
                     else if (rondelCGIAktiv == 1) {
@@ -311,7 +376,17 @@ var mediaObjektePortfolio;
                         rondelPicAktiv++;
                         divConPicText[rondelPicAktiv - 1].className = "rondelNichtAngezeigt";
                         divConPicText[rondelPicAktiv].className = "rondelAngezeigt";
-                        divConPicMed[rondelPicAktiv - 1].className = "rondelNichtAngezeigt";
+                        divConCGIMed[rondelCGIAktiv - 1].animate([
+                            { transform: "translate3D(0, 0, 0)" },
+                            { transform: "translate3D(-400px, 0, 0)" }
+                        ], { duration: 1000 });
+                        setTimeout(function () {
+                            divConPicMed[rondelPicAktiv - 1].className = "rondelNichtAngezeigt";
+                        }, 1000);
+                        divConPicMed[rondelPicAktiv].animate([
+                            { transform: "translate3D(400px, 0, 0)" },
+                            { transform: "translate3D(0px, 0, 0)" }
+                        ], { duration: 1000 });
                         divConPicMed[rondelPicAktiv].className = "rondelAngezeigt";
                     }
                 }
@@ -320,7 +395,17 @@ var mediaObjektePortfolio;
                         rondelPicAktiv--;
                         divConPicText[rondelPicAktiv + 1].className = "rondelNichtAngezeigt";
                         divConPicText[rondelPicAktiv].className = "rondelAngezeigt";
-                        divConPicMed[rondelPicAktiv + 1].className = "rondelNichtAngezeigt";
+                        divConPicMed[rondelPicAktiv + 1].animate([
+                            { transform: "translate3D(0, 0, 0)" },
+                            { transform: "translate3D(400px, 0, 0)" }
+                        ], { duration: 1000 });
+                        setTimeout(function () {
+                            divConPicMed[rondelPicAktiv + 1].className = "rondelNichtAngezeigt";
+                        }, 1000);
+                        divConPicMed[rondelPicAktiv].animate([
+                            { transform: "translate3D(-400px, 0, 0)" },
+                            { transform: "translate3D(0px, 0, 0)" }
+                        ], { duration: 1000 });
                         divConPicMed[rondelPicAktiv].className = "rondelAngezeigt";
                     }
                     else if (rondelPicAktiv == 1) {
@@ -335,7 +420,17 @@ var mediaObjektePortfolio;
                         rondelUXAktiv++;
                         divConUXText[rondelUXAktiv - 1].className = "rondelNichtAngezeigt";
                         divConUXText[rondelUXAktiv].className = "rondelAngezeigt";
-                        divConUXMed[rondelUXAktiv - 1].className = "rondelNichtAngezeigt";
+                        divConUXMed[rondelUXAktiv - 1].animate([
+                            { transform: "translate3D(0, 0, 0)" },
+                            { transform: "translate3D(-400px, 0, 0)" }
+                        ], { duration: 1000 });
+                        setTimeout(function () {
+                            divConUXMed[rondelUXAktiv - 1].className = "rondelNichtAngezeigt";
+                        }, 1000);
+                        divConUXMed[rondelUXAktiv].animate([
+                            { transform: "translate3D(400px, 0, 0)" },
+                            { transform: "translate3D(0px, 0, 0)" }
+                        ], { duration: 1000 });
                         divConUXMed[rondelUXAktiv].className = "rondelAngezeigt";
                     }
                 }
@@ -344,7 +439,17 @@ var mediaObjektePortfolio;
                         rondelUXAktiv--;
                         divConUXText[rondelUXAktiv + 1].className = "rondelNichtAngezeigt";
                         divConUXText[rondelUXAktiv].className = "rondelAngezeigt";
-                        divConUXMed[rondelUXAktiv + 1].className = "rondelNichtAngezeigt";
+                        divConUXMed[rondelUXAktiv + 1].animate([
+                            { transform: "translate3D(0, 0, 0)" },
+                            { transform: "translate3D(400px, 0, 0)" }
+                        ], { duration: 1000 });
+                        setTimeout(function () {
+                            divConUXMed[rondelUXAktiv + 1].className = "rondelNichtAngezeigt";
+                        }, 1000);
+                        divConUXMed[rondelUXAktiv].animate([
+                            { transform: "translate3D(-400px, 0, 0)" },
+                            { transform: "translate3D(0px, 0, 0)" }
+                        ], { duration: 1000 });
                         divConUXMed[rondelUXAktiv].className = "rondelAngezeigt";
                     }
                     else if (rondelUXAktiv == 1) {
@@ -359,7 +464,17 @@ var mediaObjektePortfolio;
                         rondelAudAktiv++;
                         divConAudText[rondelAudAktiv - 1].className = "rondelNichtAngezeigt";
                         divConAudText[rondelAudAktiv].className = "rondelAngezeigt";
-                        divConAudMed[rondelAudAktiv - 1].className = "rondelNichtAngezeigt";
+                        divConAudMed[rondelAudAktiv - 1].animate([
+                            { transform: "translate3D(0, 0, 0)" },
+                            { transform: "translate3D(-400px, 0, 0)" }
+                        ], { duration: 1000 });
+                        setTimeout(function () {
+                            divConAudMed[rondelAudAktiv - 1].className = "rondelNichtAngezeigt";
+                        }, 1000);
+                        divConAudMed[rondelAudAktiv].animate([
+                            { transform: "translate3D(400px, 0, 0)" },
+                            { transform: "translate3D(0px, 0, 0)" }
+                        ], { duration: 1000 });
                         divConAudMed[rondelAudAktiv].className = "rondelAngezeigt";
                     }
                 }
@@ -368,7 +483,17 @@ var mediaObjektePortfolio;
                         rondelAudAktiv--;
                         divConAudText[rondelAudAktiv + 1].className = "rondelNichtAngezeigt";
                         divConAudText[rondelAudAktiv].className = "rondelAngezeigt";
-                        divConAudMed[rondelAudAktiv + 1].className = "rondelNichtAngezeigt";
+                        divConAudMed[rondelAudAktiv + 1].animate([
+                            { transform: "translate3D(0, 0, 0)" },
+                            { transform: "translate3D(400px, 0, 0)" }
+                        ], { duration: 1000 });
+                        setTimeout(function () {
+                            divConAudMed[rondelAudAktiv + 1].className = "rondelNichtAngezeigt";
+                        }, 1000);
+                        divConAudMed[rondelAudAktiv].animate([
+                            { transform: "translate3D(-400px, 0, 0)" },
+                            { transform: "translate3D(0px, 0, 0)" }
+                        ], { duration: 1000 });
                         divConAudMed[rondelAudAktiv].className = "rondelAngezeigt";
                     }
                     else if (rondelAudAktiv == 1) {
@@ -383,7 +508,17 @@ var mediaObjektePortfolio;
                         rondelZertAktiv++;
                         divConZertText[rondelZertAktiv - 1].className = "rondelNichtAngezeigt";
                         divConZertText[rondelZertAktiv].className = "rondelAngezeigt";
-                        divConZertMed[rondelZertAktiv - 1].className = "rondelNichtAngezeigt";
+                        divConZertMed[rondelZertAktiv - 1].animate([
+                            { transform: "translate3D(0, 0, 0)" },
+                            { transform: "translate3D(-400px, 0, 0)" }
+                        ], { duration: 1000 });
+                        setTimeout(function () {
+                            divConZertMed[rondelZertAktiv - 1].className = "rondelNichtAngezeigt";
+                        }, 1000);
+                        divConZertMed[rondelZertAktiv].animate([
+                            { transform: "translate3D(400px, 0, 0)" },
+                            { transform: "translate3D(0px, 0, 0)" }
+                        ], { duration: 1000 });
                         divConZertMed[rondelZertAktiv].className = "rondelAngezeigt";
                     }
                 }
@@ -392,7 +527,17 @@ var mediaObjektePortfolio;
                         rondelZertAktiv--;
                         divConZertText[rondelZertAktiv + 1].className = "rondelNichtAngezeigt";
                         divConZertText[rondelZertAktiv].className = "rondelAngezeigt";
-                        divConZertMed[rondelZertAktiv + 1].className = "rondelNichtAngezeigt";
+                        divConZertMed[rondelZertAktiv + 1].animate([
+                            { transform: "translate3D(0, 0, 0)" },
+                            { transform: "translate3D(400px, 0, 0)" }
+                        ], { duration: 1000 });
+                        setTimeout(function () {
+                            divConZertMed[rondelZertAktiv + 1].className = "rondelNichtAngezeigt";
+                        }, 1000);
+                        divConAudMed[rondelAudAktiv].animate([
+                            { transform: "translate3D(-400px, 0, 0)" },
+                            { transform: "translate3D(0px, 0, 0)" }
+                        ], { duration: 1000 });
                         divConZertMed[rondelZertAktiv].className = "rondelAngezeigt";
                     }
                     else if (rondelZertAktiv == 1) {

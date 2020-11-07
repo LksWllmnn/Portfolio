@@ -5,7 +5,7 @@
 body{
     margin: 0px;
     overflow-x: hidden;
-    /*overflow: hidden;*/
+    overflow: hidden;
 }
 
 a{
@@ -122,7 +122,7 @@ h1,h2,h3{
 }
 
 .navElement:hover{
-    background-color: #222;
+    background-color: #ddfff777;
     box-shadow: none;
     color: rgb(255, 255, 255);
 }
@@ -137,7 +137,7 @@ h1,h2,h3{
 }
 
 .navElement>div>.active{
-    color: red;
+    color: #BF1A2F;
 }
 
 /*/////////////////*/
@@ -155,6 +155,31 @@ h1,h2,h3{
 .grid-container:nth-child(odd){
     background-color: rgb(51, 0, 51);
 }
+
+.grid-container:nth-child(odd) a{
+    color: #BF1A2F;
+}
+
+.grid-container:nth-child(odd) p{
+    color: white;
+}
+
+.grid-container:nth-child(odd) a:hover{
+    color: #DDFFF7;
+}
+
+.grid-container:nth-child(even) a{
+    color: rgb(51, 0, 51);
+}
+
+.grid-container:nth-child(even) p{
+    color: rgb(51, 0, 51);
+}
+
+.grid-container:nth-child(even) a:hover{
+    color: #BF1A2F;
+}
+
   .grid-item {
     /*border: 1px solid rgba(0, 0, 0, 0.8);*/
     padding: 20px;
@@ -205,7 +230,7 @@ h1,h2,h3{
 .rondel-grid-container{
     display: grid;
     grid-template-columns: 10% 40% 40% 10%;
-    vertical-align: ;
+    
 }
 
 .rondel-grid-item{
@@ -230,10 +255,17 @@ h1,h2,h3{
 
 .rondelNichtAngezeigt{
     display:none;
+    
 }
 
 .rondelAngezeigt{
-    display:block;
+    display: block;
+    
+}
+
+.rondelAngezeigt p{
+    display: block;
+    position: relative;
 }
 
 .grid-item.bild{
@@ -268,13 +300,13 @@ h1,h2,h3{
     color: white;
 }
 
-.grid-item.impkondat a:hover{
+/*.grid-item.impkondat a:hover{
     color:rgba(51, 0, 51, 0.4);
 }
 
 .grid-item.impkondatw a:hover{
     color:rgba(51, 51, 51, 0.4);
-}
+}*/
 
 .normGridbild{
     height: 100%;
