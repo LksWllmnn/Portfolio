@@ -9,7 +9,7 @@ namespace Portfolio {
     if (versuch) {
         unternav = versuch;
     }
-     else if (versuch2) {
+    else if (versuch2) {
         unternav = versuch2;
     }
     else if (versuch3) {
@@ -171,21 +171,21 @@ namespace Portfolio {
         anchor43.innerHTML = "CGI Projekte";
         anchor43.setAttribute("class", "navAnchor");
         anchor43.setAttribute("href", "04Arbeitsbeispiele.html#CGI");
-        let listenelement44: HTMLLIElement = <HTMLLIElement>document.createElement("li");
+        /*let listenelement44: HTMLLIElement = <HTMLLIElement>document.createElement("li");
         let anchor44: HTMLAnchorElement = <HTMLAnchorElement>document.createElement("a");
         anchor44.innerHTML = "Bildbearbeitungen und Logos";
         anchor44.setAttribute("class", "navAnchor");
-        anchor44.setAttribute("href", "04Arbeitsbeispiele.html#Bildbearbeitungen");
+        anchor44.setAttribute("href", "04Arbeitsbeispiele.html#Bildbearbeitungen");*/
         let listenelement45: HTMLLIElement = <HTMLLIElement>document.createElement("li");
         let anchor45: HTMLAnchorElement = <HTMLAnchorElement>document.createElement("a");
         anchor45.innerHTML = "Sonstige Webprojekte";
         anchor45.setAttribute("class", "navAnchor");
         anchor45.setAttribute("href", "04Arbeitsbeispiele.html#WebPrakt");
-        let listenelement46: HTMLLIElement = <HTMLLIElement>document.createElement("li");
+        /*let listenelement46: HTMLLIElement = <HTMLLIElement>document.createElement("li");
         let anchor46: HTMLAnchorElement = <HTMLAnchorElement>document.createElement("a");
         anchor46.innerHTML = "Audioprojekte";
         anchor46.setAttribute("class", "navAnchor");
-        anchor46.setAttribute("href", "04Arbeitsbeispiele.html#Audioprojekte");
+        anchor46.setAttribute("href", "04Arbeitsbeispiele.html#Audioprojekte");*/
 
         
         unterunternav5.setAttribute("class", "versteckt");
@@ -268,9 +268,9 @@ namespace Portfolio {
         unterunternav4.appendChild(listenelement41);
         unterunternav4.appendChild(listenelement42);
         unterunternav4.appendChild(listenelement43);
-        unterunternav4.appendChild(listenelement44);
+        //unterunternav4.appendChild(listenelement44);
         unterunternav4.appendChild(listenelement45);
-        unterunternav4.appendChild(listenelement46);
+        //unterunternav4.appendChild(listenelement46);
 
         unterunternav5.appendChild(listenelement51);
         unterunternav5.appendChild(listenelement52);
@@ -298,9 +298,9 @@ namespace Portfolio {
         listenelement41.appendChild(anchor41);
         listenelement42.appendChild(anchor42);
         listenelement43.appendChild(anchor43);
-        listenelement44.appendChild(anchor44);
+        //listenelement44.appendChild(anchor44);
         listenelement45.appendChild(anchor45);
-        listenelement46.appendChild(anchor46);
+        //listenelement46.appendChild(anchor46);
 
         listenelement51.appendChild(anchor51);
         listenelement52.appendChild(anchor52);

@@ -20,53 +20,77 @@ namespace mediaObjektePortfolio {
     
     //Knöpfe zur Bedienung des Rondels
     let butLinksProg: HTMLButtonElement = <HTMLButtonElement>document.getElementById("butLinksProg");
-    if (butLinksProg)
+    if (butLinksProg) {
         butLinksProg.addEventListener("click", hndl_links_Prog);
+        butLinksProg.className = "klickbar";
+    }
     let butRechtsProg: HTMLButtonElement = <HTMLButtonElement>document.getElementById("butRechtsProg");
-    if (butRechtsProg)
+    if (butRechtsProg) {
         butRechtsProg.addEventListener("click", hndl_rechts_Prog);
+        butRechtsProg.className = "nichtKlickbar";
+    }
     
     let butLinksCGI: HTMLButtonElement = <HTMLButtonElement>document.getElementById("butLinksCGI");
-    if (butLinksCGI)
+    if (butLinksCGI) {
         butLinksCGI.addEventListener("click", hndl_links_CGI);
+        butLinksCGI.className = "klickbar";
+    }
     let butRechtsCGI: HTMLButtonElement = <HTMLButtonElement>document.getElementById("butRechtsCGI");
-    if (butRechtsCGI)
+    if (butRechtsCGI) {
         butRechtsCGI.addEventListener("click", hndl_rechts_CGI);
+        butRechtsCGI.className = "nichtKlickbar";
+    }
     
     let butLinksPic: HTMLButtonElement = <HTMLButtonElement>document.getElementById("butLinksPic");
-    if (butLinksPic)
+    if (butLinksPic) {
         butLinksPic.addEventListener("click", hndl_links_Pic);
+        butLinksPic.className = "klickbar";
+    }
     let butRechtsPic: HTMLButtonElement = <HTMLButtonElement>document.getElementById("butRechtsPic");
-    if (butRechtsPic)
+    if (butRechtsPic) {
         butRechtsPic.addEventListener("click", hndl_rechts_Pic);
+        butRechtsPic.className = "nichtKlickbar";
+    }
     
     let butLinksUX: HTMLButtonElement = <HTMLButtonElement>document.getElementById("butLinksUX");
-    if (butLinksUX)
+    if (butLinksUX) {
         butLinksUX.addEventListener("click", hndl_links_UX);
+        butLinksUX.className = "klickbar";
+    }
     let butRechtsUX: HTMLButtonElement = <HTMLButtonElement>document.getElementById("butRechtsUX");
-    if (butRechtsUX)
+    if (butRechtsUX) {
         butRechtsUX.addEventListener("click", hndl_rechts_UX);
+        butRechtsUX.className = "nichtKlickbar";
+    }
     
     let butLinksAud: HTMLButtonElement = <HTMLButtonElement>document.getElementById("butLinksAud");
-    if (butLinksAud)
+    if (butLinksAud) {
         butLinksAud.addEventListener("click", hndl_links_Aud);
+        butLinksAud.className = "klickbar";
+    }
     let butRechtsAud: HTMLButtonElement = <HTMLButtonElement>document.getElementById("butRechtsAud");
-    if (butRechtsAud)
+    if (butRechtsAud) {
         butRechtsAud.addEventListener("click", hndl_rechts_Aud);
+        butRechtsAud.className = "nichtKlickbar";
+    }
     
     let butLinksZert: HTMLButtonElement = <HTMLButtonElement>document.getElementById("butLinksZert");
-    if (butLinksZert)
+    if (butLinksZert) {
         butLinksZert.addEventListener("click", hndl_links_Zert);
+        butLinksZert.className = "klickbar";
+    }
     let butRechtsZert: HTMLButtonElement = <HTMLButtonElement>document.getElementById("butRechtsZert");
-    if (butRechtsZert)
+    if (butRechtsZert) {
         butRechtsZert.addEventListener("click", hndl_rechts_Zert);
+        butRechtsZert.className = "nichtKlickbar";
+    }
     
-    let rondelProgAktiv: number = 0;
-    let rondelCGIAktiv: number = 0;
-    let rondelPicAktiv: number = 0;
-    let rondelUXAktiv: number = 0;
-    let rondelAudAktiv: number = 0;
-    let rondelZertAktiv: number = 0;
+    let rondelProgAktiv: number = 1;
+    let rondelCGIAktiv: number = 1;
+    let rondelPicAktiv: number = 1;
+    let rondelUXAktiv: number = 1;
+    let rondelAudAktiv: number = 1;
+    let rondelZertAktiv: number = 1;
 
     let platzhalter: HTMLDivElement = <HTMLDivElement>document.createElement("div");
     
@@ -164,50 +188,98 @@ namespace mediaObjektePortfolio {
 
     function hndl_links_Prog(): void {
         wechsel("Prog", "+1");
+        butLinksProg.removeEventListener("click", hndl_links_Prog);
+        setTimeout(function(): void {
+            butLinksProg.addEventListener("click", hndl_links_Prog);
+        },         400);
     }
 
     function hndl_rechts_Prog(): void {
         wechsel("Prog", "-1");
+        butRechtsProg.removeEventListener("click", hndl_rechts_Prog);
+        setTimeout(function(): void {
+            butRechtsProg.addEventListener("click", hndl_rechts_Prog);
+        },         400);
     }
 
     function hndl_links_CGI(): void {
         wechsel("CGI", "+1");
+        butLinksCGI.removeEventListener("click", hndl_links_CGI);
+        setTimeout(function(): void {
+            butLinksCGI.addEventListener("click", hndl_links_CGI);
+        },         400);
     }
 
     function hndl_rechts_CGI(): void {
         wechsel("CGI", "-1");
+        butRechtsCGI.removeEventListener("click", hndl_rechts_CGI);
+        setTimeout(function(): void {
+            butRechtsCGI.addEventListener("click", hndl_rechts_CGI);
+        },         400);
     }
 
     function hndl_links_Pic(): void {
         wechsel("Pic", "+1");
+        butLinksPic.removeEventListener("click", hndl_links_Pic);
+        setTimeout(function(): void {
+            butLinksPic.addEventListener("click", hndl_links_Pic);
+        },         400);
     }
 
     function hndl_rechts_Pic(): void {
         wechsel("Pic", "-1");
+        butRechtsPic.removeEventListener("click", hndl_rechts_Pic);
+        setTimeout(function(): void {
+            butRechtsPic.addEventListener("click", hndl_rechts_Pic);
+        },         400);
     }
 
     function hndl_links_UX(): void {
         wechsel("UX", "+1");
+        butLinksUX.removeEventListener("click", hndl_links_UX);
+        setTimeout(function(): void {
+            butLinksUX.addEventListener("click", hndl_links_UX);
+        },         400);
     }
 
     function hndl_rechts_UX(): void {
         wechsel("UX", "-1");
+        butRechtsUX.removeEventListener("click", hndl_rechts_UX);
+        setTimeout(function(): void {
+            butRechtsUX.addEventListener("click", hndl_rechts_UX);
+        },         400);
     }
 
     function hndl_links_Aud(): void {
         wechsel("Aud", "+1");
+        butLinksAud.removeEventListener("click", hndl_links_Aud);
+        setTimeout(function(): void {
+            butLinksAud.addEventListener("click", hndl_links_Aud);
+        },         400);
     }
 
     function hndl_rechts_Aud(): void {
         wechsel("Aud", "-1");
+        butRechtsAud.removeEventListener("click", hndl_rechts_Aud);
+        setTimeout(function(): void {
+            butRechtsAud.addEventListener("click", hndl_rechts_Aud);
+        },         400);
     }
 
     function hndl_links_Zert(): void {
         wechsel("Zert", "+1");
+        butLinksZert.removeEventListener("click", hndl_links_Zert);
+        setTimeout(function(): void {
+            butLinksZert.addEventListener("click", hndl_links_Zert);
+        },         400);
     }
 
     function hndl_rechts_Zert(): void {
         wechsel("Zert", "-1");
+        butRechtsZert.removeEventListener("click", hndl_rechts_Zert);
+        setTimeout(function(): void {
+            butRechtsZert.addEventListener("click", hndl_rechts_Zert);
+        },         400);
     }
 
     function show (_section: string, _order: string): void {
@@ -322,19 +394,21 @@ namespace mediaObjektePortfolio {
                             { transform: "translate3D(0, 0, 0)" }, 
                             { transform: "translate3D(-400px, 0, 0)" }
                         ], 
-                                                                   {duration: 1000}
+                                                                   {duration: 500}
                         );
                         setTimeout(function (): void {
                             divConProgMed[rondelProgAktiv - 1].className = "rondelNichtAngezeigt";
-                        },         1000);
+                        },         400);
                         divConProgMed[rondelProgAktiv].className = "rondelAngezeigt";
                         divConProgMed[rondelProgAktiv].animate([
                             { transform: "translate3D(400px, 0, 0)" }, 
                             { transform: "translate3D(0px, 0, 0)" }
                         ], 
-                                                               {duration: 1000}
+                                                               {duration: 500}
                         );
-                        
+                        butRechtsProg.className = "klickbar";
+                        if (rondelProgAktiv == divConProgMed.length - 1)
+                            butLinksProg.className = "nichtKlickbar";
                     }
                 } else {
                     if (rondelProgAktiv > 1) {
@@ -361,19 +435,24 @@ namespace mediaObjektePortfolio {
                             { transform: "translate3D(0, 0, 0)" }, 
                             { transform: "translate3D(400px, 0, 0)" }
                         ], 
-                                                                   {duration: 1000}
+                                                                   {duration: 500}
                         );
                         setTimeout(function (): void {
                             divConProgMed[rondelProgAktiv + 1].className = "rondelNichtAngezeigt";
-                        },         1000);
+                        },         400);
                         
                         divConProgMed[rondelProgAktiv].animate([
                             { transform: "translate3D(-400px, 0, 0)" }, 
                             { transform: "translate3D(0px, 0, 0)" }
                         ], 
-                                                               {duration: 1000}
+                                                               {duration: 500}
                         );
                         divConProgMed[rondelProgAktiv].className = "rondelAngezeigt";
+                        
+                        butLinksProg.className = "klickbar";
+                        if (rondelProgAktiv == 1)
+                            butRechtsProg.className = "nichtKlickbar";
+                        
                     } else if (rondelProgAktiv == 1) {
                         divConProgText[rondelProgAktiv].className = "rondelAngezeigt";
                         divConProgMed[rondelProgAktiv].className = "rondelAngezeigt";
@@ -391,18 +470,21 @@ namespace mediaObjektePortfolio {
                             { transform: "translate3D(0, 0, 0)" }, 
                             { transform: "translate3D(-400px, 0, 0)" }
                         ], 
-                                                                 {duration: 1000}
+                                                                 {duration: 500}
                         );
                         setTimeout(function (): void {
                             divConCGIMed[rondelCGIAktiv - 1].className = "rondelNichtAngezeigt";
-                        },         1000);
+                        },         400);
                         divConCGIMed[rondelCGIAktiv].className = "rondelAngezeigt";
                         divConCGIMed[rondelCGIAktiv].animate([
                             { transform: "translate3D(400px, 0, 0)" }, 
                             { transform: "translate3D(0px, 0, 0)" }
                         ], 
-                                                             {duration: 1000}
+                                                             {duration: 500}
                         );
+                        butRechtsCGI.className = "klickbar";
+                        if (rondelCGIAktiv == divConCGIMed.length - 1)
+                            butLinksCGI.className = "nichtKlickbar";
                     }
                 } else {
                     if (rondelCGIAktiv > 1) {
@@ -414,22 +496,25 @@ namespace mediaObjektePortfolio {
                         { transform: "translate3D(0, 0, 0)" }, 
                         { transform: "translate3D(400px, 0, 0)" }
                     ], 
-                                                             {duration: 1000}
+                                                             {duration: 500}
                     );
                     setTimeout(function (): void {
                         divConCGIMed[rondelCGIAktiv + 1].className = "rondelNichtAngezeigt";
-                    },         1000);
+                    },         500);
                     divConCGIMed[rondelCGIAktiv].animate([
                         { transform: "translate3D(-400px, 0, 0)" }, 
                         { transform: "translate3D(0px, 0, 0)" }
                     ], 
-                                                         {duration: 1000}
+                                                         {duration: 500}
                     );
                     divConCGIMed[rondelCGIAktiv].className = "rondelAngezeigt";
                     } else if (rondelCGIAktiv == 1) {
                         divConCGIText[rondelCGIAktiv].className = "rondelAngezeigt";
                         divConCGIMed[rondelCGIAktiv].className = "rondelAngezeigt";
                     }
+                    butLinksCGI.className = "klickbar";
+                    if (rondelCGIAktiv == 1)
+                        butRechtsCGI.className = "nichtKlickbar";
                 }
                 break;
             case "Pic":
@@ -443,18 +528,21 @@ namespace mediaObjektePortfolio {
                             { transform: "translate3D(0, 0, 0)" }, 
                             { transform: "translate3D(-400px, 0, 0)" }
                         ], 
-                                                                 {duration: 1000}
+                                                                 {duration: 500}
                         );
                         setTimeout(function (): void {
                             divConPicMed[rondelPicAktiv - 1].className = "rondelNichtAngezeigt";
-                        },         1000);
+                        },         400);
                         divConPicMed[rondelPicAktiv].animate([
                             { transform: "translate3D(400px, 0, 0)" }, 
                             { transform: "translate3D(0px, 0, 0)" }
                         ], 
-                                                             {duration: 1000}
+                                                             {duration: 500}
                         );
                         divConPicMed[rondelPicAktiv].className = "rondelAngezeigt";
+                        butRechtsPic.className = "klickbar";
+                        if (rondelPicAktiv == divConPicMed.length - 1)
+                            butLinksPic.className = "nichtKlickbar";
                     }
                 } else {
                     if (rondelPicAktiv > 1) {
@@ -466,18 +554,23 @@ namespace mediaObjektePortfolio {
                         { transform: "translate3D(0, 0, 0)" }, 
                         { transform: "translate3D(400px, 0, 0)" }
                     ], 
-                                                             {duration: 1000}
+                                                             {duration: 500}
                     );
                     setTimeout(function (): void {
                         divConPicMed[rondelPicAktiv + 1].className = "rondelNichtAngezeigt";
-                    },         1000);
+                    },         400);
                     divConPicMed[rondelPicAktiv].animate([
                         { transform: "translate3D(-400px, 0, 0)" }, 
                         { transform: "translate3D(0px, 0, 0)" }
                     ], 
-                                                         {duration: 1000}
+                                                         {duration: 500}
                     );
                     divConPicMed[rondelPicAktiv].className = "rondelAngezeigt";
+                    
+                    butLinksPic.className = "klickbar";
+                    if (rondelPicAktiv == 1)
+                        butRechtsPic.className = "nichtKlickbar";
+
                     } else if (rondelPicAktiv == 1) {
                         divConPicText[rondelPicAktiv].className = "rondelAngezeigt";
                         divConPicMed[rondelPicAktiv].className = "rondelAngezeigt";
@@ -495,18 +588,21 @@ namespace mediaObjektePortfolio {
                             { transform: "translate3D(0, 0, 0)" }, 
                             { transform: "translate3D(-400px, 0, 0)" }
                         ], 
-                                                               {duration: 1000}
+                                                               {duration: 500}
                         );
                         setTimeout(function (): void {
                             divConUXMed[rondelUXAktiv - 1].className = "rondelNichtAngezeigt";
-                        },         1000);
+                        },         400);
                         divConUXMed[rondelUXAktiv].animate([
                             { transform: "translate3D(400px, 0, 0)" }, 
                             { transform: "translate3D(0px, 0, 0)" }
                         ], 
-                                                           {duration: 1000}
+                                                           {duration: 500}
                         );
                         divConUXMed[rondelUXAktiv].className = "rondelAngezeigt";
+                        butRechtsUX.className = "klickbar";
+                        if (rondelUXAktiv == divConUXMed.length - 1)
+                            butLinksUX.className = "nichtKlickbar";
                     }
                 } else {
                     if (rondelUXAktiv > 1) {
@@ -518,18 +614,23 @@ namespace mediaObjektePortfolio {
                         { transform: "translate3D(0, 0, 0)" }, 
                         { transform: "translate3D(400px, 0, 0)" }
                     ], 
-                                                           {duration: 1000}
+                                                           {duration: 500}
                     );
                     setTimeout(function (): void {
                         divConUXMed[rondelUXAktiv + 1].className = "rondelNichtAngezeigt";
-                    },         1000);
+                    },         400);
                     divConUXMed[rondelUXAktiv].animate([
                         { transform: "translate3D(-400px, 0, 0)" }, 
                         { transform: "translate3D(0px, 0, 0)" }
                     ], 
-                                                       {duration: 1000}
+                                                       {duration: 500}
                     );
                     divConUXMed[rondelUXAktiv].className = "rondelAngezeigt";
+                    butLinksUX.className = "klickbar";
+                    if (rondelUXAktiv == 1)
+                        butRechtsUX.className = "nichtKlickbar";
+
+                    
                     } else if (rondelUXAktiv == 1) {
                         divConUXText[rondelUXAktiv].className = "rondelAngezeigt";
                         divConUXMed[rondelUXAktiv].className = "rondelAngezeigt";
@@ -547,18 +648,21 @@ namespace mediaObjektePortfolio {
                             { transform: "translate3D(0, 0, 0)" }, 
                             { transform: "translate3D(-400px, 0, 0)" }
                         ], 
-                                                                 {duration: 1000}
+                                                                 {duration: 500}
                         );
                         setTimeout(function (): void {
                             divConAudMed[rondelAudAktiv - 1].className = "rondelNichtAngezeigt";
-                        },         1000);
+                        },         400);
                         divConAudMed[rondelAudAktiv].animate([
                             { transform: "translate3D(400px, 0, 0)" }, 
                             { transform: "translate3D(0px, 0, 0)" }
                         ], 
-                                                             {duration: 1000}
+                                                             {duration: 500}
                         );
                         divConAudMed[rondelAudAktiv].className = "rondelAngezeigt";
+                        butRechtsAud.className = "klickbar";
+                        if (rondelAudAktiv == divConAudMed.length - 1)
+                            butLinksAud.className = "nichtKlickbar";
                     }
                 } else {
                     if (rondelAudAktiv > 1) {
@@ -570,18 +674,23 @@ namespace mediaObjektePortfolio {
                         { transform: "translate3D(0, 0, 0)" }, 
                         { transform: "translate3D(400px, 0, 0)" }
                     ], 
-                                                             {duration: 1000}
+                                                             {duration: 500}
                     );
                     setTimeout(function (): void {
                         divConAudMed[rondelAudAktiv + 1].className = "rondelNichtAngezeigt";
-                    },         1000);
+                    },         400);
                     divConAudMed[rondelAudAktiv].animate([
                         { transform: "translate3D(-400px, 0, 0)" }, 
                         { transform: "translate3D(0px, 0, 0)" }
                     ], 
-                                                         {duration: 1000}
+                                                         {duration: 500}
                     );
                     divConAudMed[rondelAudAktiv].className = "rondelAngezeigt";
+
+                    butLinksAud.className = "klickbar";
+                    if (rondelAudAktiv == 1)
+                        butRechtsAud.className = "nichtKlickbar";
+
                     } else if (rondelAudAktiv == 1) {
                         divConAudText[rondelAudAktiv].className = "rondelAngezeigt";
                         divConAudMed[rondelAudAktiv].className = "rondelAngezeigt";
@@ -599,18 +708,22 @@ namespace mediaObjektePortfolio {
                             { transform: "translate3D(0, 0, 0)" }, 
                             { transform: "translate3D(-400px, 0, 0)" }
                         ], 
-                                                                   {duration: 1000}
+                                                                   {duration: 500}
                         );
                         setTimeout(function (): void {
                             divConZertMed[rondelZertAktiv - 1].className = "rondelNichtAngezeigt";
-                        },         1000);
+                        },         400);
                         divConZertMed[rondelZertAktiv].animate([
                             { transform: "translate3D(400px, 0, 0)" }, 
                             { transform: "translate3D(0px, 0, 0)" }
                         ], 
-                                                               {duration: 1000}
+                                                               {duration: 500}
                         );
                         divConZertMed[rondelZertAktiv].className = "rondelAngezeigt";
+                        
+                        butRechtsZert.className = "klickbar";
+                        if (rondelZertAktiv == divConZertMed.length - 1)
+                            butLinksZert.className = "nichtKlickbar";
                     }
                 } else {
                     if (rondelZertAktiv > 1) {
@@ -622,18 +735,23 @@ namespace mediaObjektePortfolio {
                         { transform: "translate3D(0, 0, 0)" }, 
                         { transform: "translate3D(400px, 0, 0)" }
                     ], 
-                                                               {duration: 1000}
+                                                               {duration: 500}
                     );
                     setTimeout(function (): void {
                         divConZertMed[rondelZertAktiv + 1].className = "rondelNichtAngezeigt";
-                    },         1000);
-                    divConAudMed[rondelAudAktiv].animate([
+                    },         400);
+                    divConZertMed[rondelZertAktiv].animate([
                         { transform: "translate3D(-400px, 0, 0)" }, 
                         { transform: "translate3D(0px, 0, 0)" }
                     ], 
-                                                         {duration: 1000}
+                                                         {duration: 500}
                     );
                     divConZertMed[rondelZertAktiv].className = "rondelAngezeigt";
+
+                    butLinksZert.className = "klickbar";
+                    if (rondelZertAktiv == 1)
+                        butRechtsZert.className = "nichtKlickbar";
+
                     } else if (rondelZertAktiv == 1) {
                         divConZertText[rondelZertAktiv].className = "rondelAngezeigt";
                         divConZertMed[rondelZertAktiv].className = "rondelAngezeigt";

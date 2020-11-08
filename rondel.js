@@ -16,47 +16,71 @@ var mediaObjektePortfolio;
     let windowZeugMedia = document.getElementById("mediatWindowZert");
     //Knöpfe zur Bedienung des Rondels
     let butLinksProg = document.getElementById("butLinksProg");
-    if (butLinksProg)
+    if (butLinksProg) {
         butLinksProg.addEventListener("click", hndl_links_Prog);
+        butLinksProg.className = "klickbar";
+    }
     let butRechtsProg = document.getElementById("butRechtsProg");
-    if (butRechtsProg)
+    if (butRechtsProg) {
         butRechtsProg.addEventListener("click", hndl_rechts_Prog);
+        butRechtsProg.className = "nichtKlickbar";
+    }
     let butLinksCGI = document.getElementById("butLinksCGI");
-    if (butLinksCGI)
+    if (butLinksCGI) {
         butLinksCGI.addEventListener("click", hndl_links_CGI);
+        butLinksCGI.className = "klickbar";
+    }
     let butRechtsCGI = document.getElementById("butRechtsCGI");
-    if (butRechtsCGI)
+    if (butRechtsCGI) {
         butRechtsCGI.addEventListener("click", hndl_rechts_CGI);
+        butRechtsCGI.className = "nichtKlickbar";
+    }
     let butLinksPic = document.getElementById("butLinksPic");
-    if (butLinksPic)
+    if (butLinksPic) {
         butLinksPic.addEventListener("click", hndl_links_Pic);
+        butLinksPic.className = "klickbar";
+    }
     let butRechtsPic = document.getElementById("butRechtsPic");
-    if (butRechtsPic)
+    if (butRechtsPic) {
         butRechtsPic.addEventListener("click", hndl_rechts_Pic);
+        butRechtsPic.className = "nichtKlickbar";
+    }
     let butLinksUX = document.getElementById("butLinksUX");
-    if (butLinksUX)
+    if (butLinksUX) {
         butLinksUX.addEventListener("click", hndl_links_UX);
+        butLinksUX.className = "klickbar";
+    }
     let butRechtsUX = document.getElementById("butRechtsUX");
-    if (butRechtsUX)
+    if (butRechtsUX) {
         butRechtsUX.addEventListener("click", hndl_rechts_UX);
+        butRechtsUX.className = "nichtKlickbar";
+    }
     let butLinksAud = document.getElementById("butLinksAud");
-    if (butLinksAud)
+    if (butLinksAud) {
         butLinksAud.addEventListener("click", hndl_links_Aud);
+        butLinksAud.className = "klickbar";
+    }
     let butRechtsAud = document.getElementById("butRechtsAud");
-    if (butRechtsAud)
+    if (butRechtsAud) {
         butRechtsAud.addEventListener("click", hndl_rechts_Aud);
+        butRechtsAud.className = "nichtKlickbar";
+    }
     let butLinksZert = document.getElementById("butLinksZert");
-    if (butLinksZert)
+    if (butLinksZert) {
         butLinksZert.addEventListener("click", hndl_links_Zert);
+        butLinksZert.className = "klickbar";
+    }
     let butRechtsZert = document.getElementById("butRechtsZert");
-    if (butRechtsZert)
+    if (butRechtsZert) {
         butRechtsZert.addEventListener("click", hndl_rechts_Zert);
-    let rondelProgAktiv = 0;
-    let rondelCGIAktiv = 0;
-    let rondelPicAktiv = 0;
-    let rondelUXAktiv = 0;
-    let rondelAudAktiv = 0;
-    let rondelZertAktiv = 0;
+        butRechtsZert.className = "nichtKlickbar";
+    }
+    let rondelProgAktiv = 1;
+    let rondelCGIAktiv = 1;
+    let rondelPicAktiv = 1;
+    let rondelUXAktiv = 1;
+    let rondelAudAktiv = 1;
+    let rondelZertAktiv = 1;
     let platzhalter = document.createElement("div");
     let divConProgText = [platzhalter];
     let divConProgMed = [platzhalter];
@@ -146,39 +170,87 @@ var mediaObjektePortfolio;
     }
     function hndl_links_Prog() {
         wechsel("Prog", "+1");
+        butLinksProg.removeEventListener("click", hndl_links_Prog);
+        setTimeout(function () {
+            butLinksProg.addEventListener("click", hndl_links_Prog);
+        }, 400);
     }
     function hndl_rechts_Prog() {
         wechsel("Prog", "-1");
+        butRechtsProg.removeEventListener("click", hndl_rechts_Prog);
+        setTimeout(function () {
+            butRechtsProg.addEventListener("click", hndl_rechts_Prog);
+        }, 400);
     }
     function hndl_links_CGI() {
         wechsel("CGI", "+1");
+        butLinksCGI.removeEventListener("click", hndl_links_CGI);
+        setTimeout(function () {
+            butLinksCGI.addEventListener("click", hndl_links_CGI);
+        }, 400);
     }
     function hndl_rechts_CGI() {
         wechsel("CGI", "-1");
+        butRechtsCGI.removeEventListener("click", hndl_rechts_CGI);
+        setTimeout(function () {
+            butRechtsCGI.addEventListener("click", hndl_rechts_CGI);
+        }, 400);
     }
     function hndl_links_Pic() {
         wechsel("Pic", "+1");
+        butLinksPic.removeEventListener("click", hndl_links_Pic);
+        setTimeout(function () {
+            butLinksPic.addEventListener("click", hndl_links_Pic);
+        }, 400);
     }
     function hndl_rechts_Pic() {
         wechsel("Pic", "-1");
+        butRechtsPic.removeEventListener("click", hndl_rechts_Pic);
+        setTimeout(function () {
+            butRechtsPic.addEventListener("click", hndl_rechts_Pic);
+        }, 400);
     }
     function hndl_links_UX() {
         wechsel("UX", "+1");
+        butLinksUX.removeEventListener("click", hndl_links_UX);
+        setTimeout(function () {
+            butLinksUX.addEventListener("click", hndl_links_UX);
+        }, 400);
     }
     function hndl_rechts_UX() {
         wechsel("UX", "-1");
+        butRechtsUX.removeEventListener("click", hndl_rechts_UX);
+        setTimeout(function () {
+            butRechtsUX.addEventListener("click", hndl_rechts_UX);
+        }, 400);
     }
     function hndl_links_Aud() {
         wechsel("Aud", "+1");
+        butLinksAud.removeEventListener("click", hndl_links_Aud);
+        setTimeout(function () {
+            butLinksAud.addEventListener("click", hndl_links_Aud);
+        }, 400);
     }
     function hndl_rechts_Aud() {
         wechsel("Aud", "-1");
+        butRechtsAud.removeEventListener("click", hndl_rechts_Aud);
+        setTimeout(function () {
+            butRechtsAud.addEventListener("click", hndl_rechts_Aud);
+        }, 400);
     }
     function hndl_links_Zert() {
         wechsel("Zert", "+1");
+        butLinksZert.removeEventListener("click", hndl_links_Zert);
+        setTimeout(function () {
+            butLinksZert.addEventListener("click", hndl_links_Zert);
+        }, 400);
     }
     function hndl_rechts_Zert() {
         wechsel("Zert", "-1");
+        butRechtsZert.removeEventListener("click", hndl_rechts_Zert);
+        setTimeout(function () {
+            butRechtsZert.addEventListener("click", hndl_rechts_Zert);
+        }, 400);
     }
     function show(_section, _order) {
         //alle bilder und Texte werden als childelemente dem Fenster Prog zugeordnet aber später werden nicht alle angezeigt
@@ -279,15 +351,18 @@ var mediaObjektePortfolio;
                         divConProgMed[rondelProgAktiv - 1].animate([
                             { transform: "translate3D(0, 0, 0)" },
                             { transform: "translate3D(-400px, 0, 0)" }
-                        ], { duration: 1000 });
+                        ], { duration: 500 });
                         setTimeout(function () {
                             divConProgMed[rondelProgAktiv - 1].className = "rondelNichtAngezeigt";
-                        }, 1000);
+                        }, 400);
                         divConProgMed[rondelProgAktiv].className = "rondelAngezeigt";
                         divConProgMed[rondelProgAktiv].animate([
                             { transform: "translate3D(400px, 0, 0)" },
                             { transform: "translate3D(0px, 0, 0)" }
-                        ], { duration: 1000 });
+                        ], { duration: 500 });
+                        butRechtsProg.className = "klickbar";
+                        if (rondelProgAktiv == divConProgMed.length - 1)
+                            butLinksProg.className = "nichtKlickbar";
                     }
                 }
                 else {
@@ -310,15 +385,18 @@ var mediaObjektePortfolio;
                         divConProgMed[rondelProgAktiv + 1].animate([
                             { transform: "translate3D(0, 0, 0)" },
                             { transform: "translate3D(400px, 0, 0)" }
-                        ], { duration: 1000 });
+                        ], { duration: 500 });
                         setTimeout(function () {
                             divConProgMed[rondelProgAktiv + 1].className = "rondelNichtAngezeigt";
-                        }, 1000);
+                        }, 400);
                         divConProgMed[rondelProgAktiv].animate([
                             { transform: "translate3D(-400px, 0, 0)" },
                             { transform: "translate3D(0px, 0, 0)" }
-                        ], { duration: 1000 });
+                        ], { duration: 500 });
                         divConProgMed[rondelProgAktiv].className = "rondelAngezeigt";
+                        butLinksProg.className = "klickbar";
+                        if (rondelProgAktiv == 1)
+                            butRechtsProg.className = "nichtKlickbar";
                     }
                     else if (rondelProgAktiv == 1) {
                         divConProgText[rondelProgAktiv].className = "rondelAngezeigt";
@@ -335,15 +413,18 @@ var mediaObjektePortfolio;
                         divConCGIMed[rondelCGIAktiv - 1].animate([
                             { transform: "translate3D(0, 0, 0)" },
                             { transform: "translate3D(-400px, 0, 0)" }
-                        ], { duration: 1000 });
+                        ], { duration: 500 });
                         setTimeout(function () {
                             divConCGIMed[rondelCGIAktiv - 1].className = "rondelNichtAngezeigt";
-                        }, 1000);
+                        }, 400);
                         divConCGIMed[rondelCGIAktiv].className = "rondelAngezeigt";
                         divConCGIMed[rondelCGIAktiv].animate([
                             { transform: "translate3D(400px, 0, 0)" },
                             { transform: "translate3D(0px, 0, 0)" }
-                        ], { duration: 1000 });
+                        ], { duration: 500 });
+                        butRechtsCGI.className = "klickbar";
+                        if (rondelCGIAktiv == divConCGIMed.length - 1)
+                            butLinksCGI.className = "nichtKlickbar";
                     }
                 }
                 else {
@@ -354,20 +435,23 @@ var mediaObjektePortfolio;
                         divConCGIMed[rondelCGIAktiv + 1].animate([
                             { transform: "translate3D(0, 0, 0)" },
                             { transform: "translate3D(400px, 0, 0)" }
-                        ], { duration: 1000 });
+                        ], { duration: 500 });
                         setTimeout(function () {
                             divConCGIMed[rondelCGIAktiv + 1].className = "rondelNichtAngezeigt";
-                        }, 1000);
+                        }, 500);
                         divConCGIMed[rondelCGIAktiv].animate([
                             { transform: "translate3D(-400px, 0, 0)" },
                             { transform: "translate3D(0px, 0, 0)" }
-                        ], { duration: 1000 });
+                        ], { duration: 500 });
                         divConCGIMed[rondelCGIAktiv].className = "rondelAngezeigt";
                     }
                     else if (rondelCGIAktiv == 1) {
                         divConCGIText[rondelCGIAktiv].className = "rondelAngezeigt";
                         divConCGIMed[rondelCGIAktiv].className = "rondelAngezeigt";
                     }
+                    butLinksCGI.className = "klickbar";
+                    if (rondelCGIAktiv == 1)
+                        butRechtsCGI.className = "nichtKlickbar";
                 }
                 break;
             case "Pic":
@@ -379,15 +463,18 @@ var mediaObjektePortfolio;
                         divConCGIMed[rondelCGIAktiv - 1].animate([
                             { transform: "translate3D(0, 0, 0)" },
                             { transform: "translate3D(-400px, 0, 0)" }
-                        ], { duration: 1000 });
+                        ], { duration: 500 });
                         setTimeout(function () {
                             divConPicMed[rondelPicAktiv - 1].className = "rondelNichtAngezeigt";
-                        }, 1000);
+                        }, 400);
                         divConPicMed[rondelPicAktiv].animate([
                             { transform: "translate3D(400px, 0, 0)" },
                             { transform: "translate3D(0px, 0, 0)" }
-                        ], { duration: 1000 });
+                        ], { duration: 500 });
                         divConPicMed[rondelPicAktiv].className = "rondelAngezeigt";
+                        butRechtsPic.className = "klickbar";
+                        if (rondelPicAktiv == divConPicMed.length - 1)
+                            butLinksPic.className = "nichtKlickbar";
                     }
                 }
                 else {
@@ -398,15 +485,18 @@ var mediaObjektePortfolio;
                         divConPicMed[rondelPicAktiv + 1].animate([
                             { transform: "translate3D(0, 0, 0)" },
                             { transform: "translate3D(400px, 0, 0)" }
-                        ], { duration: 1000 });
+                        ], { duration: 500 });
                         setTimeout(function () {
                             divConPicMed[rondelPicAktiv + 1].className = "rondelNichtAngezeigt";
-                        }, 1000);
+                        }, 400);
                         divConPicMed[rondelPicAktiv].animate([
                             { transform: "translate3D(-400px, 0, 0)" },
                             { transform: "translate3D(0px, 0, 0)" }
-                        ], { duration: 1000 });
+                        ], { duration: 500 });
                         divConPicMed[rondelPicAktiv].className = "rondelAngezeigt";
+                        butLinksPic.className = "klickbar";
+                        if (rondelPicAktiv == 1)
+                            butRechtsPic.className = "nichtKlickbar";
                     }
                     else if (rondelPicAktiv == 1) {
                         divConPicText[rondelPicAktiv].className = "rondelAngezeigt";
@@ -423,15 +513,18 @@ var mediaObjektePortfolio;
                         divConUXMed[rondelUXAktiv - 1].animate([
                             { transform: "translate3D(0, 0, 0)" },
                             { transform: "translate3D(-400px, 0, 0)" }
-                        ], { duration: 1000 });
+                        ], { duration: 500 });
                         setTimeout(function () {
                             divConUXMed[rondelUXAktiv - 1].className = "rondelNichtAngezeigt";
-                        }, 1000);
+                        }, 400);
                         divConUXMed[rondelUXAktiv].animate([
                             { transform: "translate3D(400px, 0, 0)" },
                             { transform: "translate3D(0px, 0, 0)" }
-                        ], { duration: 1000 });
+                        ], { duration: 500 });
                         divConUXMed[rondelUXAktiv].className = "rondelAngezeigt";
+                        butRechtsUX.className = "klickbar";
+                        if (rondelUXAktiv == divConUXMed.length - 1)
+                            butLinksUX.className = "nichtKlickbar";
                     }
                 }
                 else {
@@ -442,15 +535,18 @@ var mediaObjektePortfolio;
                         divConUXMed[rondelUXAktiv + 1].animate([
                             { transform: "translate3D(0, 0, 0)" },
                             { transform: "translate3D(400px, 0, 0)" }
-                        ], { duration: 1000 });
+                        ], { duration: 500 });
                         setTimeout(function () {
                             divConUXMed[rondelUXAktiv + 1].className = "rondelNichtAngezeigt";
-                        }, 1000);
+                        }, 400);
                         divConUXMed[rondelUXAktiv].animate([
                             { transform: "translate3D(-400px, 0, 0)" },
                             { transform: "translate3D(0px, 0, 0)" }
-                        ], { duration: 1000 });
+                        ], { duration: 500 });
                         divConUXMed[rondelUXAktiv].className = "rondelAngezeigt";
+                        butLinksUX.className = "klickbar";
+                        if (rondelUXAktiv == 1)
+                            butRechtsUX.className = "nichtKlickbar";
                     }
                     else if (rondelUXAktiv == 1) {
                         divConUXText[rondelUXAktiv].className = "rondelAngezeigt";
@@ -467,15 +563,18 @@ var mediaObjektePortfolio;
                         divConAudMed[rondelAudAktiv - 1].animate([
                             { transform: "translate3D(0, 0, 0)" },
                             { transform: "translate3D(-400px, 0, 0)" }
-                        ], { duration: 1000 });
+                        ], { duration: 500 });
                         setTimeout(function () {
                             divConAudMed[rondelAudAktiv - 1].className = "rondelNichtAngezeigt";
-                        }, 1000);
+                        }, 400);
                         divConAudMed[rondelAudAktiv].animate([
                             { transform: "translate3D(400px, 0, 0)" },
                             { transform: "translate3D(0px, 0, 0)" }
-                        ], { duration: 1000 });
+                        ], { duration: 500 });
                         divConAudMed[rondelAudAktiv].className = "rondelAngezeigt";
+                        butRechtsAud.className = "klickbar";
+                        if (rondelAudAktiv == divConAudMed.length - 1)
+                            butLinksAud.className = "nichtKlickbar";
                     }
                 }
                 else {
@@ -486,15 +585,18 @@ var mediaObjektePortfolio;
                         divConAudMed[rondelAudAktiv + 1].animate([
                             { transform: "translate3D(0, 0, 0)" },
                             { transform: "translate3D(400px, 0, 0)" }
-                        ], { duration: 1000 });
+                        ], { duration: 500 });
                         setTimeout(function () {
                             divConAudMed[rondelAudAktiv + 1].className = "rondelNichtAngezeigt";
-                        }, 1000);
+                        }, 400);
                         divConAudMed[rondelAudAktiv].animate([
                             { transform: "translate3D(-400px, 0, 0)" },
                             { transform: "translate3D(0px, 0, 0)" }
-                        ], { duration: 1000 });
+                        ], { duration: 500 });
                         divConAudMed[rondelAudAktiv].className = "rondelAngezeigt";
+                        butLinksAud.className = "klickbar";
+                        if (rondelAudAktiv == 1)
+                            butRechtsAud.className = "nichtKlickbar";
                     }
                     else if (rondelAudAktiv == 1) {
                         divConAudText[rondelAudAktiv].className = "rondelAngezeigt";
@@ -511,15 +613,18 @@ var mediaObjektePortfolio;
                         divConZertMed[rondelZertAktiv - 1].animate([
                             { transform: "translate3D(0, 0, 0)" },
                             { transform: "translate3D(-400px, 0, 0)" }
-                        ], { duration: 1000 });
+                        ], { duration: 500 });
                         setTimeout(function () {
                             divConZertMed[rondelZertAktiv - 1].className = "rondelNichtAngezeigt";
-                        }, 1000);
+                        }, 400);
                         divConZertMed[rondelZertAktiv].animate([
                             { transform: "translate3D(400px, 0, 0)" },
                             { transform: "translate3D(0px, 0, 0)" }
-                        ], { duration: 1000 });
+                        ], { duration: 500 });
                         divConZertMed[rondelZertAktiv].className = "rondelAngezeigt";
+                        butRechtsZert.className = "klickbar";
+                        if (rondelZertAktiv == divConZertMed.length - 1)
+                            butLinksZert.className = "nichtKlickbar";
                     }
                 }
                 else {
@@ -530,15 +635,18 @@ var mediaObjektePortfolio;
                         divConZertMed[rondelZertAktiv + 1].animate([
                             { transform: "translate3D(0, 0, 0)" },
                             { transform: "translate3D(400px, 0, 0)" }
-                        ], { duration: 1000 });
+                        ], { duration: 500 });
                         setTimeout(function () {
                             divConZertMed[rondelZertAktiv + 1].className = "rondelNichtAngezeigt";
-                        }, 1000);
-                        divConAudMed[rondelAudAktiv].animate([
+                        }, 400);
+                        divConZertMed[rondelZertAktiv].animate([
                             { transform: "translate3D(-400px, 0, 0)" },
                             { transform: "translate3D(0px, 0, 0)" }
-                        ], { duration: 1000 });
+                        ], { duration: 500 });
                         divConZertMed[rondelZertAktiv].className = "rondelAngezeigt";
+                        butLinksZert.className = "klickbar";
+                        if (rondelZertAktiv == 1)
+                            butRechtsZert.className = "nichtKlickbar";
                     }
                     else if (rondelZertAktiv == 1) {
                         divConZertText[rondelZertAktiv].className = "rondelAngezeigt";
