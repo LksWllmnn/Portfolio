@@ -20,60 +20,120 @@ var mediaObjektePortfolio;
         butLinksProg.addEventListener("click", hndl_links_Prog);
         butLinksProg.className = "klickbar";
     }
+    let butLinksProgSmall = document.getElementById("butLinksProgSmall");
+    if (butLinksProgSmall) {
+        butLinksProgSmall.addEventListener("click", hndl_links_ProgSmall);
+        butLinksProgSmall.className = "klickbar";
+    }
     let butRechtsProg = document.getElementById("butRechtsProg");
     if (butRechtsProg) {
         butRechtsProg.addEventListener("click", hndl_rechts_Prog);
         butRechtsProg.className = "nichtKlickbar";
+    }
+    let butRechtsProgSmall = document.getElementById("butRechtsProgSmall");
+    if (butRechtsProgSmall) {
+        butRechtsProgSmall.addEventListener("click", hndl_rechts_ProgSmall);
+        butRechtsProgSmall.className = "nichtKlickbar";
     }
     let butLinksCGI = document.getElementById("butLinksCGI");
     if (butLinksCGI) {
         butLinksCGI.addEventListener("click", hndl_links_CGI);
         butLinksCGI.className = "klickbar";
     }
+    let butLinksCGISmall = document.getElementById("butLinksCGISmall");
+    if (butLinksCGISmall) {
+        butLinksCGISmall.addEventListener("click", hndl_links_CGISmall);
+        butLinksCGISmall.className = "klickbar";
+    }
     let butRechtsCGI = document.getElementById("butRechtsCGI");
     if (butRechtsCGI) {
         butRechtsCGI.addEventListener("click", hndl_rechts_CGI);
         butRechtsCGI.className = "nichtKlickbar";
+    }
+    let butRechtsCGISmall = document.getElementById("butRechtsCGISmall");
+    if (butRechtsCGISmall) {
+        butRechtsCGISmall.addEventListener("click", hndl_rechts_CGISmall);
+        butRechtsCGISmall.className = "nichtKlickbar";
     }
     let butLinksPic = document.getElementById("butLinksPic");
     if (butLinksPic) {
         butLinksPic.addEventListener("click", hndl_links_Pic);
         butLinksPic.className = "klickbar";
     }
+    let butLinksPicSmall = document.getElementById("butLinksPicSmall");
+    if (butLinksPicSmall) {
+        butLinksPicSmall.addEventListener("click", hndl_links_PicSmall);
+        butLinksPicSmall.className = "klickbar";
+    }
     let butRechtsPic = document.getElementById("butRechtsPic");
     if (butRechtsPic) {
         butRechtsPic.addEventListener("click", hndl_rechts_Pic);
         butRechtsPic.className = "nichtKlickbar";
+    }
+    let butRechtsPicSmall = document.getElementById("butRechtsPicSmall");
+    if (butRechtsPicSmall) {
+        butRechtsPicSmall.addEventListener("click", hndl_rechts_PicSmall);
+        butRechtsPicSmall.className = "nichtKlickbar";
     }
     let butLinksUX = document.getElementById("butLinksUX");
     if (butLinksUX) {
         butLinksUX.addEventListener("click", hndl_links_UX);
         butLinksUX.className = "klickbar";
     }
+    let butLinksUXSmall = document.getElementById("butLinksUXSmall");
+    if (butLinksUXSmall) {
+        butLinksUXSmall.addEventListener("click", hndl_links_UXSmall);
+        butLinksUXSmall.className = "klickbar";
+    }
     let butRechtsUX = document.getElementById("butRechtsUX");
     if (butRechtsUX) {
         butRechtsUX.addEventListener("click", hndl_rechts_UX);
         butRechtsUX.className = "nichtKlickbar";
+    }
+    let butRechtsUXSmall = document.getElementById("butRechtsUXSmall");
+    if (butRechtsUXSmall) {
+        butRechtsUXSmall.addEventListener("click", hndl_rechts_UXSmall);
+        butRechtsUXSmall.className = "nichtKlickbar";
     }
     let butLinksAud = document.getElementById("butLinksAud");
     if (butLinksAud) {
         butLinksAud.addEventListener("click", hndl_links_Aud);
         butLinksAud.className = "klickbar";
     }
+    let butLinksAudSmall = document.getElementById("butLinksAudSmall");
+    if (butLinksAudSmall) {
+        butLinksAudSmall.addEventListener("click", hndl_links_AudSmall);
+        butLinksAudSmall.className = "klickbar";
+    }
     let butRechtsAud = document.getElementById("butRechtsAud");
     if (butRechtsAud) {
         butRechtsAud.addEventListener("click", hndl_rechts_Aud);
         butRechtsAud.className = "nichtKlickbar";
+    }
+    let butRechtsAudSmall = document.getElementById("butRechtsAudSmall");
+    if (butRechtsAudSmall) {
+        butRechtsAudSmall.addEventListener("click", hndl_rechts_AudSmall);
+        butRechtsAudSmall.className = "nichtKlickbar";
     }
     let butLinksZert = document.getElementById("butLinksZert");
     if (butLinksZert) {
         butLinksZert.addEventListener("click", hndl_links_Zert);
         butLinksZert.className = "klickbar";
     }
+    let butLinksZertSmall = document.getElementById("butLinksZertSmall");
+    if (butLinksZertSmall) {
+        butLinksZertSmall.addEventListener("click", hndl_links_ZertSmall);
+        butLinksZertSmall.className = "klickbar";
+    }
     let butRechtsZert = document.getElementById("butRechtsZert");
     if (butRechtsZert) {
         butRechtsZert.addEventListener("click", hndl_rechts_Zert);
         butRechtsZert.className = "nichtKlickbar";
+    }
+    let butRechtsZertSmall = document.getElementById("butRechtsZertSmall");
+    if (butRechtsZertSmall) {
+        butRechtsZertSmall.addEventListener("click", hndl_rechts_ZertSmall);
+        butRechtsZertSmall.className = "nichtKlickbar";
     }
     let rondelProgAktiv = 1;
     let rondelCGIAktiv = 1;
@@ -175,11 +235,25 @@ var mediaObjektePortfolio;
             butLinksProg.addEventListener("click", hndl_links_Prog);
         }, 400);
     }
+    function hndl_links_ProgSmall() {
+        wechsel("Prog", "+1");
+        butLinksProgSmall.removeEventListener("click", hndl_links_ProgSmall);
+        setTimeout(function () {
+            butLinksProgSmall.addEventListener("click", hndl_links_ProgSmall);
+        }, 400);
+    }
     function hndl_rechts_Prog() {
         wechsel("Prog", "-1");
         butRechtsProg.removeEventListener("click", hndl_rechts_Prog);
         setTimeout(function () {
             butRechtsProg.addEventListener("click", hndl_rechts_Prog);
+        }, 400);
+    }
+    function hndl_rechts_ProgSmall() {
+        wechsel("Prog", "-1");
+        butRechtsProgSmall.removeEventListener("click", hndl_rechts_ProgSmall);
+        setTimeout(function () {
+            butRechtsProgSmall.addEventListener("click", hndl_rechts_ProgSmall);
         }, 400);
     }
     function hndl_links_CGI() {
@@ -189,11 +263,25 @@ var mediaObjektePortfolio;
             butLinksCGI.addEventListener("click", hndl_links_CGI);
         }, 400);
     }
+    function hndl_links_CGISmall() {
+        wechsel("CGI", "+1");
+        butLinksCGISmall.removeEventListener("click", hndl_links_CGISmall);
+        setTimeout(function () {
+            butLinksCGISmall.addEventListener("click", hndl_links_CGISmall);
+        }, 400);
+    }
     function hndl_rechts_CGI() {
         wechsel("CGI", "-1");
         butRechtsCGI.removeEventListener("click", hndl_rechts_CGI);
         setTimeout(function () {
             butRechtsCGI.addEventListener("click", hndl_rechts_CGI);
+        }, 400);
+    }
+    function hndl_rechts_CGISmall() {
+        wechsel("CGI", "-1");
+        butRechtsCGISmall.removeEventListener("click", hndl_rechts_CGISmall);
+        setTimeout(function () {
+            butRechtsCGISmall.addEventListener("click", hndl_rechts_CGISmall);
         }, 400);
     }
     function hndl_links_Pic() {
@@ -203,11 +291,25 @@ var mediaObjektePortfolio;
             butLinksPic.addEventListener("click", hndl_links_Pic);
         }, 400);
     }
+    function hndl_links_PicSmall() {
+        wechsel("Pic", "+1");
+        butLinksPicSmall.removeEventListener("click", hndl_links_PicSmall);
+        setTimeout(function () {
+            butLinksPicSmall.addEventListener("click", hndl_links_PicSmall);
+        }, 400);
+    }
     function hndl_rechts_Pic() {
         wechsel("Pic", "-1");
         butRechtsPic.removeEventListener("click", hndl_rechts_Pic);
         setTimeout(function () {
             butRechtsPic.addEventListener("click", hndl_rechts_Pic);
+        }, 400);
+    }
+    function hndl_rechts_PicSmall() {
+        wechsel("Pic", "-1");
+        butRechtsPicSmall.removeEventListener("click", hndl_rechts_PicSmall);
+        setTimeout(function () {
+            butRechtsPicSmall.addEventListener("click", hndl_rechts_PicSmall);
         }, 400);
     }
     function hndl_links_UX() {
@@ -217,11 +319,25 @@ var mediaObjektePortfolio;
             butLinksUX.addEventListener("click", hndl_links_UX);
         }, 400);
     }
+    function hndl_links_UXSmall() {
+        wechsel("UX", "+1");
+        butLinksUXSmall.removeEventListener("click", hndl_links_UXSmall);
+        setTimeout(function () {
+            butLinksUXSmall.addEventListener("click", hndl_links_UXSmall);
+        }, 400);
+    }
     function hndl_rechts_UX() {
         wechsel("UX", "-1");
         butRechtsUX.removeEventListener("click", hndl_rechts_UX);
         setTimeout(function () {
             butRechtsUX.addEventListener("click", hndl_rechts_UX);
+        }, 400);
+    }
+    function hndl_rechts_UXSmall() {
+        wechsel("UX", "-1");
+        butRechtsUXSmall.removeEventListener("click", hndl_rechts_UXSmall);
+        setTimeout(function () {
+            butRechtsUXSmall.addEventListener("click", hndl_rechts_UXSmall);
         }, 400);
     }
     function hndl_links_Aud() {
@@ -231,11 +347,25 @@ var mediaObjektePortfolio;
             butLinksAud.addEventListener("click", hndl_links_Aud);
         }, 400);
     }
+    function hndl_links_AudSmall() {
+        wechsel("Aud", "+1");
+        butLinksAudSmall.removeEventListener("click", hndl_links_AudSmall);
+        setTimeout(function () {
+            butLinksAudSmall.addEventListener("click", hndl_links_AudSmall);
+        }, 400);
+    }
     function hndl_rechts_Aud() {
         wechsel("Aud", "-1");
         butRechtsAud.removeEventListener("click", hndl_rechts_Aud);
         setTimeout(function () {
             butRechtsAud.addEventListener("click", hndl_rechts_Aud);
+        }, 400);
+    }
+    function hndl_rechts_AudSmall() {
+        wechsel("Aud", "-1");
+        butRechtsAudSmall.removeEventListener("click", hndl_rechts_AudSmall);
+        setTimeout(function () {
+            butRechtsAudSmall.addEventListener("click", hndl_rechts_AudSmall);
         }, 400);
     }
     function hndl_links_Zert() {
@@ -245,11 +375,25 @@ var mediaObjektePortfolio;
             butLinksZert.addEventListener("click", hndl_links_Zert);
         }, 400);
     }
+    function hndl_links_ZertSmall() {
+        wechsel("Zert", "+1");
+        butLinksZertSmall.removeEventListener("click", hndl_links_ZertSmall);
+        setTimeout(function () {
+            butLinksZertSmall.addEventListener("click", hndl_links_ZertSmall);
+        }, 400);
+    }
     function hndl_rechts_Zert() {
         wechsel("Zert", "-1");
         butRechtsZert.removeEventListener("click", hndl_rechts_Zert);
         setTimeout(function () {
             butRechtsZert.addEventListener("click", hndl_rechts_Zert);
+        }, 400);
+    }
+    function hndl_rechts_ZertSmall() {
+        wechsel("Zert", "-1");
+        butRechtsZertSmall.removeEventListener("click", hndl_rechts_ZertSmall);
+        setTimeout(function () {
+            butRechtsZertSmall.addEventListener("click", hndl_rechts_ZertSmall);
         }, 400);
     }
     function show(_section, _order) {
@@ -361,8 +505,11 @@ var mediaObjektePortfolio;
                             { transform: "translate3D(0px, 0, 0)" }
                         ], { duration: 500 });
                         butRechtsProg.className = "klickbar";
-                        if (rondelProgAktiv == divConProgMed.length - 1)
+                        butRechtsProgSmall.className = "klickbar";
+                        if (rondelProgAktiv == divConProgMed.length - 1) {
                             butLinksProg.className = "nichtKlickbar";
+                            butLinksProgSmall.className = "nichtKlickbar";
+                        }
                     }
                 }
                 else {
@@ -395,8 +542,11 @@ var mediaObjektePortfolio;
                         ], { duration: 500 });
                         divConProgMed[rondelProgAktiv].className = "rondelAngezeigt";
                         butLinksProg.className = "klickbar";
-                        if (rondelProgAktiv == 1)
+                        butLinksProgSmall.className = "klickbar";
+                        if (rondelProgAktiv == 1) {
                             butRechtsProg.className = "nichtKlickbar";
+                            butRechtsProgSmall.className = "nichtKlickbar";
+                        }
                     }
                     else if (rondelProgAktiv == 1) {
                         divConProgText[rondelProgAktiv].className = "rondelAngezeigt";
@@ -423,8 +573,11 @@ var mediaObjektePortfolio;
                             { transform: "translate3D(0px, 0, 0)" }
                         ], { duration: 500 });
                         butRechtsCGI.className = "klickbar";
-                        if (rondelCGIAktiv == divConCGIMed.length - 1)
+                        butRechtsCGISmall.className = "klickbar";
+                        if (rondelCGIAktiv == divConCGIMed.length - 1) {
                             butLinksCGI.className = "nichtKlickbar";
+                            butLinksCGISmall.className = "nichtKlickbar";
+                        }
                     }
                 }
                 else {
@@ -450,8 +603,11 @@ var mediaObjektePortfolio;
                         divConCGIMed[rondelCGIAktiv].className = "rondelAngezeigt";
                     }
                     butLinksCGI.className = "klickbar";
-                    if (rondelCGIAktiv == 1)
+                    butLinksCGISmall.className = "klickbar";
+                    if (rondelCGIAktiv == 1) {
                         butRechtsCGI.className = "nichtKlickbar";
+                        butRechtsCGISmall.className = "nichtKlickbar";
+                    }
                 }
                 break;
             case "Pic":
@@ -473,8 +629,11 @@ var mediaObjektePortfolio;
                         ], { duration: 500 });
                         divConPicMed[rondelPicAktiv].className = "rondelAngezeigt";
                         butRechtsPic.className = "klickbar";
-                        if (rondelPicAktiv == divConPicMed.length - 1)
+                        butRechtsPicSmall.className = "klickbar";
+                        if (rondelPicAktiv == divConPicMed.length - 1) {
                             butLinksPic.className = "nichtKlickbar";
+                            butLinksPicSmall.className = "nichtKlickbar";
+                        }
                     }
                 }
                 else {
@@ -495,8 +654,11 @@ var mediaObjektePortfolio;
                         ], { duration: 500 });
                         divConPicMed[rondelPicAktiv].className = "rondelAngezeigt";
                         butLinksPic.className = "klickbar";
-                        if (rondelPicAktiv == 1)
+                        butLinksPicSmall.className = "klickbar";
+                        if (rondelPicAktiv == 1) {
                             butRechtsPic.className = "nichtKlickbar";
+                            butRechtsPicSmall.className = "nichtKlickbar";
+                        }
                     }
                     else if (rondelPicAktiv == 1) {
                         divConPicText[rondelPicAktiv].className = "rondelAngezeigt";
@@ -523,8 +685,11 @@ var mediaObjektePortfolio;
                         ], { duration: 500 });
                         divConUXMed[rondelUXAktiv].className = "rondelAngezeigt";
                         butRechtsUX.className = "klickbar";
-                        if (rondelUXAktiv == divConUXMed.length - 1)
+                        butRechtsUXSmall.className = "klickbar";
+                        if (rondelUXAktiv == divConUXMed.length - 1) {
                             butLinksUX.className = "nichtKlickbar";
+                            butLinksUXSmall.className = "nichtKlickbar";
+                        }
                     }
                 }
                 else {
@@ -545,8 +710,11 @@ var mediaObjektePortfolio;
                         ], { duration: 500 });
                         divConUXMed[rondelUXAktiv].className = "rondelAngezeigt";
                         butLinksUX.className = "klickbar";
-                        if (rondelUXAktiv == 1)
+                        butLinksUXSmall.className = "klickbar";
+                        if (rondelUXAktiv == 1) {
                             butRechtsUX.className = "nichtKlickbar";
+                            butRechtsUXSmall.className = "nichtKlickbar";
+                        }
                     }
                     else if (rondelUXAktiv == 1) {
                         divConUXText[rondelUXAktiv].className = "rondelAngezeigt";
@@ -573,8 +741,11 @@ var mediaObjektePortfolio;
                         ], { duration: 500 });
                         divConAudMed[rondelAudAktiv].className = "rondelAngezeigt";
                         butRechtsAud.className = "klickbar";
-                        if (rondelAudAktiv == divConAudMed.length - 1)
+                        butRechtsAudSmall.className = "klickbar";
+                        if (rondelAudAktiv == divConAudMed.length - 1) {
                             butLinksAud.className = "nichtKlickbar";
+                            butLinksAudSmall.className = "nichtKlickbar";
+                        }
                     }
                 }
                 else {
@@ -595,8 +766,11 @@ var mediaObjektePortfolio;
                         ], { duration: 500 });
                         divConAudMed[rondelAudAktiv].className = "rondelAngezeigt";
                         butLinksAud.className = "klickbar";
-                        if (rondelAudAktiv == 1)
+                        butLinksAudSmall.className = "klickbar";
+                        if (rondelAudAktiv == 1) {
                             butRechtsAud.className = "nichtKlickbar";
+                            butRechtsAudSmall.className = "nichtKlickbar";
+                        }
                     }
                     else if (rondelAudAktiv == 1) {
                         divConAudText[rondelAudAktiv].className = "rondelAngezeigt";
@@ -623,8 +797,11 @@ var mediaObjektePortfolio;
                         ], { duration: 500 });
                         divConZertMed[rondelZertAktiv].className = "rondelAngezeigt";
                         butRechtsZert.className = "klickbar";
-                        if (rondelZertAktiv == divConZertMed.length - 1)
+                        butRechtsZertSmall.className = "klickbar";
+                        if (rondelZertAktiv == divConZertMed.length - 1) {
                             butLinksZert.className = "nichtKlickbar";
+                            butLinksZertSmall.className = "nichtKlickbar";
+                        }
                     }
                 }
                 else {
@@ -645,8 +822,11 @@ var mediaObjektePortfolio;
                         ], { duration: 500 });
                         divConZertMed[rondelZertAktiv].className = "rondelAngezeigt";
                         butLinksZert.className = "klickbar";
-                        if (rondelZertAktiv == 1)
+                        butLinksZertSmall.className = "klickbar";
+                        if (rondelZertAktiv == 1) {
                             butRechtsZert.className = "nichtKlickbar";
+                            butRechtsZertSmall.className = "nichtKlickbar";
+                        }
                     }
                     else if (rondelZertAktiv == 1) {
                         divConZertText[rondelZertAktiv].className = "rondelAngezeigt";

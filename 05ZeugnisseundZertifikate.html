@@ -9,6 +9,7 @@
     <script src="script.js" defer></script>
     <script src="mediaObjekte.js"></script>
     <script src="rondel.js" defer></script>
+    <script src="burger.js" defer></script>
     <title>LW | Zeugnisse und Zertifikate</title>
 </head>
 <body>
@@ -26,6 +27,17 @@
             <div class="navElement"><div><a href="04Arbeitsbeispiele.html">Arbeitsbeispiele</a></div></div>
             <div class="navElement"><div><a class="active" href="#">Zeugnisse und Zertifikate</a></div></div>
             <div class="burger"><img class="bugerbild" src="00Design/Logos/burger.png"></div>
+        </div>
+
+        <div class="" id="burger5">
+            <div class="navElementburger"><div><a href="01Startseite.html">Startseite</a></div></div>
+            <div class="navElementburger"><div><a href="02ueberMich.html">Über Mich</a></div></div>
+            <div class="navElementburger"><div><a href="03Lebenslauf.html">Lebenslauf</a></div></div>
+            <div class="navElementburger"><div><a href="04Arbeitsbeispiele.html">Arbeitsbespiele</a></div></div>
+            <div class="navElementburger"><div><a class="active" href="#">Zeugnisse und Zertifikate</a></div></div>
+            <div class="burgeropener" id="burgerClick5">
+                <img class="bugerbild" src="00Design/Logos/burger.png">
+            </div>
         </div>
 
         <div id="seitenNav5" class="geschlossen"></div>
@@ -194,10 +206,14 @@
         <div class="grid-item oben notnessesary"></div>
         <div class="grid-item rondel" >
             <div id="rondelZert" class="rondel-grid-container">
-                <div class="rondel-grid-item"><button id="butLinksZert"><img src="00Design/Logos/pfeilnachoben_schwarz.png"></button></div>
+                <div class="rondel-grid-item button-big"><button id="butLinksZert"><img src="00Design/Logos/pfeilnachoben_schwarz.png"></button></div>
                 <div class="rondel-grid-item" id="textWindowZert"></div>
                 <div class="rondel-grid-item" id="mediatWindowZert"></div>
-                <div class="rondel-grid-item"><button id="butRechtsZert"><img src="00Design/Logos/pfeilnachunten_schwarz.png"></button></div>
+                <div class="rondel-grid-item button-big"><button id="butRechtsZert"><img src="00Design/Logos/pfeilnachunten_schwarz.png"></button></div>
+                <div class="rondel-grid-item button-small">
+                    <button id="butLinksZertSmall"><img src="00Design/Logos/pfeilnachoben_schwarz.png"></button>
+                    <button id="butRechtsZertSmall"><img src="00Design/Logos/pfeilnachunten_schwarz.png"></button>
+                </div>
             </div>
         </div>
         <div class="grid-item unten notnessesary"></div>

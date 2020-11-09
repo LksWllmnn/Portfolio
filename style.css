@@ -81,8 +81,18 @@ h1,h2,h3{
     justify-content: center;
     background-color: rgba(15, 15, 15, 0.651);
 }
-.buger{
+
+.navElementburger{
+    text-align: center;
+    width: 100%;
+}
+.burger{
     display: none;
+    position: fixed;
+    background-color: rgba(51, 51, 51, 0);
+    text-align: center;
+    z-index: 1;
+    top: 0px;
 }
 
 .bugerbild{
@@ -240,7 +250,7 @@ Rondel
     /*border: 1px solid red;*/
     justify-content: center;
     align-items: center;
-    height: calc(99vh*0.5);
+    
     overflow-y: auto;
     overflow-x: hidden;
     display: flex;
@@ -262,13 +272,13 @@ Rondel
 }
 
 .rondelElementBild{
-max-width: 100%;
-max-height: 280px;
+max-width: 90%;
+/*max-height: 280px;*/
 }
 
 .rondelElementVideo{
     max-width: 100%;
-    max-height: 280px;
+    /*max-height: 280px;*/
     }
 
 .rondelAngezeigt{
@@ -279,6 +289,8 @@ max-height: 280px;
 .rondelAngezeigt p{
     display: block;
     position: relative;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 .klickbar{
     cursor: pointer;
@@ -333,6 +345,9 @@ max-height: 280px;
     height: 100%;
 }
 
+.button-small{
+    display: none;
+}
 /*//////////////////////////////////////////////////////////////////////////////////////*/
 /*kleine nav*/
 /*//////////////////////////////////////////////////////////////////////////////////////*/
@@ -408,6 +423,11 @@ max-height: 280px;
 /*//////////////////////////////////////////////////////////////////////////////////////*/
 /*Responsive*/
 /*//////////////////////////////////////////////////////////////////////////////////////*/
+@media (min-width:1000px){
+    .grid-rondel-item{
+        height: calc(99vh*0.5);
+    }
+}
 
 @media (max-width:1000px){
     h1{
@@ -456,10 +476,33 @@ max-height: 280px;
         font-size: 100%;
     }
 
+    .grid-item.impkondatw a{
+        font-size: 100%;
+    }
+
     .notnessesary{
         display: none;
     }
     
+    .rondel-grid-container{
+        grid-template-columns: auto ;
+        grid-template-rows: auto auto auto;
+        /*width: 80%;*/
+    }
+
+    .rondelElementText{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .button-big{
+        display:none;
+    }
+
+    .button-small{
+        display:block;
+        margin-bottom: 30px;
+    }
 }
 
 @media (max-width:768px){
@@ -487,14 +530,49 @@ max-height: 280px;
         display: none;
     }
 
-    .buger{
+    .burger{
         display: block;
-        width: 10px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(15, 15, 15, 0.808);
+        height: 250px;
+        top:-210px;
     }
 
+    .burger a{
+        color: #DDFFF7;
+    }
+
+    .burger a:hover{
+        color: rgb(51, 0, 51);
+    }
+
+    .burger a.active{
+        color: #BF1A2F;
+    }
+
+    .burger.show{
+        top:0px;
+    }
+
+    /*.burgeropener{
+        background-color: rgba(15, 15, 15, 0.842);
+    }*/
     .bugerbild{
         display: block;
         width: 30px;
+    }
+    .navElementburger{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        
+    }
+
+    .navElementburger a{
+        font-size: 20px;
+        text-decoration: none;
     }
 
     .nav{
@@ -539,5 +617,38 @@ max-height: 280px;
 
     .sectionLila, .sectionWeiß{
         margin-top: 200px;
+    }
+}
+
+@media (min-width:1920px){
+    .textWeiß, .textLila, .rondelElementText {
+        font-size: 30px;
+    }
+
+    .rondelElementText{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .sprungmarke{
+        width:100px;
+    }
+
+    h1{
+        font-size: 100px;
+    }
+
+    h2{
+        text-align: left;
+        padding-left: 10%;
+        font-size: 80px;
+    }
+
+    .rondelElementBild{
+        max-height: 1000px;
+    }
+
+    .rondelElementVideo{
+        max-height: 1000px;
     }
 }
