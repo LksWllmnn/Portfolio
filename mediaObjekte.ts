@@ -87,31 +87,31 @@ namespace mediaObjektePortfolio {
         { seite: "ZeugnisseundZertifikate", kapitel: "rondelAud", mediapfad: "04Zertifikate/ZertifikatHTML.jpg", typ: "audio", 
         text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."},*/
         
-        { seite: "ZeugnisseundZertifikate", kapitel: "rondelZert", mediapfad: "04Zertifikate/ZertifikatHTML.jpg", typ: "bild", 
+        { seite: "ZeugnisseundZertifikate", kapitel: "rondelZert", mediapfad: "04Zertifikate/HTML.PNG", typ: "bild", 
         text: "In dem 5std. LinkedIn Learning Vortrag gieng es um grundsätzliche html-Tags, html-Meta-Tags etc. ."},
         
-        { seite: "ZeugnisseundZertifikate", kapitel: "rondelZert", mediapfad: "04Zertifikate/IhrWegZumProgrammierer.jpg", typ: "bild", 
+        { seite: "ZeugnisseundZertifikate", kapitel: "rondelZert", mediapfad: "04Zertifikate/Programm.PNG", typ: "bild", 
         text: "Dieses Zertifikat beschreibt einen Lernweg über mehrere LinkedIn Kurse. Darin wurden unteranderem Objekt orientiertes Entwickeln, die Grundlage von Programmierverständnissen wie Schleifen und Bedinungen sowie aber auch rechtliche Aspekte im Bereich Programmierung besprochen."},
         
-        { seite: "ZeugnisseundZertifikate", kapitel: "rondelZert", mediapfad: "04Zertifikate/SelbstOrga.jpg", typ: "bild", 
+        { seite: "ZeugnisseundZertifikate", kapitel: "rondelZert", mediapfad: "04Zertifikate/Selbstorga.PNG", typ: "bild", 
         text: "Dieses Zertifikat beschreibt einen Lernweg über mehrere LinkedIn Kurse. Es gieng um Selbstorganisation, Zeitmanagement mit dem Eisenhower Diagram und andere nützliche Tipps für das Arbeiten und Selbstorganisation."},
         
-        { seite: "ZeugnisseundZertifikate", kapitel: "rondelZert", mediapfad: "04Zertifikate/AnimationFoundation.jpg", typ: "bild", 
+        { seite: "ZeugnisseundZertifikate", kapitel: "rondelZert", mediapfad: "04Zertifikate/Animation.PNG", typ: "bild", 
         text: "In diesem Kurs gieng es um die Grundlagen, wie animierte Körper realistisch wirken und wie Bewegungen unser Verständnis zu dem Material eines sich bewegenden Körpers ist."},
         
-        { seite: "ZeugnisseundZertifikate", kapitel: "rondelZert", mediapfad: "04Zertifikate/GrundlagenGestaltung.jpg", typ: "bild", 
+        { seite: "ZeugnisseundZertifikate", kapitel: "rondelZert", mediapfad: "04Zertifikate/GrundlagenGest.PNG", typ: "bild", 
         text: "Der Dozent zu dem HFU Modul Grundlagen der Gestaltung, Herr Fries, hat einen LinkedIn Kurs erstellt um darin nochmal die Grundlagen des Moduls in Videoform festzuhalten. Diesen habe ich neben zur Selbstübung und vorbereitung auf die Prüfung ebenfalls absolviert."},
         
-        { seite: "ZeugnisseundZertifikate", kapitel: "rondelZert", mediapfad: "04Zertifikate/RStudio.jpg", typ: "bild", 
+        { seite: "ZeugnisseundZertifikate", kapitel: "rondelZert", mediapfad: "04Zertifikate/R.PNG", typ: "bild", 
         text: "Da Statistik durchaus ein interessantes Feld ist und sehr nah mit Data Science verbunden ist, habe ich mich durch den Kurs mit der Sprache R und der Entwicklungsumgebung RStudio einmal vertraut gemacht aber bisher noch nicht vertieft."},
 
-        { seite: "ZeugnisseundZertifikate", kapitel: "rondelZert", mediapfad: "04Zertifikate/GoogleAnalytics.jpg", typ: "bild", 
+        { seite: "ZeugnisseundZertifikate", kapitel: "rondelZert", mediapfad: "04Zertifikate/GooglAnalytics.PNG", typ: "bild", 
         text: "Bereits wärend meiner Zeit in der Ausbildung habe ich mich schon mit der Analyse von Websites auseinander gesetzt, und wie man messbare Zahlen mit einem TKP (Tausender Kontakt Preis) in Verbindung bringt. Mit dem Zertifikat konnte ich einen Einblick in die Funktionsweise von Google Analytics gewinnen, jedoch habe in noch keine allzu große praktische Erfahrung mit dem Programm."},
 
-        { seite: "ZeugnisseundZertifikate", kapitel: "rondelZert", mediapfad: "04Zertifikate/GoogleAnalytics.jpg", typ: "bild", 
+        { seite: "ZeugnisseundZertifikate", kapitel: "rondelZert", mediapfad: "04Zertifikate/GrundOnlMark.PNG", typ: "bild", 
         text: "In der Google Zukunftswerkstatt gibt es einen längeren Kors über online Marketing von online Firmenverzeichnisse über SEO und SEA bis zu Video-Marketing. Außer SEO Einstellungen in Wordpress und Metatags in dieser Seite konnte ich dieses Wissen bisher noch nicht groß einbringen."},
 
-        { seite: "ZeugnisseundZertifikate", kapitel: "rondelZert", mediapfad: "04Zertifikate/KmK.jpg", typ: "bild", 
+        { seite: "ZeugnisseundZertifikate", kapitel: "rondelZert", mediapfad: "04Zertifikate/KmK.PNG", typ: "bild", 
         text: "In der Berufsschule gab es die Möglichkeit einen Sprachtest zu absolvieren. Dieser entspricht zwar nur dem Sprachniveau B2 (das Abitur C1) aber trotzdem war ich daran interessiert meine Sprachkenntnisse nocheinmal zu testen."}
     ];
 }
