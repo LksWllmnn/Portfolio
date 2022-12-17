@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/style.css">
+
+    <link rel="icon" type="image/x-icon" href="./source/media/pictures/Initialien5.png">
+</head>
+<body>
+    
+    <!--NAvBar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <!--<a class="navbar-brand" href="#">Navigation</a>-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                      <a class="nav-link active" href="#">Projects</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="./aboutme.html">About Me</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#contact">Contact</a>
+                  </li>
+              </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="headline">
+        <div class="jumbotron container">
+            <div class="row d-flex align-items-center headline-row">
+                <div class="col">
+                    <h1>Projects</h1>
+                    <p>Web-Development, Gamification and Games</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container text-center filter">
+        <div class="row align-items-center" style="min-height: 5em">
+            <ul>
+                <li>
+                    <div class="btn btn-dark filterbutton">All</div>
+                </li>
+                <li>
+                    <div class=" btn btn-dark filterbutton">TypeScript/JavaScript</div>
+                </li>
+                <li>
+                    <div class=" btn btn-dark filterbutton">C#</div>
+                </li>
+                <li>
+                    <div class=" btn btn-dark filterbutton">PHP</div>
+                </li>
+                <li>
+                    <div class=" btn btn-dark filterbutton">NodeJS</div>
+                </li>
+                <li>
+                    <div class=" btn btn-dark filterbutton">HLSL</div>
+                </li>
+                <li>
+                    <div class=" btn btn-dark filterbutton">Unity</div>
+                </li>
+                <li>
+                    <div class=" btn btn-dark filterbutton">krPano</div>
+                </li>
+                <li>
+                    <div class=" btn btn-dark filterbutton">RoomDB</div>
+                </li>
+                <li>
+                    <div class=" btn btn-dark filterbutton">Wordpress</div>
+                </li>
+                <li>
+                    <div class=" btn btn-dark filterbutton">AFrame</div>
+                </li>
+                <li>
+                    <div class=" btn btn-dark filterbutton">NodeJS</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    
+    
+    <div class="section">
+
+        <div class="container article all margin1 unity c# hlsl">
+            <div class="row">
+                <div class="col-sm-3"><img class="clickableImg" src="./source/media/pictures/RR-BA.png" alt="Bachelorthesis - Remote Rendering"></div>
+                <div class="col-sm-9 padding1">
+                    <h2>Bachelorthesis - Remote Rendering</h2>
+                    <p>Since the beginning of September 2022 I am working on a remote rendering component in Unity for the application MARBLE which runs on the HoloLens2. The goal of this work is to show if it is possible to create a component for the application that implements the principle of remote rendering and what difficulties it can cause. The concept of remote rendering describes that a complex model is rendered on an outsourced computing unit and the result is transferred to the client so that the client does not have to bear the computing load for the rendering process.</p>
+                    <p>I work with the MRTK and the Mixed Reality WebRTC Package from Microsoft.  In the practical part of the work, I focus on which data has to be streamed, how to build up the scene so that a 3D image is created from the streamed data, how to get the data from the depth buffer, transfer it and integrate it again, and chromakeying so that the object integrates well into the scene.</p>
+                    <p><b>Tools: </b>Unity, C#, HLSL</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container article all margin1 aframe tsjs hlsl">
+            <div class="row">
+                <div class="col-sm-3"><img class="clickableImg" src="./source/media/pictures/BeerPhong.png" alt="Realtime BeerPhong - Screenshot"></div>
+                <div class="col-sm-9 padding1">
+                    <h2>Realtime BeerPhong</h2>
+                    <p>Realtime BeerPhong was a project for the Real-Time Computer Graphics module. The project was the final project of the course and our team implemented it in about 2 months. The assignment was to create an AR application using WebGL or a library based on WebGL. We decided to implement the game Beer Pong in our application. Special features of the project were learning new techniques like working on shaders can be very intimidating at the beginning but with time very fascinating.</p>
+                    <p>In the project I was very involved in coordinating our group, programming shaders and researching 3D libraries that were interesting for our application.</p>
+                    <p><b>Tools: </b>AFrame, JavaScript, HLSL</p>
+                    <div class=" btn btn-dark">
+                        <a href="https://calvindo.github.io/Realtime-BeerBong/aFrame.html" target="_blank" rel="noopener noreferrer">Play Game</a> 
+                    </div>
+                    <div class=" btn btn-dark">
+                        <a href="https://github.com/CalvinDO/Realtime-BeerBong" target="_blank" rel="noopener noreferrer">Repository</a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container article all margin1 hlsl">
+            <div class="row">
+                <div class="col-sm-3"><img class="clickableImg" src="./source/media/pictures/SolarShader.png" alt="Shader Solarsystem"></div>
+                <div class="col-sm-9 padding1">
+                    <h2>Shader Solarsystem</h2>
+                    <p>Like Realtime BeerPhong, the Shader Solar System was created in the Realtime Computer Graphics module. The task was to get acquainted with the Shadertoy tool and develop a shader within a week. Within two long days I designed the idea and implemented the shader. I concentrated on the shadows of the planets to make them look like 3D models although they exist only on pixel basis.</p>
+                    <p>What I find fascinating about shader coding is that the graphics card can really calculate the information for each pixel in an incredibly short time.</p>
+                    <p><b>Tools: </b>HLSL</p>
+                    <div class=" btn btn-dark">
+                        <a href="https://www.shadertoy.com/view/Nt2cz1" target="_blank" rel="noopener noreferrer">Watch Shader</a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container article all margin1 kotlin jetpackCompose">
+            <div class="row">
+                <div class="col-sm-3"><img class="clickableImg" src="./source/media/pictures/SudokuKing.png" alt="Sudokuking"></div>
+                <div class="col-sm-9 padding1">
+                    <h2>Sudokuking</h2>
+                    <p>SudokuKing was developed in the Mobile App Development module in the summer semester 22/23 in collaboration with a fellow student. He focused on the development of the iOS app and I focused on the Android version. The app should be a puzzle app to pass the time of the user. Due to the fact that our concept was too large, we were unfortunately not able to embed actual puzzles at the end. However, you can theoretically play Sudoku games with the app. The course gave me great insights into the process of app development.</p>
+                    <p>During the implementation, I worked on every single step from concept to creation. With the help of Figma, I created wireframes and screens of how the app should look later. For software design, I used the Data, Domain, Presentation model. For the creation of the UI I used Jetpack Composed. For data management I worked with the Room Database.</p>
+                    <p><b>Tools: </b>Kotlin, JetpackCompose, Room Database</p>
+                    
+                    <div class=" btn btn-dark">
+                        <a href="https://github.com/LksWllmnn/SudokuKing_Android" target="_blank" rel="noopener noreferrer">Repository</a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container article all margin1 krpano tsjs php">
+            <div class="row">
+                <div class="col-sm-3"><img class="clickableImg" src="./source/media/pictures/Cowa.png" alt="Cowa – Sicherheitstraining im Reinigungsberuf"></div>
+                <div class="col-sm-9 padding1">
+                    <h2>Cowa – Sicherheitstraining im Reinigungsberuf</h2>
+                    <p>I supervised this project during my work as a working student at imsimity as a developer for about half a year. The customer Cowa wanted to create a teaching application for its employees. The application should be a VR application as well as a browser application to serve as many employees as possible. So it was decided to create a cardboard application that would take the user on a guided tour of a building and have him solve various puzzles like in a "Point and Click" game to learn the information to be conveyed.</p>
+                    <p>I was asked to take over the development part and to implement the concept. For this I had to learn how krPano and JavaScript work together, develop the software architecture and create the logic for the different puzzles.</p>
+                    <p><b>Tools: </b>krPano, HTML+CSS+TypeScript, Figma</p>
+                    <div class=" btn btn-dark">
+                        <a href="https://mobilevr.imsimity.com/cowa/" target="_blank" rel="noopener noreferrer">Play Game</a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container article all margin1 unity c#">
+            <div class="row">
+                <div class="col-sm-3"><img class="clickableImg" src="./source/media/pictures/AFractionOfTime.png" alt="Game Design - A Fraction of Time"></div>
+                <div class="col-sm-9 padding1">
+                    <h2>A Fraction of Time</h2>
+                    <p>In the course GameDesign Seminar I worked in a great group on a game concept and a demo for the game "A Fraction of Time" for one semester. "A Fraction of Time" is a 3D puzzle game in which the player controls a scientist and has to guide him through different levels while solving puzzles. The puzzles can only be solved by manipulating different time periods using the different egos of the scientist.</p>
+                    <p>In the project, I worked with my team members on the concept for the game. Also, in the development, I took care of the character's controls, the integration of sound effects, as well as the UI design and development of the UI interface.</p>
+                    <p><b>Tools: </b>Unity, Figma</p>
+                    <div class=" btn btn-dark">
+                        <a href="https://nickhaecker.github.io/A-fraction-of-time/Release/index.html" target="_blank" rel="noopener noreferrer">Play Game</a> 
+                    </div>
+                    <div class=" btn btn-dark">
+                        <a href="https://github.com/NickHaecker/A-fraction-of-time" target="_blank" rel="noopener noreferrer">Repository</a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container article all margin1 unity c# arFoundation">
+            <div class="row">
+                <div class="col-sm-3"><img class="clickableImg" src="./source/media/pictures/CubicRacing.png" alt="Cubic Racing App"></div>
+                <div class="col-sm-9 padding1">
+                    <h2>Cubicracing App</h2>
+                    <p>This was my first project as a working student at imsimity where I worked from the beginning. It was an app created with Unity for a school team that had gotten very far in a cubic racing tournament. The idea was to be able to play embedded videos and drive around the environment with the car in AR view.</p>
+                    <p>For the project, I worked with Unity and AR-Foundation. I created the scene, built the UI with Text-Mesh Pro, built the controls for the car with a virtual joystick, and tied the videos and the photos into Unity so that they worked as markers for the videos and the car.</p>
+                    <p><b>Tools: </b>Unity, C#, AR-Foundation</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container article all margin1 nodejs tsjs">
+            <div class="row">
+                <div class="col-sm-3"><img class="clickableImg" src="./source/media/pictures/TextAdventures.png" alt="TextAdventures"></div>
+                <div class="col-sm-9 padding1">
+                    <h2>TextAdventures</h2>
+                    <p>TextAdventures was developed in the course Softwaredesign in the 4th semester of my studies as a final project of the module. The application is a simple console game, where you can control a map by line-inputs. You can also create your own maps.</p>
+                    <p>For the application, there was a task as a basis. Then I had to draw up a class diagram and a use case diagram. Then I implemented the software design and the implementation of the code in Typescript and NodeJS.</p>
+                    <p><b>Tools: </b>NodeJS, Typescript</p>
+                    
+                    <div class=" btn btn-dark">
+                        <a href="https://github.com/LksWllmnn/Softwaredesign_SoSe21" target="_blank" rel="noopener noreferrer">Repository</a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container article all fudge tsjs">
+            <div class="row">
+                <div class="col-sm-3"><img class="clickableImg" src="./source/media/pictures/whackyTowerjump.png" alt="Whacky Towerjump Game"></div>
+                <div class="col-sm-9 padding1">
+                    <h2>Whacky Towerjump</h2>
+                    <p>Whacky Towerjump was created as a final project of the PRIMA module (Prototyping of Interactive Media Apps) in my 4th semester at Furtwangen University. We had 1-2 months to create a game using Fudge (a game engine based on Typescript). In the game, you have to find the appropriate jump strength by holding down the spacebar and control the avatar using the keyboard to get from one platform to the next.</p>
+                    <p>From the conception of the game to the implementation I did everything here. Conception, input handling, integration of physics, scene design, music selection and installation.</p>
+                    <p><b>Tools: </b>Fudge, Typescript</p>
+                    <div class=" btn btn-dark">
+                        <a href="https://lkswllmnn.github.io/WhackyTowerjump/lvl/NewProject.html" target="_blank" rel="noopener noreferrer">Play Game</a> 
+                    </div>
+                    <div class=" btn btn-dark">
+                        <a href="https://github.com/LksWllmnn/WhackyTowerjump" target="_blank" rel="noopener noreferrer">Repository</a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container article all margin1 c# unity">
+            <div class="row">
+                <div class="col-sm-3"><img class="clickableImg" src="./source/media/pictures/EscapeRoom.png" alt="Escaperoom"></div>
+                <div class="col-sm-9 padding1">
+                    <h2>Escaperoom</h2>
+                    <p>This was my entry project at Imsimity starting in March 2021 for about 3 months. The EscapeRoom is a project to introduce the technology of AI by building an Escape Room step by step.</p>
+                    <p>My tasks were among other things parts of the implementation of the UI, incorporation of the sounds and partial implementation of the interactions and the flow of the multiple-choice tasks.</p>
+                    <p><b>Tools: </b>C#, Unity</p>
+                    <div class=" btn btn-dark">
+                        <a href="https://textil-vernetzt-escaperoom.imsimity.com/" target="_blank" rel="noopener noreferrer">Play Game</a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container article all margin1 wordpress php tsjs">
+            <div class="row">
+                <div class="col-sm-3"><img class="clickableImg" src="./source/media/pictures/Kriewe.png" alt="Kriewe Computerservice Website Onepager"></div>
+                <div class="col-sm-9 padding1">
+                    <h2>Kriewe Computerservice Website</h2>
+                    <p>During my internship at Schanze & Horn in the 3rd semester of my studies, I created several websites. Among others the one of Kriewe Computerservice. Schanze & Horn worked with Wordpress, the Beaverbuilder, PHP, JavaScript and of course CSS and HTML. For the creation there were layouts for websites, which could be redesigned depending on the customer.</p>
+                    <p>During the creation of the site, I had to think of a CI for the client, using his old website as a guide. With the help of the Beaverbuilder, there were already some modules that you could simply drag and drop onto the page, but you had to help out with JavaScript and PHP from time to time if you wanted to have functionalities that were not standard.</p>
+                    <p><b>Tools: </b>Wordpress, PHP, JavaScript, CSS</p>
+                    <div class=" btn btn-dark">
+                        <a href="https://www.kriewe.de/" target="_blank" rel="noopener noreferrer">Website</a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="jumbotron">
+            <div class="container footerStuff">
+                <h2 id="contact">Contact</h2>
+                <div >
+                    <a href="https://www.linkedin.com/in/lukas-willmann-3061811ba/" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                        </svg>
+                    </a>
+                    
+                    <a href="mailto:LukasWillmann@gmx.de">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-envelope-paper-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M6.5 9.5 3 7.5v-6A1.5 1.5 0 0 1 4.5 0h7A1.5 1.5 0 0 1 13 1.5v6l-3.5 2L8 8.75l-1.5.75ZM1.059 3.635 2 3.133v3.753L0 5.713V5.4a2 2 0 0 1 1.059-1.765ZM16 5.713l-2 1.173V3.133l.941.502A2 2 0 0 1 16 5.4v.313Zm0 1.16-5.693 3.337L16 13.372v-6.5Zm-8 3.199 7.941 4.412A2 2 0 0 1 14 16H2a2 2 0 0 1-1.941-1.516L8 10.072Zm-8 3.3 5.693-3.162L0 6.873v6.5Z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+    </footer>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01" style="width:100%">
+        <div id="caption"></div>
+    </div>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById('myModal');
+
+        let imgs = document.getElementsByClassName("clickableImg");
+        
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        //var img = document.getElementById('myImg');
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+
+        for(let i = 0; i < imgs.length; i++) {
+            imgs[i].onclick = function() {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;   
+            }
+        }
+
+        /*img.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }*/
+        
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() { 
+          modal.style.display = "none";
+        }
+    </script>
+    
+    <script>
+        let filterButtons = document.getElementsByClassName("filterbutton");
+        let projects = document.getElementsByClassName("all");
+        for(let i = 0; i < filterButtons.length; i++) {
+            filterButtons[i].addEventListener("click", gotFiltered)
+        }
+
+        function gotFiltered() {
+            switch(this.textContent) {
+                case "All":
+                    for(let i = 0; i < projects.length; i++) {
+                        projects[i].classList.remove("hide");
+                    }
+                    break;
+                case "TypeScript/JavaScript":
+                    for(let i = 0; i < projects.length; i++) {
+                        if(!projects[i].classList.contains("tsjs")) projects[i].classList.add("hide");
+                        else  projects[i].classList.remove("hide");
+                    }
+                    break;
+                case "C#":
+                    for(let i = 0; i < projects.length; i++) {
+                        if(!projects[i].classList.contains("c#")) projects[i].classList.add("hide");
+                        else  projects[i].classList.remove("hide");
+                    }
+                    break;
+                case "PHP":
+                    for(let i = 0; i < projects.length; i++) {
+                        if(!projects[i].classList.contains("php")) projects[i].classList.add("hide");
+                        else  projects[i].classList.remove("hide");
+                    }
+                    break;
+                case "NodeJS":
+                    for(let i = 0; i < projects.length; i++) {
+                        if(!projects[i].classList.contains("nodejs")) projects[i].classList.add("hide");
+                        else  projects[i].classList.remove("hide");
+                    }
+                    break;
+                case "HLSL":
+                    for(let i = 0; i < projects.length; i++) {
+                        if(!projects[i].classList.contains("hlsl")) projects[i].classList.add("hide");
+                        else  projects[i].classList.remove("hide");
+                    }
+                    break;
+                case "Unity":
+                    for(let i = 0; i < projects.length; i++) {
+                        if(!projects[i].classList.contains("unity")) projects[i].classList.add("hide");
+                        else  projects[i].classList.remove("hide");
+                    }
+                    break;
+                case "krPano":
+                    for(let i = 0; i < projects.length; i++) {
+                        if(!projects[i].classList.contains("hlsl")) projects[i].classList.add("hide");
+                        else  projects[i].classList.remove("hide");
+                    }
+                    break;
+                case "RoomDB":
+                    for(let i = 0; i < projects.length; i++) {
+                        if(!projects[i].classList.contains("roomdm")) projects[i].classList.add("hide");
+                        else  projects[i].classList.remove("hide");
+                    }
+                    break;
+                case "Wordpress":
+                    for(let i = 0; i < projects.length; i++) {
+                        if(!projects[i].classList.contains("wordpress")) projects[i].classList.add("hide");
+                        else  projects[i].classList.remove("hide");
+                    }
+                    break;
+                case "AFrame":
+                    for(let i = 0; i < projects.length; i++) {
+                        if(!projects[i].classList.contains("aframe")) projects[i].classList.add("hide");
+                        else  projects[i].classList.remove("hide");
+                    }
+                    break;
+                case "NodeJS":
+                    for(let i = 0; i < projects.length; i++) {
+                        if(!projects[i].classList.contains("nodejs")) projects[i].classList.add("hide");
+                        else  projects[i].classList.remove("hide");
+                    }
+                    break; 
+            }
+        }
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,154 @@
+@font-face {
+  font-family: Source CodePro;
+  src: url("../source/static/SourceCodePro-Light.ttf");
+}
+p, h1, h2, h3, h4, button, li {
+  color: #212529;
+  font-family: Source CodePro;
+}
+
+a {
+  color: #1B998B;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0CCA4A;
+}
+
+body {
+  background-color: rgb(241, 241, 241);
+}
+body .navbar {
+  position: fixed;
+  right: 0;
+}
+body .headline {
+  background-color: #212529;
+  box-shadow: 0px 4px 3px rgb(215, 215, 215);
+  display: block;
+}
+body .headline .headline-row {
+  height: 10em;
+}
+body .headline h1, body .headline p {
+  color: rgb(241, 241, 241);
+}
+body .filter {
+  display: block;
+}
+body .filter ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+body .filter ul li {
+  margin: 0.5em;
+}
+body .section {
+  margin: 10px;
+}
+body .section .margin1 {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+body .section .hide {
+  display: none;
+}
+body .section .article {
+  box-shadow: 0px 0px 3px rgb(215, 215, 215);
+  border-radius: 5px;
+}
+body .section .article .meTalk {
+  text-transform: uppercase;
+}
+body .section .article ul {
+  list-style-type: none;
+  padding: 0;
+}
+body .section .article ul li {
+  padding-bottom: 10px;
+}
+body .section .article img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: none;
+     object-fit: none;
+  cursor: pointer;
+}
+body .section .article .padding1 {
+  padding: 1em;
+}
+body .section .eeh {
+  padding-bottom: 1em;
+}
+body footer {
+  background-color: #212529;
+  box-shadow: 0px 4px 3px rgb(215, 215, 215);
+  display: block;
+}
+body footer h2, body footer p {
+  color: rgb(241, 241, 241);
+}
+body .footerStuff {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+body .modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+}
+body .modal .modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+body .modal #caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+body .modal .modal-content, body .modal #caption {
+  -webkit-animation-name: zoom;
+          animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
+}
+body .modal .close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+body .modal .close:hover, body .modal .close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*@keyframes zoom
+ *  from transform: scale(0.1) 
+ *  to transform: scale(1)*/
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */
