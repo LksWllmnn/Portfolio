@@ -86,6 +86,12 @@
                 <li>
                     <div class=" btn btn-dark filterbutton">NodeJS</div>
                 </li>
+                <li>
+                    <div class=" btn btn-dark filterbutton">Python</div>
+                </li>
+                <li>
+                    <div class=" btn btn-dark filterbutton">OpenCV</div>
+                </li>
             </ul>
         </div>
     </div>
@@ -93,6 +99,36 @@
     
     
     <div class="section">
+
+        <div class="container article all margin1 unity c# python opencv">
+            <div class="row">
+                <div class="col-sm-3"><img class="clickableImg" src="./source/media/pictures/teach3D.jpg" alt="Teaching 3D"></div>
+                <div class="col-sm-9 padding1">
+                    <h2>Teaching 3D</h2>
+                    <p>In the project "Teaching 3D" (unofficial name) I officially started as an auxiliary researcher in August 2023. After that, I continued to participate on a voluntary basis. The project was initiated by the Digital Media Faculty at Furtwangen University under the direction of Prof. Dr. Uwe Hahne. The idea is to capture lecturers with 3D cameras and display them in virtual space. This will make it easier for students to understand complex things (e.g. geometry) by actually showing them in virtual space instead of the lecturer only being able to show them on a 2D blackboard or with hand signs.</p>
+                    <p>I looked for different tools to implement this idea. I chose Python and OpenCV to calibrate the cameras and Unity to display the point clouds. This project is still in the development phase and many functions are still to be built into it.</p>
+                    <p><b>Tools: </b>Unity, C#, Python, OpenCV</p>
+                    <div class=" btn btn-dark">
+                        <a href="https://github.com/LksWllmnn/Teaching3D" target="_blank" rel="noopener noreferrer">Repository</a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container article all margin1 unity c#">
+            <div class="row">
+                <div class="col-sm-3"><img class="clickableImg" src="./source/media/pictures/offMir.jpg" alt="Office Mirage"></div>
+                <div class="col-sm-9 padding1">
+                    <h2>GameJam - Office Mirage</h2>
+                    <p>As part of the Game Design module of the Master's programme in Media Informatics in Furtwangen, I and my group developed a game for the Vive XR Elite. The player has to break out of an office in which he has to fulfil strange tasks.</p>
+                    <p>I worked on the brainstorming and the mechanics (complete programming) of the game. Furthermore, I took on smaller level design and conception tasks.</p>
+                    <p><b>Tools: </b>Unity, C#</p>
+                    <div class=" btn btn-dark">
+                        <a href="https://github.com/LksWllmnn/GD_PaulSpez23/tree/main/GameJam" target="_blank" rel="noopener noreferrer">Repository</a> 
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <div class="container article all margin1 unity c# hlsl">
             <div class="row">
@@ -139,7 +175,7 @@
             </div>
         </div>
 
-        <div class="container article all margin1 kotlin jetpackCompose">
+        <div class="container article all margin1 kotlin jetpackCompose roomdm">
             <div class="row">
                 <div class="col-sm-3"><img class="clickableImg" src="./source/media/pictures/SudokuKing.png" alt="Sudokuking"></div>
                 <div class="col-sm-9 padding1">
@@ -381,7 +417,7 @@
                     break;
                 case "krPano":
                     for(let i = 0; i < projects.length; i++) {
-                        if(!projects[i].classList.contains("hlsl")) projects[i].classList.add("hide");
+                        if(!projects[i].classList.contains("krpano")) projects[i].classList.add("hide");
                         else  projects[i].classList.remove("hide");
                     }
                     break;
@@ -406,6 +442,18 @@
                 case "NodeJS":
                     for(let i = 0; i < projects.length; i++) {
                         if(!projects[i].classList.contains("nodejs")) projects[i].classList.add("hide");
+                        else  projects[i].classList.remove("hide");
+                    }
+                    break; 
+                case "Python":
+                    for(let i = 0; i < projects.length; i++) {
+                        if(!projects[i].classList.contains("python")) projects[i].classList.add("hide");
+                        else  projects[i].classList.remove("hide");
+                    }
+                    break; 
+                case "OpenCV":
+                    for(let i = 0; i < projects.length; i++) {
+                        if(!projects[i].classList.contains("opencv")) projects[i].classList.add("hide");
                         else  projects[i].classList.remove("hide");
                     }
                     break; 
